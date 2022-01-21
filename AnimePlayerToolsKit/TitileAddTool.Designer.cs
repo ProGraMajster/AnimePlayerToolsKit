@@ -174,6 +174,7 @@
             this.buttonBackToEp2 = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.panelEp1.SuspendLayout();
             this.panelEp1ViewItem.SuspendLayout();
             this.panelEp1VI.SuspendLayout();
@@ -1894,6 +1895,7 @@
             // 
             // panelEp3
             // 
+            this.panelEp3.Controls.Add(this.listBox2);
             this.panelEp3.Controls.Add(this.comboBox12);
             this.panelEp3.Controls.Add(this.textBoxTlumacz);
             this.panelEp3.Controls.Add(this.comboBox11);
@@ -2012,6 +2014,15 @@
             this.label28.Size = new System.Drawing.Size(64, 24);
             this.label28.TabIndex = 17;
             this.label28.Text = "Etap 3";
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 15;
+            this.listBox2.Location = new System.Drawing.Point(505, 104);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(228, 169);
+            this.listBox2.TabIndex = 26;
             // 
             // TitileAddTool
             // 
@@ -2250,5 +2261,6 @@
         private ComboBox comboBox10;
         private TextBox textBoxTlumacz;
         private ComboBox comboBox12;
+        private ListBox listBox2;
     }
 }
