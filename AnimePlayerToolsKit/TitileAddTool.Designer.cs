@@ -166,15 +166,22 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panelEp3 = new System.Windows.Forms.Panel();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.listBoxEp = new System.Windows.Forms.ListBox();
+            this.comboBoxEpQuality = new System.Windows.Forms.ComboBox();
             this.textBoxTlumacz = new System.Windows.Forms.TextBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBoxTypeEpTra = new System.Windows.Forms.ComboBox();
+            this.comboBoxServiceHost = new System.Windows.Forms.ComboBox();
             this.panel57 = new System.Windows.Forms.Panel();
             this.buttonBackToEp2 = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.buttonAddEp = new System.Windows.Forms.Button();
+            this.buttonRemoveEp = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.numericUpDownEpNum = new System.Windows.Forms.NumericUpDown();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBoxEpLink = new System.Windows.Forms.TextBox();
             this.panelEp1.SuspendLayout();
             this.panelEp1ViewItem.SuspendLayout();
             this.panelEp1VI.SuspendLayout();
@@ -226,6 +233,7 @@
             this.panel1.SuspendLayout();
             this.panelEp3.SuspendLayout();
             this.panel57.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEpNum)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -1895,11 +1903,18 @@
             // 
             // panelEp3
             // 
-            this.panelEp3.Controls.Add(this.listBox2);
-            this.panelEp3.Controls.Add(this.comboBox12);
+            this.panelEp3.Controls.Add(this.textBoxEpLink);
+            this.panelEp3.Controls.Add(this.label31);
+            this.panelEp3.Controls.Add(this.numericUpDownEpNum);
+            this.panelEp3.Controls.Add(this.label30);
+            this.panelEp3.Controls.Add(this.label29);
+            this.panelEp3.Controls.Add(this.buttonRemoveEp);
+            this.panelEp3.Controls.Add(this.buttonAddEp);
+            this.panelEp3.Controls.Add(this.listBoxEp);
+            this.panelEp3.Controls.Add(this.comboBoxEpQuality);
             this.panelEp3.Controls.Add(this.textBoxTlumacz);
-            this.panelEp3.Controls.Add(this.comboBox11);
-            this.panelEp3.Controls.Add(this.comboBox10);
+            this.panelEp3.Controls.Add(this.comboBoxTypeEpTra);
+            this.panelEp3.Controls.Add(this.comboBoxServiceHost);
             this.panelEp3.Controls.Add(this.panel57);
             this.panelEp3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEp3.Location = new System.Drawing.Point(0, 0);
@@ -1907,20 +1922,33 @@
             this.panelEp3.Size = new System.Drawing.Size(963, 536);
             this.panelEp3.TabIndex = 17;
             // 
-            // comboBox12
+            // listBoxEp
             // 
-            this.comboBox12.BackColor = System.Drawing.Color.Black;
-            this.comboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox12.ForeColor = System.Drawing.Color.White;
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
-            "1080p, 720p 460p, 360p"});
-            this.comboBox12.Location = new System.Drawing.Point(16, 127);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(204, 23);
-            this.comboBox12.Sorted = true;
-            this.comboBox12.TabIndex = 25;
+            this.listBoxEp.Dock = System.Windows.Forms.DockStyle.Right;
+            this.listBoxEp.FormattingEnabled = true;
+            this.listBoxEp.ItemHeight = 15;
+            this.listBoxEp.Location = new System.Drawing.Point(455, 74);
+            this.listBoxEp.Name = "listBoxEp";
+            this.listBoxEp.Size = new System.Drawing.Size(508, 462);
+            this.listBoxEp.TabIndex = 26;
+            // 
+            // comboBoxEpQuality
+            // 
+            this.comboBoxEpQuality.BackColor = System.Drawing.Color.Black;
+            this.comboBoxEpQuality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEpQuality.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxEpQuality.ForeColor = System.Drawing.Color.White;
+            this.comboBoxEpQuality.FormattingEnabled = true;
+            this.comboBoxEpQuality.Items.AddRange(new object[] {
+            "1080p, 720p 460p, 360p",
+            "360p",
+            "460p, 360p",
+            "720p 460p, 360p"});
+            this.comboBoxEpQuality.Location = new System.Drawing.Point(10, 145);
+            this.comboBoxEpQuality.Name = "comboBoxEpQuality";
+            this.comboBoxEpQuality.Size = new System.Drawing.Size(204, 23);
+            this.comboBoxEpQuality.Sorted = true;
+            this.comboBoxEpQuality.TabIndex = 25;
             // 
             // textBoxTlumacz
             // 
@@ -1928,44 +1956,42 @@
             this.textBoxTlumacz.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxTlumacz.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxTlumacz.ForeColor = System.Drawing.Color.White;
-            this.textBoxTlumacz.Location = new System.Drawing.Point(238, 85);
+            this.textBoxTlumacz.Location = new System.Drawing.Point(238, 113);
             this.textBoxTlumacz.Name = "textBoxTlumacz";
             this.textBoxTlumacz.Size = new System.Drawing.Size(179, 20);
             this.textBoxTlumacz.TabIndex = 24;
             // 
-            // comboBox11
+            // comboBoxTypeEpTra
             // 
-            this.comboBox11.BackColor = System.Drawing.Color.Black;
-            this.comboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox11.ForeColor = System.Drawing.Color.White;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.comboBoxTypeEpTra.BackColor = System.Drawing.Color.Black;
+            this.comboBoxTypeEpTra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTypeEpTra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxTypeEpTra.ForeColor = System.Drawing.Color.White;
+            this.comboBoxTypeEpTra.FormattingEnabled = true;
+            this.comboBoxTypeEpTra.Items.AddRange(new object[] {
             "Dubbing PL",
             "Lektor PL",
             "Napisy PL"});
-            this.comboBox11.Location = new System.Drawing.Point(124, 84);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(96, 23);
-            this.comboBox11.Sorted = true;
-            this.comboBox11.TabIndex = 22;
+            this.comboBoxTypeEpTra.Location = new System.Drawing.Point(118, 84);
+            this.comboBoxTypeEpTra.Name = "comboBoxTypeEpTra";
+            this.comboBoxTypeEpTra.Size = new System.Drawing.Size(96, 23);
+            this.comboBoxTypeEpTra.Sorted = true;
+            this.comboBoxTypeEpTra.TabIndex = 22;
             // 
-            // comboBox10
+            // comboBoxServiceHost
             // 
-            this.comboBox10.BackColor = System.Drawing.Color.Black;
-            this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox10.ForeColor = System.Drawing.Color.White;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
-            "CDA",
-            "GDrive",
-            "YouTube"});
-            this.comboBox10.Location = new System.Drawing.Point(13, 85);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(96, 23);
-            this.comboBox10.Sorted = true;
-            this.comboBox10.TabIndex = 21;
+            this.comboBoxServiceHost.BackColor = System.Drawing.Color.Black;
+            this.comboBoxServiceHost.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxServiceHost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBoxServiceHost.ForeColor = System.Drawing.Color.White;
+            this.comboBoxServiceHost.FormattingEnabled = true;
+            this.comboBoxServiceHost.Items.AddRange(new object[] {
+            "Cda"});
+            this.comboBoxServiceHost.Location = new System.Drawing.Point(10, 84);
+            this.comboBoxServiceHost.Name = "comboBoxServiceHost";
+            this.comboBoxServiceHost.Size = new System.Drawing.Size(96, 23);
+            this.comboBoxServiceHost.Sorted = true;
+            this.comboBoxServiceHost.TabIndex = 21;
             // 
             // panel57
             // 
@@ -2015,14 +2041,89 @@
             this.label28.TabIndex = 17;
             this.label28.Text = "Etap 3";
             // 
-            // listBox2
+            // buttonAddEp
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 15;
-            this.listBox2.Location = new System.Drawing.Point(505, 104);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(228, 169);
-            this.listBox2.TabIndex = 26;
+            this.buttonAddEp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.buttonAddEp.FlatAppearance.BorderSize = 0;
+            this.buttonAddEp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddEp.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonAddEp.ForeColor = System.Drawing.Color.White;
+            this.buttonAddEp.Location = new System.Drawing.Point(10, 234);
+            this.buttonAddEp.Name = "buttonAddEp";
+            this.buttonAddEp.Size = new System.Drawing.Size(83, 28);
+            this.buttonAddEp.TabIndex = 28;
+            this.buttonAddEp.Text = "Dodaj";
+            this.buttonAddEp.UseVisualStyleBackColor = false;
+            this.buttonAddEp.Click += new System.EventHandler(this.buttonAddEp_Click);
+            // 
+            // buttonRemoveEp
+            // 
+            this.buttonRemoveEp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.buttonRemoveEp.FlatAppearance.BorderSize = 0;
+            this.buttonRemoveEp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRemoveEp.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonRemoveEp.ForeColor = System.Drawing.Color.White;
+            this.buttonRemoveEp.Location = new System.Drawing.Point(118, 234);
+            this.buttonRemoveEp.Name = "buttonRemoveEp";
+            this.buttonRemoveEp.Size = new System.Drawing.Size(83, 28);
+            this.buttonRemoveEp.TabIndex = 29;
+            this.buttonRemoveEp.Text = "Usuń";
+            this.buttonRemoveEp.UseVisualStyleBackColor = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(238, 91);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(65, 19);
+            this.label29.TabIndex = 30;
+            this.label29.Text = "Tłumacz:";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(238, 136);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(109, 19);
+            this.label30.TabIndex = 31;
+            this.label30.Text = "Numer odcinka:";
+            // 
+            // numericUpDownEpNum
+            // 
+            this.numericUpDownEpNum.BackColor = System.Drawing.Color.Black;
+            this.numericUpDownEpNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.numericUpDownEpNum.ForeColor = System.Drawing.Color.White;
+            this.numericUpDownEpNum.Location = new System.Drawing.Point(238, 160);
+            this.numericUpDownEpNum.Name = "numericUpDownEpNum";
+            this.numericUpDownEpNum.Size = new System.Drawing.Size(120, 19);
+            this.numericUpDownEpNum.TabIndex = 32;
+            this.numericUpDownEpNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(13, 179);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(154, 19);
+            this.label31.TabIndex = 33;
+            this.label31.Text = "Link do odcinka (z cda)";
+            // 
+            // textBoxEpLink
+            // 
+            this.textBoxEpLink.BackColor = System.Drawing.Color.Black;
+            this.textBoxEpLink.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxEpLink.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxEpLink.ForeColor = System.Drawing.Color.White;
+            this.textBoxEpLink.Location = new System.Drawing.Point(13, 204);
+            this.textBoxEpLink.Name = "textBoxEpLink";
+            this.textBoxEpLink.Size = new System.Drawing.Size(436, 20);
+            this.textBoxEpLink.TabIndex = 34;
             // 
             // TitileAddTool
             // 
@@ -2109,6 +2210,7 @@
             this.panelEp3.PerformLayout();
             this.panel57.ResumeLayout(false);
             this.panel57.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEpNum)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2257,10 +2359,17 @@
         private Button buttonBackToEp2;
         private Label label27;
         private Label label28;
-        private ComboBox comboBox11;
-        private ComboBox comboBox10;
+        private ComboBox comboBoxTypeEpTra;
+        private ComboBox comboBoxServiceHost;
         private TextBox textBoxTlumacz;
-        private ComboBox comboBox12;
-        private ListBox listBox2;
+        private ComboBox comboBoxEpQuality;
+        private ListBox listBoxEp;
+        private Label label29;
+        private Button buttonRemoveEp;
+        private Button buttonAddEp;
+        private NumericUpDown numericUpDownEpNum;
+        private Label label30;
+        private TextBox textBoxEpLink;
+        private Label label31;
     }
 }

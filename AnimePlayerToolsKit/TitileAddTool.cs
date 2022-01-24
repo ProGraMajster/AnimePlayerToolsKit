@@ -209,5 +209,47 @@ namespace AnimePlayerToolsKit
             panelEp2.Show();
             panelEp2.BringToFront();
         }
+
+        private void buttonAddEp_Click(object sender, EventArgs e)
+        {
+            int quality = comboBoxEpQuality.SelectedIndex + 1;
+            string script = "EpisodeListed;\n" + comboBoxServiceHost.SelectedItem.ToString() + ";\n" +
+                comboBoxTypeEpTra.SelectedItem.ToString() + ";\n" +
+                textBoxTlumacz.Text + ";\n" + "null;\n" +
+                numericUpDownEpNum.Value.ToString() + ";\n" +
+                quality + ";\n";
+            if(quality == 1)
+            {
+                script += "360p;\n";
+                script += textBoxEpLink.Text + ";\n";
+            }
+            else if ( quality == 2)
+            {
+                script += "480p;\n";
+                script += textBoxEpLink.Text + ";\n";
+                script += "360p;\n";
+                script += textBoxEpLink.Text + ";\n";
+            }
+            else if ( quality == 3)
+            {
+                script += "720p;\n";
+                script += textBoxEpLink.Text + ";\n";
+                script += "480p;\n";
+                script += textBoxEpLink.Text + ";\n";
+                script += "360p;\n";
+                script += textBoxEpLink.Text + ";\n";
+            }
+            else if ( quality == 4)
+            {
+                script += "1080p;\n";
+                script += textBoxEpLink.Text + ";\n";
+                script += "720p;\n";
+                script += textBoxEpLink.Text + ";\n";
+                script += "480p;\n";
+                script += textBoxEpLink.Text + ";\n";
+                script += "360p;\n";
+                script += textBoxEpLink.Text + ";\n";
+            }
+        }
     }
 }

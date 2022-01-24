@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.richTextBoxScript = new System.Windows.Forms.RichTextBox();
             this.panelMainInfo = new System.Windows.Forms.Panel();
             this.buttonPreview = new System.Windows.Forms.Button();
             this.textBox_LinkImage = new System.Windows.Forms.TextBox();
@@ -38,27 +42,23 @@
             this.textBox_Title = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelNavigation = new System.Windows.Forms.Panel();
+            this.panelPreview = new System.Windows.Forms.Panel();
             this.panelP_news = new System.Windows.Forms.Panel();
             this.panelPreviewText = new System.Windows.Forms.Panel();
             this.labelP_Dis = new System.Windows.Forms.Label();
             this.labelP_Title = new System.Windows.Forms.Label();
             this.pictureBox_PreviewIconLink = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBoxScript = new System.Windows.Forms.RichTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panelPreview = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panelMainInfo.SuspendLayout();
             this.panelP_news.SuspendLayout();
             this.panelPreviewText.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_PreviewIconLink)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -85,6 +85,50 @@
             this.splitContainer1.Size = new System.Drawing.Size(1034, 601);
             this.splitContainer1.SplitterDistance = 500;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 167);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(307, 434);
+            this.panel1.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(307, 30);
+            this.panel2.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.Black;
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.ForeColor = System.Drawing.Color.White;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Image",
+            "Label",
+            "ButtonOpenLink"});
+            this.comboBox1.Location = new System.Drawing.Point(0, 0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(307, 25);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // richTextBoxScript
+            // 
+            this.richTextBoxScript.Location = new System.Drawing.Point(1001, 575);
+            this.richTextBoxScript.Name = "richTextBoxScript";
+            this.richTextBoxScript.Size = new System.Drawing.Size(30, 26);
+            this.richTextBoxScript.TabIndex = 1;
+            this.richTextBoxScript.Text = "";
+            this.richTextBoxScript.Visible = false;
             // 
             // panelMainInfo
             // 
@@ -186,6 +230,16 @@
             this.panelNavigation.Size = new System.Drawing.Size(1034, 36);
             this.panelNavigation.TabIndex = 0;
             // 
+            // panelPreview
+            // 
+            this.panelPreview.AutoScroll = true;
+            this.panelPreview.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panelPreview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelPreview.Location = new System.Drawing.Point(0, 240);
+            this.panelPreview.Name = "panelPreview";
+            this.panelPreview.Size = new System.Drawing.Size(96, -140);
+            this.panelPreview.TabIndex = 0;
+            // 
             // panelP_news
             // 
             this.panelP_news.Controls.Add(this.panelPreviewText);
@@ -256,60 +310,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Podgląd";
             // 
-            // richTextBoxScript
-            // 
-            this.richTextBoxScript.Location = new System.Drawing.Point(1001, 575);
-            this.richTextBoxScript.Name = "richTextBoxScript";
-            this.richTextBoxScript.Size = new System.Drawing.Size(30, 26);
-            this.richTextBoxScript.TabIndex = 1;
-            this.richTextBoxScript.Text = "";
-            this.richTextBoxScript.Visible = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.Black;
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Image",
-            "Label",
-            "ButtonOpenLink"});
-            this.comboBox1.Location = new System.Drawing.Point(0, 0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(307, 25);
-            this.comboBox1.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 167);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(307, 434);
-            this.panel1.TabIndex = 3;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(307, 30);
-            this.panel2.TabIndex = 0;
-            // 
-            // panelPreview
-            // 
-            this.panelPreview.AutoScroll = true;
-            this.panelPreview.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.panelPreview.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelPreview.Location = new System.Drawing.Point(0, 240);
-            this.panelPreview.Name = "panelPreview";
-            this.panelPreview.Size = new System.Drawing.Size(96, 0);
-            this.panelPreview.TabIndex = 0;
-            // 
             // Tool_NewsCreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -328,13 +328,13 @@
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panelMainInfo.ResumeLayout(false);
             this.panelMainInfo.PerformLayout();
             this.panelP_news.ResumeLayout(false);
             this.panelPreviewText.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_PreviewIconLink)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

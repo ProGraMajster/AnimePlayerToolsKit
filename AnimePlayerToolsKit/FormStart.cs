@@ -27,5 +27,13 @@ namespace AnimePlayerToolsKit
             _.Show();
             GC.Collect();
         }
+
+        private void buttonEpCreator_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tool_EpCreator _ = new Tool_EpCreator();
+            _.Show();
+            GC.Collect();
+        }
     }
 }
