@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +18,17 @@ namespace AnimePlayerToolsKit
         {
             InitializeComponent();
         }
+
+        public string GetScript()
+        {
+            string code = null;
+            foreach (var s in listBoxEp.Items)
+            {
+                code += s.ToString();
+            }
+            return code;
+        }
+
         private void buttonAddEp_Click(object sender, EventArgs e)
         {
             try
@@ -25,7 +38,7 @@ namespace AnimePlayerToolsKit
                     comboBoxTypeEpTra.SelectedItem.ToString() + ";\n" +
                     textBoxTlumacz.Text + ";\n" + "null;\n" +
                     numericUpDownEpNum.Value.ToString() + ";\n" +
-                    "Quality;\n"+quality + ";\n";
+                    "Quality;\n" + quality + ";\n";
                 if (quality == 1)
                 {
                     script += "360p;\n";
@@ -138,6 +151,38 @@ namespace AnimePlayerToolsKit
             catch(Exception ex)
             {
                 Console.WriteLine(ex.ToString());
+            }
+        }
+
+        private void buttonSend_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MailMessage mail = new MailMessage();
+                SmtpClient SmtpServer = new SmtpClient();
+                mail.To.Add("testq8055@gmail.com");
+                mail.From = new MailAddress("mail@domain.com");
+                mail.Subject = "EpCreator - Created List Ep";
+                mail.IsBodyHtml = true;
+                mail.Body = GetScript();
+                SmtpServer.Host = "smtpserver";
+                SmtpServer.Port = 25;
+                SmtpServer.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
+                try
+                {
+                    SmtpServer.Send(mail);
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("Exception Message: " + ex.Message);
+                    if (ex.InnerException != null)
+                        Debug.WriteLine("Exception Inner:   " + ex.InnerException);
+                }
+            }
+            catch(Exception exBtnSend)
+            {
+                MessageBox.Show("Wystąpił błąd!", "Error");
+                Console.WriteLine(exBtnSend.ToString());
             }
         }
     }

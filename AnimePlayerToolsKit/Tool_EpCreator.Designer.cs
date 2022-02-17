@@ -46,6 +46,7 @@
             this.buttonReset = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
+            this.buttonSend = new System.Windows.Forms.Button();
             this.panelEp3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEpNum)).BeginInit();
             this.panel57.SuspendLayout();
@@ -53,6 +54,7 @@
             // 
             // panelEp3
             // 
+            this.panelEp3.Controls.Add(this.buttonSend);
             this.panelEp3.Controls.Add(this.buttonEnd);
             this.panelEp3.Controls.Add(this.textBoxEpLink);
             this.panelEp3.Controls.Add(this.label31);
@@ -298,6 +300,21 @@
             this.label27.TabIndex = 17;
             this.label27.Text = "Dodawanie odcinków";
             // 
+            // buttonSend
+            // 
+            this.buttonSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.buttonSend.FlatAppearance.BorderSize = 0;
+            this.buttonSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSend.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonSend.ForeColor = System.Drawing.Color.White;
+            this.buttonSend.Location = new System.Drawing.Point(365, 166);
+            this.buttonSend.Name = "buttonSend";
+            this.buttonSend.Size = new System.Drawing.Size(83, 28);
+            this.buttonSend.TabIndex = 36;
+            this.buttonSend.Text = "Wyślij";
+            this.buttonSend.UseVisualStyleBackColor = false;
+            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
+            // 
             // Tool_EpCreator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -340,5 +357,6 @@
         private Button buttonBack;
         private Label label27;
         private Button buttonReset;
+        private Button buttonSend;
     }
 }
