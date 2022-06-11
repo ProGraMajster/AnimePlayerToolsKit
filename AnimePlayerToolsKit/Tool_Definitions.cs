@@ -67,6 +67,7 @@ namespace AnimePlayerToolsKit
                         .Replace(':','_')
                         .Replace(';','_')   
                         .Replace(' ','_')+".dat");
+
                     folderBrowserDialog.Dispose();
                     MessageBox.Show("Zapisano plik");
                     textBox3.Tag = Guid.NewGuid();
