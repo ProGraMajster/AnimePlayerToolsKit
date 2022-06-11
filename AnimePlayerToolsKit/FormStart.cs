@@ -35,5 +35,13 @@ namespace AnimePlayerToolsKit
             _.Show();
             GC.Collect();
         }
+
+        private void buttonDefinitions_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tool_Definitions tool_Definitions = new Tool_Definitions();
+            tool_Definitions.Show();
+            GC.Collect();
+        }
     }
 }

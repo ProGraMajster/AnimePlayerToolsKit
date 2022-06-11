@@ -34,25 +34,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panelEp1 = new System.Windows.Forms.Panel();
+            this.buttonRemoveLinkInList = new System.Windows.Forms.Button();
+            this.buttonAddIconLinkToList = new System.Windows.Forms.Button();
+            this.listBoxIconsLinks = new System.Windows.Forms.ListBox();
             this.buttonSHViewItem = new System.Windows.Forms.Button();
             this.panelEp1ViewItem = new System.Windows.Forms.Panel();
             this.panelEp1VI = new System.Windows.Forms.Panel();
             this.pictureBoxEp1VI = new System.Windows.Forms.PictureBox();
             this.buttonEp1VI = new System.Windows.Forms.Button();
-            this.buttonEp1ShowMoreSetting = new System.Windows.Forms.Button();
-            this.panelEp1MoreSetting = new System.Windows.Forms.Panel();
-            this.textBox_contentId = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.buttonBackToStarterform = new System.Windows.Forms.Button();
-            this.buttonEndEp1 = new System.Windows.Forms.Button();
             this.buttonNextToEp2 = new System.Windows.Forms.Button();
-            this.textBox_sitelink = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.textBox_iconlink = new System.Windows.Forms.TextBox();
             this.textBox_title = new System.Windows.Forms.TextBox();
             this.panelEp2 = new System.Windows.Forms.Panel();
             this.panel56 = new System.Windows.Forms.Panel();
-            this.buttonNextToEp3 = new System.Windows.Forms.Button();
+            this.buttonEndCreator = new System.Windows.Forms.Button();
             this.panel53 = new System.Windows.Forms.Panel();
             this.panel54 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
@@ -165,28 +161,10 @@
             this.buttonBackToEp1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.panelEp3 = new System.Windows.Forms.Panel();
-            this.listBoxEp = new System.Windows.Forms.ListBox();
-            this.comboBoxEpQuality = new System.Windows.Forms.ComboBox();
-            this.textBoxTlumacz = new System.Windows.Forms.TextBox();
-            this.comboBoxTypeEpTra = new System.Windows.Forms.ComboBox();
-            this.comboBoxServiceHost = new System.Windows.Forms.ComboBox();
-            this.panel57 = new System.Windows.Forms.Panel();
-            this.buttonBackToEp2 = new System.Windows.Forms.Button();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.buttonAddEp = new System.Windows.Forms.Button();
-            this.buttonRemoveEp = new System.Windows.Forms.Button();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.numericUpDownEpNum = new System.Windows.Forms.NumericUpDown();
-            this.label31 = new System.Windows.Forms.Label();
-            this.textBoxEpLink = new System.Windows.Forms.TextBox();
             this.panelEp1.SuspendLayout();
             this.panelEp1ViewItem.SuspendLayout();
             this.panelEp1VI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEp1VI)).BeginInit();
-            this.panelEp1MoreSetting.SuspendLayout();
             this.panelEp2.SuspendLayout();
             this.panel56.SuspendLayout();
             this.panel53.SuspendLayout();
@@ -231,9 +209,6 @@
             this.panel7.SuspendLayout();
             this.panelSeparator1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panelEp3.SuspendLayout();
-            this.panel57.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEpNum)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -293,15 +268,13 @@
             // 
             // panelEp1
             // 
+            this.panelEp1.Controls.Add(this.buttonRemoveLinkInList);
+            this.panelEp1.Controls.Add(this.buttonAddIconLinkToList);
+            this.panelEp1.Controls.Add(this.listBoxIconsLinks);
             this.panelEp1.Controls.Add(this.buttonSHViewItem);
             this.panelEp1.Controls.Add(this.panelEp1ViewItem);
-            this.panelEp1.Controls.Add(this.buttonEp1ShowMoreSetting);
-            this.panelEp1.Controls.Add(this.panelEp1MoreSetting);
             this.panelEp1.Controls.Add(this.buttonBackToStarterform);
-            this.panelEp1.Controls.Add(this.buttonEndEp1);
             this.panelEp1.Controls.Add(this.buttonNextToEp2);
-            this.panelEp1.Controls.Add(this.textBox_sitelink);
-            this.panelEp1.Controls.Add(this.label6);
             this.panelEp1.Controls.Add(this.textBox_iconlink);
             this.panelEp1.Controls.Add(this.textBox_title);
             this.panelEp1.Controls.Add(this.label4);
@@ -312,8 +285,50 @@
             this.panelEp1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEp1.Location = new System.Drawing.Point(0, 0);
             this.panelEp1.Name = "panelEp1";
-            this.panelEp1.Size = new System.Drawing.Size(963, 536);
+            this.panelEp1.Size = new System.Drawing.Size(912, 536);
             this.panelEp1.TabIndex = 7;
+            // 
+            // buttonRemoveLinkInList
+            // 
+            this.buttonRemoveLinkInList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.buttonRemoveLinkInList.FlatAppearance.BorderSize = 0;
+            this.buttonRemoveLinkInList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRemoveLinkInList.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonRemoveLinkInList.ForeColor = System.Drawing.Color.White;
+            this.buttonRemoveLinkInList.Location = new System.Drawing.Point(362, 302);
+            this.buttonRemoveLinkInList.Name = "buttonRemoveLinkInList";
+            this.buttonRemoveLinkInList.Size = new System.Drawing.Size(107, 45);
+            this.buttonRemoveLinkInList.TabIndex = 20;
+            this.buttonRemoveLinkInList.Text = "Usuń zaznaczony element";
+            this.buttonRemoveLinkInList.UseVisualStyleBackColor = false;
+            this.buttonRemoveLinkInList.Click += new System.EventHandler(this.buttonRemoveLinkInList_Click);
+            // 
+            // buttonAddIconLinkToList
+            // 
+            this.buttonAddIconLinkToList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.buttonAddIconLinkToList.FlatAppearance.BorderSize = 0;
+            this.buttonAddIconLinkToList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddIconLinkToList.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonAddIconLinkToList.ForeColor = System.Drawing.Color.White;
+            this.buttonAddIconLinkToList.Location = new System.Drawing.Point(362, 237);
+            this.buttonAddIconLinkToList.Name = "buttonAddIconLinkToList";
+            this.buttonAddIconLinkToList.Size = new System.Drawing.Size(107, 25);
+            this.buttonAddIconLinkToList.TabIndex = 19;
+            this.buttonAddIconLinkToList.Text = "Dodaj";
+            this.buttonAddIconLinkToList.UseVisualStyleBackColor = false;
+            this.buttonAddIconLinkToList.Click += new System.EventHandler(this.buttonAddIconLinkToList_Click);
+            // 
+            // listBoxIconsLinks
+            // 
+            this.listBoxIconsLinks.BackColor = System.Drawing.Color.Black;
+            this.listBoxIconsLinks.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxIconsLinks.ForeColor = System.Drawing.Color.White;
+            this.listBoxIconsLinks.FormattingEnabled = true;
+            this.listBoxIconsLinks.ItemHeight = 15;
+            this.listBoxIconsLinks.Location = new System.Drawing.Point(25, 271);
+            this.listBoxIconsLinks.Name = "listBoxIconsLinks";
+            this.listBoxIconsLinks.Size = new System.Drawing.Size(331, 120);
+            this.listBoxIconsLinks.TabIndex = 18;
             // 
             // buttonSHViewItem
             // 
@@ -322,7 +337,7 @@
             this.buttonSHViewItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSHViewItem.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonSHViewItem.ForeColor = System.Drawing.Color.White;
-            this.buttonSHViewItem.Location = new System.Drawing.Point(489, 131);
+            this.buttonSHViewItem.Location = new System.Drawing.Point(489, 41);
             this.buttonSHViewItem.Name = "buttonSHViewItem";
             this.buttonSHViewItem.Size = new System.Drawing.Size(110, 24);
             this.buttonSHViewItem.TabIndex = 17;
@@ -333,7 +348,7 @@
             // panelEp1ViewItem
             // 
             this.panelEp1ViewItem.Controls.Add(this.panelEp1VI);
-            this.panelEp1ViewItem.Location = new System.Drawing.Point(489, 163);
+            this.panelEp1ViewItem.Location = new System.Drawing.Point(489, 85);
             this.panelEp1ViewItem.Name = "panelEp1ViewItem";
             this.panelEp1ViewItem.Size = new System.Drawing.Size(336, 307);
             this.panelEp1ViewItem.TabIndex = 16;
@@ -374,53 +389,6 @@
             this.buttonEp1VI.Text = "Titile";
             this.buttonEp1VI.UseVisualStyleBackColor = false;
             // 
-            // buttonEp1ShowMoreSetting
-            // 
-            this.buttonEp1ShowMoreSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonEp1ShowMoreSetting.FlatAppearance.BorderSize = 0;
-            this.buttonEp1ShowMoreSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEp1ShowMoreSetting.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonEp1ShowMoreSetting.ForeColor = System.Drawing.Color.White;
-            this.buttonEp1ShowMoreSetting.Location = new System.Drawing.Point(486, 12);
-            this.buttonEp1ShowMoreSetting.Name = "buttonEp1ShowMoreSetting";
-            this.buttonEp1ShowMoreSetting.Size = new System.Drawing.Size(110, 24);
-            this.buttonEp1ShowMoreSetting.TabIndex = 15;
-            this.buttonEp1ShowMoreSetting.Text = "Zaawansowane";
-            this.buttonEp1ShowMoreSetting.UseVisualStyleBackColor = false;
-            this.buttonEp1ShowMoreSetting.Click += new System.EventHandler(this.buttonEp1ShowMoreSetting_Click);
-            // 
-            // panelEp1MoreSetting
-            // 
-            this.panelEp1MoreSetting.Controls.Add(this.textBox_contentId);
-            this.panelEp1MoreSetting.Controls.Add(this.label7);
-            this.panelEp1MoreSetting.Location = new System.Drawing.Point(486, 42);
-            this.panelEp1MoreSetting.Name = "panelEp1MoreSetting";
-            this.panelEp1MoreSetting.Size = new System.Drawing.Size(431, 77);
-            this.panelEp1MoreSetting.TabIndex = 14;
-            this.panelEp1MoreSetting.Visible = false;
-            // 
-            // textBox_contentId
-            // 
-            this.textBox_contentId.BackColor = System.Drawing.Color.Black;
-            this.textBox_contentId.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_contentId.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_contentId.ForeColor = System.Drawing.Color.White;
-            this.textBox_contentId.Location = new System.Drawing.Point(0, 27);
-            this.textBox_contentId.Name = "textBox_contentId";
-            this.textBox_contentId.Size = new System.Drawing.Size(325, 20);
-            this.textBox_contentId.TabIndex = 16;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(3, 5);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 19);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "ContentId";
-            // 
             // buttonBackToStarterform
             // 
             this.buttonBackToStarterform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -436,21 +404,6 @@
             this.buttonBackToStarterform.UseVisualStyleBackColor = false;
             this.buttonBackToStarterform.Click += new System.EventHandler(this.buttonBackToStarterform_Click);
             // 
-            // buttonEndEp1
-            // 
-            this.buttonEndEp1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonEndEp1.FlatAppearance.BorderSize = 0;
-            this.buttonEndEp1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEndEp1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonEndEp1.ForeColor = System.Drawing.Color.White;
-            this.buttonEndEp1.Location = new System.Drawing.Point(24, 361);
-            this.buttonEndEp1.Name = "buttonEndEp1";
-            this.buttonEndEp1.Size = new System.Drawing.Size(161, 50);
-            this.buttonEndEp1.TabIndex = 12;
-            this.buttonEndEp1.Text = "Zakończ na tym etapie";
-            this.buttonEndEp1.UseVisualStyleBackColor = false;
-            this.buttonEndEp1.Click += new System.EventHandler(this.buttonEndEp1_Click);
-            // 
             // buttonNextToEp2
             // 
             this.buttonNextToEp2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -458,35 +411,13 @@
             this.buttonNextToEp2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNextToEp2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonNextToEp2.ForeColor = System.Drawing.Color.White;
-            this.buttonNextToEp2.Location = new System.Drawing.Point(305, 361);
+            this.buttonNextToEp2.Location = new System.Drawing.Point(25, 418);
             this.buttonNextToEp2.Name = "buttonNextToEp2";
-            this.buttonNextToEp2.Size = new System.Drawing.Size(161, 50);
+            this.buttonNextToEp2.Size = new System.Drawing.Size(441, 50);
             this.buttonNextToEp2.TabIndex = 11;
             this.buttonNextToEp2.Text = "Przejdź do następnego etapu >";
             this.buttonNextToEp2.UseVisualStyleBackColor = false;
             this.buttonNextToEp2.Click += new System.EventHandler(this.buttonNextToEp2_Click);
-            // 
-            // textBox_sitelink
-            // 
-            this.textBox_sitelink.BackColor = System.Drawing.Color.Black;
-            this.textBox_sitelink.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_sitelink.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_sitelink.ForeColor = System.Drawing.Color.White;
-            this.textBox_sitelink.Location = new System.Drawing.Point(24, 311);
-            this.textBox_sitelink.Name = "textBox_sitelink";
-            this.textBox_sitelink.Size = new System.Drawing.Size(442, 20);
-            this.textBox_sitelink.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(24, 277);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(448, 19);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Link do tytułu z strony: https://sites.google.com/view/twojeanimepl";
             // 
             // textBox_iconlink
             // 
@@ -496,7 +427,7 @@
             this.textBox_iconlink.ForeColor = System.Drawing.Color.White;
             this.textBox_iconlink.Location = new System.Drawing.Point(24, 237);
             this.textBox_iconlink.Name = "textBox_iconlink";
-            this.textBox_iconlink.Size = new System.Drawing.Size(442, 20);
+            this.textBox_iconlink.Size = new System.Drawing.Size(332, 20);
             this.textBox_iconlink.TabIndex = 8;
             // 
             // textBox_title
@@ -551,34 +482,34 @@
             this.panelEp2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEp2.Location = new System.Drawing.Point(0, 0);
             this.panelEp2.Name = "panelEp2";
-            this.panelEp2.Size = new System.Drawing.Size(963, 536);
+            this.panelEp2.Size = new System.Drawing.Size(912, 536);
             this.panelEp2.TabIndex = 16;
             // 
             // panel56
             // 
-            this.panel56.Controls.Add(this.buttonNextToEp3);
+            this.panel56.Controls.Add(this.buttonEndCreator);
             this.panel56.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel56.Location = new System.Drawing.Point(0, 2002);
             this.panel56.Name = "panel56";
             this.panel56.Padding = new System.Windows.Forms.Padding(20);
-            this.panel56.Size = new System.Drawing.Size(946, 106);
+            this.panel56.Size = new System.Drawing.Size(895, 106);
             this.panel56.TabIndex = 51;
             // 
-            // buttonNextToEp3
+            // buttonEndCreator
             // 
-            this.buttonNextToEp3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonNextToEp3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonNextToEp3.FlatAppearance.BorderSize = 0;
-            this.buttonNextToEp3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNextToEp3.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonNextToEp3.ForeColor = System.Drawing.Color.White;
-            this.buttonNextToEp3.Location = new System.Drawing.Point(20, 20);
-            this.buttonNextToEp3.Name = "buttonNextToEp3";
-            this.buttonNextToEp3.Size = new System.Drawing.Size(906, 66);
-            this.buttonNextToEp3.TabIndex = 12;
-            this.buttonNextToEp3.Text = "Przejdź do następnego etapu >";
-            this.buttonNextToEp3.UseVisualStyleBackColor = false;
-            this.buttonNextToEp3.Click += new System.EventHandler(this.buttonNextToEp3_Click);
+            this.buttonEndCreator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.buttonEndCreator.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonEndCreator.FlatAppearance.BorderSize = 0;
+            this.buttonEndCreator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEndCreator.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonEndCreator.ForeColor = System.Drawing.Color.White;
+            this.buttonEndCreator.Location = new System.Drawing.Point(20, 20);
+            this.buttonEndCreator.Name = "buttonEndCreator";
+            this.buttonEndCreator.Size = new System.Drawing.Size(855, 66);
+            this.buttonEndCreator.TabIndex = 12;
+            this.buttonEndCreator.Text = "Zakończ";
+            this.buttonEndCreator.UseVisualStyleBackColor = false;
+            this.buttonEndCreator.Click += new System.EventHandler(this.buttonEndCreator_Click);
             // 
             // panel53
             // 
@@ -587,7 +518,7 @@
             this.panel53.Location = new System.Drawing.Point(0, 1978);
             this.panel53.Name = "panel53";
             this.panel53.Padding = new System.Windows.Forms.Padding(10);
-            this.panel53.Size = new System.Drawing.Size(946, 24);
+            this.panel53.Size = new System.Drawing.Size(895, 24);
             this.panel53.TabIndex = 50;
             // 
             // panel54
@@ -596,7 +527,7 @@
             this.panel54.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel54.Location = new System.Drawing.Point(10, 10);
             this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(926, 4);
+            this.panel54.Size = new System.Drawing.Size(875, 4);
             this.panel54.TabIndex = 24;
             // 
             // panel20
@@ -606,7 +537,7 @@
             this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel20.Location = new System.Drawing.Point(0, 1872);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(946, 106);
+            this.panel20.Size = new System.Drawing.Size(895, 106);
             this.panel20.TabIndex = 34;
             // 
             // comboBox9
@@ -641,7 +572,7 @@
             this.panel51.Location = new System.Drawing.Point(0, 1848);
             this.panel51.Name = "panel51";
             this.panel51.Padding = new System.Windows.Forms.Padding(10);
-            this.panel51.Size = new System.Drawing.Size(946, 24);
+            this.panel51.Size = new System.Drawing.Size(895, 24);
             this.panel51.TabIndex = 49;
             // 
             // panel52
@@ -650,7 +581,7 @@
             this.panel52.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel52.Location = new System.Drawing.Point(10, 10);
             this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(926, 4);
+            this.panel52.Size = new System.Drawing.Size(875, 4);
             this.panel52.TabIndex = 24;
             // 
             // panel19
@@ -661,7 +592,7 @@
             this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel19.Location = new System.Drawing.Point(0, 1742);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(946, 106);
+            this.panel19.Size = new System.Drawing.Size(895, 106);
             this.panel19.TabIndex = 33;
             // 
             // label25
@@ -706,7 +637,7 @@
             this.panel49.Location = new System.Drawing.Point(0, 1718);
             this.panel49.Name = "panel49";
             this.panel49.Padding = new System.Windows.Forms.Padding(10);
-            this.panel49.Size = new System.Drawing.Size(946, 24);
+            this.panel49.Size = new System.Drawing.Size(895, 24);
             this.panel49.TabIndex = 48;
             // 
             // panel50
@@ -715,7 +646,7 @@
             this.panel50.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel50.Location = new System.Drawing.Point(10, 10);
             this.panel50.Name = "panel50";
-            this.panel50.Size = new System.Drawing.Size(926, 4);
+            this.panel50.Size = new System.Drawing.Size(875, 4);
             this.panel50.TabIndex = 24;
             // 
             // panel18
@@ -725,7 +656,7 @@
             this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel18.Location = new System.Drawing.Point(0, 1612);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(946, 106);
+            this.panel18.Size = new System.Drawing.Size(895, 106);
             this.panel18.TabIndex = 32;
             // 
             // listBox1
@@ -740,7 +671,7 @@
             this.listBox1.Location = new System.Drawing.Point(540, 0);
             this.listBox1.Name = "listBox1";
             this.listBox1.ScrollAlwaysVisible = true;
-            this.listBox1.Size = new System.Drawing.Size(406, 106);
+            this.listBox1.Size = new System.Drawing.Size(355, 106);
             this.listBox1.TabIndex = 23;
             // 
             // panel55
@@ -812,7 +743,7 @@
             this.panel47.Location = new System.Drawing.Point(0, 1588);
             this.panel47.Name = "panel47";
             this.panel47.Padding = new System.Windows.Forms.Padding(10);
-            this.panel47.Size = new System.Drawing.Size(946, 24);
+            this.panel47.Size = new System.Drawing.Size(895, 24);
             this.panel47.TabIndex = 47;
             // 
             // panel48
@@ -821,7 +752,7 @@
             this.panel48.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel48.Location = new System.Drawing.Point(10, 10);
             this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(926, 4);
+            this.panel48.Size = new System.Drawing.Size(875, 4);
             this.panel48.TabIndex = 24;
             // 
             // panel17
@@ -831,7 +762,7 @@
             this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel17.Location = new System.Drawing.Point(0, 1513);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(946, 75);
+            this.panel17.Size = new System.Drawing.Size(895, 75);
             this.panel17.TabIndex = 31;
             // 
             // numericUpDown1
@@ -870,7 +801,7 @@
             this.panel45.Location = new System.Drawing.Point(0, 1489);
             this.panel45.Name = "panel45";
             this.panel45.Padding = new System.Windows.Forms.Padding(10);
-            this.panel45.Size = new System.Drawing.Size(946, 24);
+            this.panel45.Size = new System.Drawing.Size(895, 24);
             this.panel45.TabIndex = 46;
             // 
             // panel46
@@ -879,7 +810,7 @@
             this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel46.Location = new System.Drawing.Point(10, 10);
             this.panel46.Name = "panel46";
-            this.panel46.Size = new System.Drawing.Size(926, 4);
+            this.panel46.Size = new System.Drawing.Size(875, 4);
             this.panel46.TabIndex = 24;
             // 
             // panel16
@@ -889,7 +820,7 @@
             this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel16.Location = new System.Drawing.Point(0, 1413);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(946, 76);
+            this.panel16.Size = new System.Drawing.Size(895, 76);
             this.panel16.TabIndex = 30;
             // 
             // dateTimePicker2
@@ -920,7 +851,7 @@
             this.panel43.Location = new System.Drawing.Point(0, 1389);
             this.panel43.Name = "panel43";
             this.panel43.Padding = new System.Windows.Forms.Padding(10);
-            this.panel43.Size = new System.Drawing.Size(946, 24);
+            this.panel43.Size = new System.Drawing.Size(895, 24);
             this.panel43.TabIndex = 45;
             // 
             // panel44
@@ -929,7 +860,7 @@
             this.panel44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel44.Location = new System.Drawing.Point(10, 10);
             this.panel44.Name = "panel44";
-            this.panel44.Size = new System.Drawing.Size(926, 4);
+            this.panel44.Size = new System.Drawing.Size(875, 4);
             this.panel44.TabIndex = 24;
             // 
             // panel15
@@ -939,7 +870,7 @@
             this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel15.Location = new System.Drawing.Point(0, 1313);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(946, 76);
+            this.panel15.Size = new System.Drawing.Size(895, 76);
             this.panel15.TabIndex = 29;
             // 
             // dateTimePicker1
@@ -970,7 +901,7 @@
             this.panel41.Location = new System.Drawing.Point(0, 1289);
             this.panel41.Name = "panel41";
             this.panel41.Padding = new System.Windows.Forms.Padding(10);
-            this.panel41.Size = new System.Drawing.Size(946, 24);
+            this.panel41.Size = new System.Drawing.Size(895, 24);
             this.panel41.TabIndex = 44;
             // 
             // panel42
@@ -979,7 +910,7 @@
             this.panel42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel42.Location = new System.Drawing.Point(10, 10);
             this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(926, 4);
+            this.panel42.Size = new System.Drawing.Size(875, 4);
             this.panel42.TabIndex = 24;
             // 
             // panel14
@@ -989,7 +920,7 @@
             this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel14.Location = new System.Drawing.Point(0, 1214);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(946, 75);
+            this.panel14.Size = new System.Drawing.Size(895, 75);
             this.panel14.TabIndex = 28;
             // 
             // comboBox8
@@ -1024,7 +955,7 @@
             this.panel39.Location = new System.Drawing.Point(0, 1190);
             this.panel39.Name = "panel39";
             this.panel39.Padding = new System.Windows.Forms.Padding(10);
-            this.panel39.Size = new System.Drawing.Size(946, 24);
+            this.panel39.Size = new System.Drawing.Size(895, 24);
             this.panel39.TabIndex = 43;
             // 
             // panel40
@@ -1033,7 +964,7 @@
             this.panel40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel40.Location = new System.Drawing.Point(10, 10);
             this.panel40.Name = "panel40";
-            this.panel40.Size = new System.Drawing.Size(926, 4);
+            this.panel40.Size = new System.Drawing.Size(875, 4);
             this.panel40.TabIndex = 24;
             // 
             // panel13
@@ -1043,7 +974,7 @@
             this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel13.Location = new System.Drawing.Point(0, 1115);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(946, 75);
+            this.panel13.Size = new System.Drawing.Size(895, 75);
             this.panel13.TabIndex = 27;
             // 
             // comboBox7
@@ -1078,7 +1009,7 @@
             this.panel37.Location = new System.Drawing.Point(0, 1091);
             this.panel37.Name = "panel37";
             this.panel37.Padding = new System.Windows.Forms.Padding(10);
-            this.panel37.Size = new System.Drawing.Size(946, 24);
+            this.panel37.Size = new System.Drawing.Size(895, 24);
             this.panel37.TabIndex = 42;
             // 
             // panel38
@@ -1087,7 +1018,7 @@
             this.panel38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel38.Location = new System.Drawing.Point(10, 10);
             this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(926, 4);
+            this.panel38.Size = new System.Drawing.Size(875, 4);
             this.panel38.TabIndex = 24;
             // 
             // panel12
@@ -1097,7 +1028,7 @@
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 1016);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(946, 75);
+            this.panel12.Size = new System.Drawing.Size(895, 75);
             this.panel12.TabIndex = 26;
             // 
             // comboBox6
@@ -1132,7 +1063,7 @@
             this.panel35.Location = new System.Drawing.Point(0, 992);
             this.panel35.Name = "panel35";
             this.panel35.Padding = new System.Windows.Forms.Padding(10);
-            this.panel35.Size = new System.Drawing.Size(946, 24);
+            this.panel35.Size = new System.Drawing.Size(895, 24);
             this.panel35.TabIndex = 41;
             // 
             // panel36
@@ -1141,7 +1072,7 @@
             this.panel36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel36.Location = new System.Drawing.Point(10, 10);
             this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(926, 4);
+            this.panel36.Size = new System.Drawing.Size(875, 4);
             this.panel36.TabIndex = 24;
             // 
             // panel11
@@ -1151,7 +1082,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 886);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(946, 106);
+            this.panel11.Size = new System.Drawing.Size(895, 106);
             this.panel11.TabIndex = 25;
             // 
             // listBox_OtherTags
@@ -1166,7 +1097,7 @@
             this.listBox_OtherTags.Location = new System.Drawing.Point(356, 0);
             this.listBox_OtherTags.Name = "listBox_OtherTags";
             this.listBox_OtherTags.ScrollAlwaysVisible = true;
-            this.listBox_OtherTags.Size = new System.Drawing.Size(590, 106);
+            this.listBox_OtherTags.Size = new System.Drawing.Size(539, 106);
             this.listBox_OtherTags.TabIndex = 27;
             // 
             // panel34
@@ -1241,7 +1172,7 @@
             this.panel32.Location = new System.Drawing.Point(0, 862);
             this.panel32.Name = "panel32";
             this.panel32.Padding = new System.Windows.Forms.Padding(10);
-            this.panel32.Size = new System.Drawing.Size(946, 24);
+            this.panel32.Size = new System.Drawing.Size(895, 24);
             this.panel32.TabIndex = 40;
             // 
             // panel33
@@ -1250,7 +1181,7 @@
             this.panel33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel33.Location = new System.Drawing.Point(10, 10);
             this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(926, 4);
+            this.panel33.Size = new System.Drawing.Size(875, 4);
             this.panel33.TabIndex = 24;
             // 
             // panel10
@@ -1260,7 +1191,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 756);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(946, 106);
+            this.panel10.Size = new System.Drawing.Size(895, 106);
             this.panel10.TabIndex = 24;
             // 
             // listBox_PlaceAndTime
@@ -1275,7 +1206,7 @@
             this.listBox_PlaceAndTime.Location = new System.Drawing.Point(356, 0);
             this.listBox_PlaceAndTime.Name = "listBox_PlaceAndTime";
             this.listBox_PlaceAndTime.ScrollAlwaysVisible = true;
-            this.listBox_PlaceAndTime.Size = new System.Drawing.Size(590, 106);
+            this.listBox_PlaceAndTime.Size = new System.Drawing.Size(539, 106);
             this.listBox_PlaceAndTime.TabIndex = 26;
             // 
             // panel29
@@ -1350,7 +1281,7 @@
             this.panel30.Location = new System.Drawing.Point(0, 732);
             this.panel30.Name = "panel30";
             this.panel30.Padding = new System.Windows.Forms.Padding(10);
-            this.panel30.Size = new System.Drawing.Size(946, 24);
+            this.panel30.Size = new System.Drawing.Size(895, 24);
             this.panel30.TabIndex = 39;
             // 
             // panel31
@@ -1359,7 +1290,7 @@
             this.panel31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel31.Location = new System.Drawing.Point(10, 10);
             this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(926, 4);
+            this.panel31.Size = new System.Drawing.Size(875, 4);
             this.panel31.TabIndex = 24;
             // 
             // panel9
@@ -1370,7 +1301,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 626);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(946, 106);
+            this.panel9.Size = new System.Drawing.Size(895, 106);
             this.panel9.TabIndex = 24;
             // 
             // listBox_typesOfCharacters
@@ -1385,7 +1316,7 @@
             this.listBox_typesOfCharacters.Location = new System.Drawing.Point(356, 0);
             this.listBox_typesOfCharacters.Name = "listBox_typesOfCharacters";
             this.listBox_typesOfCharacters.ScrollAlwaysVisible = true;
-            this.listBox_typesOfCharacters.Size = new System.Drawing.Size(590, 106);
+            this.listBox_typesOfCharacters.Size = new System.Drawing.Size(539, 106);
             this.listBox_typesOfCharacters.TabIndex = 25;
             // 
             // panel28
@@ -1473,7 +1404,7 @@
             this.panel26.Location = new System.Drawing.Point(0, 602);
             this.panel26.Name = "panel26";
             this.panel26.Padding = new System.Windows.Forms.Padding(10);
-            this.panel26.Size = new System.Drawing.Size(946, 24);
+            this.panel26.Size = new System.Drawing.Size(895, 24);
             this.panel26.TabIndex = 38;
             // 
             // panel27
@@ -1482,7 +1413,7 @@
             this.panel27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel27.Location = new System.Drawing.Point(10, 10);
             this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(926, 4);
+            this.panel27.Size = new System.Drawing.Size(875, 4);
             this.panel27.TabIndex = 24;
             // 
             // panel5
@@ -1492,7 +1423,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 526);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(946, 76);
+            this.panel5.Size = new System.Drawing.Size(895, 76);
             this.panel5.TabIndex = 22;
             // 
             // comboBox1
@@ -1530,7 +1461,7 @@
             this.panel24.Location = new System.Drawing.Point(0, 502);
             this.panel24.Name = "panel24";
             this.panel24.Padding = new System.Windows.Forms.Padding(10);
-            this.panel24.Size = new System.Drawing.Size(946, 24);
+            this.panel24.Size = new System.Drawing.Size(895, 24);
             this.panel24.TabIndex = 37;
             // 
             // panel25
@@ -1539,7 +1470,7 @@
             this.panel25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel25.Location = new System.Drawing.Point(10, 10);
             this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(926, 4);
+            this.panel25.Size = new System.Drawing.Size(875, 4);
             this.panel25.TabIndex = 24;
             // 
             // panel4
@@ -1549,7 +1480,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 377);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(946, 125);
+            this.panel4.Size = new System.Drawing.Size(895, 125);
             this.panel4.TabIndex = 21;
             // 
             // listBox_Species
@@ -1564,7 +1495,7 @@
             this.listBox_Species.Location = new System.Drawing.Point(356, 0);
             this.listBox_Species.Name = "listBox_Species";
             this.listBox_Species.ScrollAlwaysVisible = true;
-            this.listBox_Species.Size = new System.Drawing.Size(590, 125);
+            this.listBox_Species.Size = new System.Drawing.Size(539, 125);
             this.listBox_Species.TabIndex = 20;
             // 
             // panel6
@@ -1679,7 +1610,7 @@
             this.panel22.Location = new System.Drawing.Point(0, 353);
             this.panel22.Name = "panel22";
             this.panel22.Padding = new System.Windows.Forms.Padding(10);
-            this.panel22.Size = new System.Drawing.Size(946, 24);
+            this.panel22.Size = new System.Drawing.Size(895, 24);
             this.panel22.TabIndex = 36;
             // 
             // panel23
@@ -1688,7 +1619,7 @@
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel23.Location = new System.Drawing.Point(10, 10);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(926, 4);
+            this.panel23.Size = new System.Drawing.Size(875, 4);
             this.panel23.TabIndex = 24;
             // 
             // panel3
@@ -1698,7 +1629,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 222);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(946, 131);
+            this.panel3.Size = new System.Drawing.Size(895, 131);
             this.panel3.TabIndex = 20;
             // 
             // richTextBox1
@@ -1710,7 +1641,7 @@
             this.richTextBox1.ForeColor = System.Drawing.Color.White;
             this.richTextBox1.Location = new System.Drawing.Point(0, 19);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(946, 112);
+            this.richTextBox1.Size = new System.Drawing.Size(895, 112);
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
@@ -1733,7 +1664,7 @@
             this.panel8.Location = new System.Drawing.Point(0, 198);
             this.panel8.Name = "panel8";
             this.panel8.Padding = new System.Windows.Forms.Padding(10);
-            this.panel8.Size = new System.Drawing.Size(946, 24);
+            this.panel8.Size = new System.Drawing.Size(895, 24);
             this.panel8.TabIndex = 35;
             // 
             // panel21
@@ -1742,7 +1673,7 @@
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel21.Location = new System.Drawing.Point(10, 10);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(926, 4);
+            this.panel21.Size = new System.Drawing.Size(875, 4);
             this.panel21.TabIndex = 24;
             // 
             // panel2
@@ -1752,7 +1683,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 98);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(946, 100);
+            this.panel2.Size = new System.Drawing.Size(895, 100);
             this.panel2.TabIndex = 19;
             // 
             // listBox_OtherTitle
@@ -1767,7 +1698,7 @@
             this.listBox_OtherTitle.Location = new System.Drawing.Point(560, 0);
             this.listBox_OtherTitle.Name = "listBox_OtherTitle";
             this.listBox_OtherTitle.ScrollAlwaysVisible = true;
-            this.listBox_OtherTitle.Size = new System.Drawing.Size(386, 100);
+            this.listBox_OtherTitle.Size = new System.Drawing.Size(335, 100);
             this.listBox_OtherTitle.TabIndex = 19;
             // 
             // panel7
@@ -1841,7 +1772,7 @@
             this.panelSeparator1.Location = new System.Drawing.Point(0, 74);
             this.panelSeparator1.Name = "panelSeparator1";
             this.panelSeparator1.Padding = new System.Windows.Forms.Padding(10);
-            this.panelSeparator1.Size = new System.Drawing.Size(946, 24);
+            this.panelSeparator1.Size = new System.Drawing.Size(895, 24);
             this.panelSeparator1.TabIndex = 23;
             // 
             // panelpanelSeparatorC1
@@ -1850,7 +1781,7 @@
             this.panelpanelSeparatorC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelpanelSeparatorC1.Location = new System.Drawing.Point(10, 10);
             this.panelpanelSeparatorC1.Name = "panelpanelSeparatorC1";
-            this.panelpanelSeparatorC1.Size = new System.Drawing.Size(926, 4);
+            this.panelpanelSeparatorC1.Size = new System.Drawing.Size(875, 4);
             this.panelpanelSeparatorC1.TabIndex = 24;
             // 
             // panel1
@@ -1861,7 +1792,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(946, 74);
+            this.panel1.Size = new System.Drawing.Size(895, 74);
             this.panel1.TabIndex = 18;
             // 
             // buttonBackToEp1
@@ -1901,237 +1832,12 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Etap 2";
             // 
-            // panelEp3
-            // 
-            this.panelEp3.Controls.Add(this.textBoxEpLink);
-            this.panelEp3.Controls.Add(this.label31);
-            this.panelEp3.Controls.Add(this.numericUpDownEpNum);
-            this.panelEp3.Controls.Add(this.label30);
-            this.panelEp3.Controls.Add(this.label29);
-            this.panelEp3.Controls.Add(this.buttonRemoveEp);
-            this.panelEp3.Controls.Add(this.buttonAddEp);
-            this.panelEp3.Controls.Add(this.listBoxEp);
-            this.panelEp3.Controls.Add(this.comboBoxEpQuality);
-            this.panelEp3.Controls.Add(this.textBoxTlumacz);
-            this.panelEp3.Controls.Add(this.comboBoxTypeEpTra);
-            this.panelEp3.Controls.Add(this.comboBoxServiceHost);
-            this.panelEp3.Controls.Add(this.panel57);
-            this.panelEp3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelEp3.Location = new System.Drawing.Point(0, 0);
-            this.panelEp3.Name = "panelEp3";
-            this.panelEp3.Size = new System.Drawing.Size(963, 536);
-            this.panelEp3.TabIndex = 17;
-            // 
-            // listBoxEp
-            // 
-            this.listBoxEp.Dock = System.Windows.Forms.DockStyle.Right;
-            this.listBoxEp.FormattingEnabled = true;
-            this.listBoxEp.ItemHeight = 15;
-            this.listBoxEp.Location = new System.Drawing.Point(455, 74);
-            this.listBoxEp.Name = "listBoxEp";
-            this.listBoxEp.Size = new System.Drawing.Size(508, 462);
-            this.listBoxEp.TabIndex = 26;
-            // 
-            // comboBoxEpQuality
-            // 
-            this.comboBoxEpQuality.BackColor = System.Drawing.Color.Black;
-            this.comboBoxEpQuality.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxEpQuality.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxEpQuality.ForeColor = System.Drawing.Color.White;
-            this.comboBoxEpQuality.FormattingEnabled = true;
-            this.comboBoxEpQuality.Items.AddRange(new object[] {
-            "1080p, 720p 460p, 360p",
-            "360p",
-            "460p, 360p",
-            "720p 460p, 360p"});
-            this.comboBoxEpQuality.Location = new System.Drawing.Point(10, 145);
-            this.comboBoxEpQuality.Name = "comboBoxEpQuality";
-            this.comboBoxEpQuality.Size = new System.Drawing.Size(204, 23);
-            this.comboBoxEpQuality.Sorted = true;
-            this.comboBoxEpQuality.TabIndex = 25;
-            // 
-            // textBoxTlumacz
-            // 
-            this.textBoxTlumacz.BackColor = System.Drawing.Color.Black;
-            this.textBoxTlumacz.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTlumacz.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxTlumacz.ForeColor = System.Drawing.Color.White;
-            this.textBoxTlumacz.Location = new System.Drawing.Point(238, 113);
-            this.textBoxTlumacz.Name = "textBoxTlumacz";
-            this.textBoxTlumacz.Size = new System.Drawing.Size(179, 20);
-            this.textBoxTlumacz.TabIndex = 24;
-            // 
-            // comboBoxTypeEpTra
-            // 
-            this.comboBoxTypeEpTra.BackColor = System.Drawing.Color.Black;
-            this.comboBoxTypeEpTra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxTypeEpTra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxTypeEpTra.ForeColor = System.Drawing.Color.White;
-            this.comboBoxTypeEpTra.FormattingEnabled = true;
-            this.comboBoxTypeEpTra.Items.AddRange(new object[] {
-            "Dubbing PL",
-            "Lektor PL",
-            "Napisy PL"});
-            this.comboBoxTypeEpTra.Location = new System.Drawing.Point(118, 84);
-            this.comboBoxTypeEpTra.Name = "comboBoxTypeEpTra";
-            this.comboBoxTypeEpTra.Size = new System.Drawing.Size(96, 23);
-            this.comboBoxTypeEpTra.Sorted = true;
-            this.comboBoxTypeEpTra.TabIndex = 22;
-            // 
-            // comboBoxServiceHost
-            // 
-            this.comboBoxServiceHost.BackColor = System.Drawing.Color.Black;
-            this.comboBoxServiceHost.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxServiceHost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxServiceHost.ForeColor = System.Drawing.Color.White;
-            this.comboBoxServiceHost.FormattingEnabled = true;
-            this.comboBoxServiceHost.Items.AddRange(new object[] {
-            "Cda"});
-            this.comboBoxServiceHost.Location = new System.Drawing.Point(10, 84);
-            this.comboBoxServiceHost.Name = "comboBoxServiceHost";
-            this.comboBoxServiceHost.Size = new System.Drawing.Size(96, 23);
-            this.comboBoxServiceHost.Sorted = true;
-            this.comboBoxServiceHost.TabIndex = 21;
-            // 
-            // panel57
-            // 
-            this.panel57.Controls.Add(this.buttonBackToEp2);
-            this.panel57.Controls.Add(this.label27);
-            this.panel57.Controls.Add(this.label28);
-            this.panel57.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel57.Location = new System.Drawing.Point(0, 0);
-            this.panel57.Name = "panel57";
-            this.panel57.Size = new System.Drawing.Size(963, 74);
-            this.panel57.TabIndex = 19;
-            // 
-            // buttonBackToEp2
-            // 
-            this.buttonBackToEp2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonBackToEp2.FlatAppearance.BorderSize = 0;
-            this.buttonBackToEp2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBackToEp2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonBackToEp2.ForeColor = System.Drawing.Color.White;
-            this.buttonBackToEp2.Location = new System.Drawing.Point(0, 2);
-            this.buttonBackToEp2.Name = "buttonBackToEp2";
-            this.buttonBackToEp2.Size = new System.Drawing.Size(83, 28);
-            this.buttonBackToEp2.TabIndex = 16;
-            this.buttonBackToEp2.Text = "< Wróć";
-            this.buttonBackToEp2.UseVisualStyleBackColor = false;
-            this.buttonBackToEp2.Click += new System.EventHandler(this.buttonBackToEp2_Click);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label27.ForeColor = System.Drawing.Color.White;
-            this.label27.Location = new System.Drawing.Point(3, 41);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(139, 19);
-            this.label27.TabIndex = 17;
-            this.label27.Text = "Dodawanie odcinków";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Comic Sans MS", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(89, 2);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(64, 24);
-            this.label28.TabIndex = 17;
-            this.label28.Text = "Etap 3";
-            // 
-            // buttonAddEp
-            // 
-            this.buttonAddEp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonAddEp.FlatAppearance.BorderSize = 0;
-            this.buttonAddEp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddEp.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonAddEp.ForeColor = System.Drawing.Color.White;
-            this.buttonAddEp.Location = new System.Drawing.Point(10, 234);
-            this.buttonAddEp.Name = "buttonAddEp";
-            this.buttonAddEp.Size = new System.Drawing.Size(83, 28);
-            this.buttonAddEp.TabIndex = 28;
-            this.buttonAddEp.Text = "Dodaj";
-            this.buttonAddEp.UseVisualStyleBackColor = false;
-            this.buttonAddEp.Click += new System.EventHandler(this.buttonAddEp_Click);
-            // 
-            // buttonRemoveEp
-            // 
-            this.buttonRemoveEp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonRemoveEp.FlatAppearance.BorderSize = 0;
-            this.buttonRemoveEp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRemoveEp.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonRemoveEp.ForeColor = System.Drawing.Color.White;
-            this.buttonRemoveEp.Location = new System.Drawing.Point(118, 234);
-            this.buttonRemoveEp.Name = "buttonRemoveEp";
-            this.buttonRemoveEp.Size = new System.Drawing.Size(83, 28);
-            this.buttonRemoveEp.TabIndex = 29;
-            this.buttonRemoveEp.Text = "Usuń";
-            this.buttonRemoveEp.UseVisualStyleBackColor = false;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(238, 91);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(65, 19);
-            this.label29.TabIndex = 30;
-            this.label29.Text = "Tłumacz:";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(238, 136);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(109, 19);
-            this.label30.TabIndex = 31;
-            this.label30.Text = "Numer odcinka:";
-            // 
-            // numericUpDownEpNum
-            // 
-            this.numericUpDownEpNum.BackColor = System.Drawing.Color.Black;
-            this.numericUpDownEpNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericUpDownEpNum.ForeColor = System.Drawing.Color.White;
-            this.numericUpDownEpNum.Location = new System.Drawing.Point(238, 160);
-            this.numericUpDownEpNum.Name = "numericUpDownEpNum";
-            this.numericUpDownEpNum.Size = new System.Drawing.Size(120, 19);
-            this.numericUpDownEpNum.TabIndex = 32;
-            this.numericUpDownEpNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label31.ForeColor = System.Drawing.Color.White;
-            this.label31.Location = new System.Drawing.Point(13, 179);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(154, 19);
-            this.label31.TabIndex = 33;
-            this.label31.Text = "Link do odcinka (z cda)";
-            // 
-            // textBoxEpLink
-            // 
-            this.textBoxEpLink.BackColor = System.Drawing.Color.Black;
-            this.textBoxEpLink.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxEpLink.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxEpLink.ForeColor = System.Drawing.Color.White;
-            this.textBoxEpLink.Location = new System.Drawing.Point(13, 204);
-            this.textBoxEpLink.Name = "textBoxEpLink";
-            this.textBoxEpLink.Size = new System.Drawing.Size(436, 20);
-            this.textBoxEpLink.TabIndex = 34;
-            // 
             // TitileAddTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(963, 536);
-            this.Controls.Add(this.panelEp3);
+            this.ClientSize = new System.Drawing.Size(912, 536);
             this.Controls.Add(this.panelEp2);
             this.Controls.Add(this.panelEp1);
             this.DoubleBuffered = true;
@@ -2143,8 +1849,6 @@
             this.panelEp1ViewItem.ResumeLayout(false);
             this.panelEp1VI.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEp1VI)).EndInit();
-            this.panelEp1MoreSetting.ResumeLayout(false);
-            this.panelEp1MoreSetting.PerformLayout();
             this.panelEp2.ResumeLayout(false);
             this.panel56.ResumeLayout(false);
             this.panel53.ResumeLayout(false);
@@ -2206,11 +1910,6 @@
             this.panelSeparator1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panelEp3.ResumeLayout(false);
-            this.panelEp3.PerformLayout();
-            this.panel57.ResumeLayout(false);
-            this.panel57.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEpNum)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2223,17 +1922,10 @@
         private Label label4;
         private Label label5;
         private Panel panelEp1;
-        private TextBox textBox_sitelink;
-        private Label label6;
         private TextBox textBox_iconlink;
         private TextBox textBox_title;
-        private Button buttonEndEp1;
         private Button buttonNextToEp2;
         private Button buttonBackToStarterform;
-        private Button buttonEp1ShowMoreSetting;
-        private Panel panelEp1MoreSetting;
-        private TextBox textBox_contentId;
-        private Label label7;
         private Panel panelEp2;
         private Label label10;
         private Label label8;
@@ -2353,23 +2045,9 @@
         private Panel panel56;
         private ComboBox comboBox9;
         private Label label26;
-        private Button buttonNextToEp3;
-        private Panel panelEp3;
-        private Panel panel57;
-        private Button buttonBackToEp2;
-        private Label label27;
-        private Label label28;
-        private ComboBox comboBoxTypeEpTra;
-        private ComboBox comboBoxServiceHost;
-        private TextBox textBoxTlumacz;
-        private ComboBox comboBoxEpQuality;
-        private ListBox listBoxEp;
-        private Label label29;
-        private Button buttonRemoveEp;
-        private Button buttonAddEp;
-        private NumericUpDown numericUpDownEpNum;
-        private Label label30;
-        private TextBox textBoxEpLink;
-        private Label label31;
+        private Button buttonEndCreator;
+        private Button buttonRemoveLinkInList;
+        private Button buttonAddIconLinkToList;
+        private ListBox listBoxIconsLinks;
     }
 }
