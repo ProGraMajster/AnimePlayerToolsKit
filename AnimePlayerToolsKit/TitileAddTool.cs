@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AnimePlayer.Class;
 
 namespace AnimePlayerToolsKit
 {
@@ -15,8 +16,8 @@ namespace AnimePlayerToolsKit
         public TitileAddTool()
         {
             InitializeComponent();
-            panelEp1.Show();
-            panelEp1.BringToFront();
+            //panelEp1.Show();
+            //panelEp1.BringToFront();
         }
 
         private void TitileAddTool_FormClosed(object sender, FormClosedEventArgs e)
@@ -129,8 +130,9 @@ namespace AnimePlayerToolsKit
 
         private void buttonBackToEp1_Click(object sender, EventArgs e)
         {
-            panelEp1.Show();
-            panelEp1.BringToFront();
+            this.Close();
+           /* panelEp1.Show();
+            panelEp1.BringToFront();*/
         }
 
         private void buttonSHViewItem_Click(object sender, EventArgs e)
@@ -249,6 +251,55 @@ namespace AnimePlayerToolsKit
                 script += textBoxEpLink.Text + ";\n";
                 script += "360p;\n";
                 script += textBoxEpLink.Text + ";\n";
+            }
+        }
+
+        
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                listBoxRT.Items.Add(textBox2.Text);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                listBoxRT.Items.Remove(listBoxRT.SelectedItem);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+        }
+
+        PageItemData _PageItemData;
+        private void buttonEndPID_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sid = AnimePlayer.Core.Replacer.Names(textBoxTit.Text);
+                PageItemData data = new PageItemData();
+                data.S_ID = sid;
+                TitleInformation titleInformation = new TitleInformation();
+                titleInformation.Title = textBoxTit.Text;
+                List<string> strings = new List<string>();
+                for (int i = 0; i < listBox_OtherTitle.Items.Count; i++)
+                {
+                    strings.Add(listBox_OtherTitle.Items[i].ToString());
+                }
+                titleInformation.OtherTitle = strings.ToArray();
+            }
+            catch (Exception ex)
+            {
+
             }
         }
     }
