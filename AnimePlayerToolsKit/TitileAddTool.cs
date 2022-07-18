@@ -184,6 +184,28 @@ namespace AnimePlayerToolsKit
             listBox_Species.Items.Add(comboBox_Speacies.SelectedItem);
             comboBox_Speacies.Items.Remove(comboBox_Speacies.SelectedItem);
         }
+        public void AddChageListboxAndComboBox(ComboBox comboBox,ListBox listBox )
+        {
+            if(comboBox.Items.Count == 0 ||
+                comboBox.SelectedIndex == -1 ||
+                comboBox.SelectedItem == null)
+            {
+                return;
+            }
+
+            listBox.Items.Add(comboBox.SelectedItem);
+            comboBox.Items.Remove(comboBox.SelectedItem);
+        }
+
+        public void RemoveChageListboxAndComboBox(ComboBox comboBox, ListBox listBox)
+        {
+            if(listBox.SelectedIndex == -1 || listBox.SelectedItem == null)
+            {
+                return;
+            }
+            comboBox.Items.Add(listBox.SelectedItem);
+            comboBox.Items.Remove(listBox.SelectedItem);
+        }
 
         private void buttonRemoveSpecies_Click(object sender, EventArgs e)
         {
@@ -301,6 +323,11 @@ namespace AnimePlayerToolsKit
             {
 
             }
+        }
+
+        private void button_Add_typesOfCharacters_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

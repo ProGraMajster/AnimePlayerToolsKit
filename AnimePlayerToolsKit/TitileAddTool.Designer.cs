@@ -55,6 +55,13 @@
             this.buttonEndPID = new System.Windows.Forms.Button();
             this.panel56 = new System.Windows.Forms.Panel();
             this.buttonNextToEp3 = new System.Windows.Forms.Button();
+            this.panel59 = new System.Windows.Forms.Panel();
+            this.listBoxRT = new System.Windows.Forms.ListBox();
+            this.panel60 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.panel53 = new System.Windows.Forms.Panel();
             this.panel54 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
@@ -129,9 +136,9 @@
             this.listBox_typesOfCharacters = new System.Windows.Forms.ListBox();
             this.panel28 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button_Remove_typesOfCharacters = new System.Windows.Forms.Button();
+            this.comboBox_TypeOfCharacter = new System.Windows.Forms.ComboBox();
+            this.button_Add_typesOfCharacters = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.panel26 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -164,6 +171,7 @@
             this.panelSeparator1 = new System.Windows.Forms.Panel();
             this.panelpanelSeparatorC1 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxTit = new System.Windows.Forms.TextBox();
             this.buttonBackToEp1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -184,14 +192,6 @@
             this.buttonBackToEp2 = new System.Windows.Forms.Button();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBoxTit = new System.Windows.Forms.TextBox();
-            this.panel59 = new System.Windows.Forms.Panel();
-            this.listBoxRT = new System.Windows.Forms.ListBox();
-            this.panel60 = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panelEp1.SuspendLayout();
             this.panelEp1ViewItem.SuspendLayout();
             this.panelEp1VI.SuspendLayout();
@@ -200,6 +200,8 @@
             this.panelEp2.SuspendLayout();
             this.panel58.SuspendLayout();
             this.panel56.SuspendLayout();
+            this.panel59.SuspendLayout();
+            this.panel60.SuspendLayout();
             this.panel53.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel51.SuspendLayout();
@@ -245,8 +247,6 @@
             this.panelEp3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEpNum)).BeginInit();
             this.panel57.SuspendLayout();
-            this.panel59.SuspendLayout();
-            this.panel60.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -622,6 +622,95 @@
             this.buttonNextToEp3.UseVisualStyleBackColor = false;
             this.buttonNextToEp3.Visible = false;
             this.buttonNextToEp3.Click += new System.EventHandler(this.buttonNextToEp3_Click);
+            // 
+            // panel59
+            // 
+            this.panel59.Controls.Add(this.listBoxRT);
+            this.panel59.Controls.Add(this.panel60);
+            this.panel59.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel59.Location = new System.Drawing.Point(0, 2002);
+            this.panel59.Name = "panel59";
+            this.panel59.Size = new System.Drawing.Size(946, 106);
+            this.panel59.TabIndex = 53;
+            // 
+            // listBoxRT
+            // 
+            this.listBoxRT.BackColor = System.Drawing.Color.Black;
+            this.listBoxRT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listBoxRT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxRT.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.listBoxRT.ForeColor = System.Drawing.Color.White;
+            this.listBoxRT.FormattingEnabled = true;
+            this.listBoxRT.ItemHeight = 18;
+            this.listBoxRT.Location = new System.Drawing.Point(356, 0);
+            this.listBoxRT.Name = "listBoxRT";
+            this.listBoxRT.ScrollAlwaysVisible = true;
+            this.listBoxRT.Size = new System.Drawing.Size(590, 106);
+            this.listBoxRT.TabIndex = 27;
+            // 
+            // panel60
+            // 
+            this.panel60.Controls.Add(this.textBox2);
+            this.panel60.Controls.Add(this.label32);
+            this.panel60.Controls.Add(this.button10);
+            this.panel60.Controls.Add(this.button11);
+            this.panel60.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel60.Location = new System.Drawing.Point(0, 0);
+            this.panel60.Name = "panel60";
+            this.panel60.Size = new System.Drawing.Size(356, 106);
+            this.panel60.TabIndex = 26;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.Black;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.ForeColor = System.Drawing.Color.White;
+            this.textBox2.Location = new System.Drawing.Point(10, 28);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(250, 16);
+            this.textBox2.TabIndex = 23;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label32.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(0, 0);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(98, 19);
+            this.label32.TabIndex = 12;
+            this.label32.Text = "Pozostałe tagi";
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Location = new System.Drawing.Point(264, 50);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 28);
+            this.button10.TabIndex = 22;
+            this.button10.Text = "Usuń";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Location = new System.Drawing.Point(264, 16);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 28);
+            this.button11.TabIndex = 21;
+            this.button11.Text = "Dodaj";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // panel53
             // 
@@ -1558,9 +1647,9 @@
             // panel28
             // 
             this.panel28.Controls.Add(this.label14);
-            this.panel28.Controls.Add(this.button1);
-            this.panel28.Controls.Add(this.comboBox3);
-            this.panel28.Controls.Add(this.button3);
+            this.panel28.Controls.Add(this.button_Remove_typesOfCharacters);
+            this.panel28.Controls.Add(this.comboBox_TypeOfCharacter);
+            this.panel28.Controls.Add(this.button_Add_typesOfCharacters);
             this.panel28.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel28.Location = new System.Drawing.Point(0, 0);
             this.panel28.Name = "panel28";
@@ -1579,28 +1668,28 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "Rodzaje postaci";
             // 
-            // button1
+            // button_Remove_typesOfCharacters
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(264, 18);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Usuń";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_Remove_typesOfCharacters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.button_Remove_typesOfCharacters.FlatAppearance.BorderSize = 0;
+            this.button_Remove_typesOfCharacters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Remove_typesOfCharacters.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button_Remove_typesOfCharacters.ForeColor = System.Drawing.Color.White;
+            this.button_Remove_typesOfCharacters.Location = new System.Drawing.Point(264, 18);
+            this.button_Remove_typesOfCharacters.Name = "button_Remove_typesOfCharacters";
+            this.button_Remove_typesOfCharacters.Size = new System.Drawing.Size(75, 28);
+            this.button_Remove_typesOfCharacters.TabIndex = 22;
+            this.button_Remove_typesOfCharacters.Text = "Usuń";
+            this.button_Remove_typesOfCharacters.UseVisualStyleBackColor = false;
             // 
-            // comboBox3
+            // comboBox_TypeOfCharacter
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.Black;
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox3.ForeColor = System.Drawing.Color.White;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBox_TypeOfCharacter.BackColor = System.Drawing.Color.Black;
+            this.comboBox_TypeOfCharacter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_TypeOfCharacter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox_TypeOfCharacter.ForeColor = System.Drawing.Color.White;
+            this.comboBox_TypeOfCharacter.FormattingEnabled = true;
+            this.comboBox_TypeOfCharacter.Items.AddRange(new object[] {
             "Aktorzy",
             "Albinos",
             "Androidy",
@@ -1696,25 +1785,26 @@
             "Zombie",
             "Zwierzęta",
             "Żołnierze"});
-            this.comboBox3.Location = new System.Drawing.Point(10, 22);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(174, 23);
-            this.comboBox3.Sorted = true;
-            this.comboBox3.TabIndex = 12;
+            this.comboBox_TypeOfCharacter.Location = new System.Drawing.Point(10, 22);
+            this.comboBox_TypeOfCharacter.Name = "comboBox_TypeOfCharacter";
+            this.comboBox_TypeOfCharacter.Size = new System.Drawing.Size(174, 23);
+            this.comboBox_TypeOfCharacter.Sorted = true;
+            this.comboBox_TypeOfCharacter.TabIndex = 12;
             // 
-            // button3
+            // button_Add_typesOfCharacters
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(183, 18);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 28);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Dodaj";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button_Add_typesOfCharacters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.button_Add_typesOfCharacters.FlatAppearance.BorderSize = 0;
+            this.button_Add_typesOfCharacters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Add_typesOfCharacters.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button_Add_typesOfCharacters.ForeColor = System.Drawing.Color.White;
+            this.button_Add_typesOfCharacters.Location = new System.Drawing.Point(183, 18);
+            this.button_Add_typesOfCharacters.Name = "button_Add_typesOfCharacters";
+            this.button_Add_typesOfCharacters.Size = new System.Drawing.Size(75, 28);
+            this.button_Add_typesOfCharacters.TabIndex = 21;
+            this.button_Add_typesOfCharacters.Text = "Dodaj";
+            this.button_Add_typesOfCharacters.UseVisualStyleBackColor = false;
+            this.button_Add_typesOfCharacters.Click += new System.EventHandler(this.button_Add_typesOfCharacters_Click);
             // 
             // comboBox2
             // 
@@ -2131,6 +2221,13 @@
             this.panel1.Size = new System.Drawing.Size(946, 74);
             this.panel1.TabIndex = 18;
             // 
+            // textBoxTit
+            // 
+            this.textBoxTit.Location = new System.Drawing.Point(238, 37);
+            this.textBoxTit.Name = "textBoxTit";
+            this.textBoxTit.Size = new System.Drawing.Size(403, 23);
+            this.textBoxTit.TabIndex = 18;
+            // 
             // buttonBackToEp1
             // 
             this.buttonBackToEp1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -2393,102 +2490,6 @@
             this.label28.TabIndex = 17;
             this.label28.Text = "Etap 3";
             // 
-            // textBoxTit
-            // 
-            this.textBoxTit.Location = new System.Drawing.Point(238, 37);
-            this.textBoxTit.Name = "textBoxTit";
-            this.textBoxTit.Size = new System.Drawing.Size(403, 23);
-            this.textBoxTit.TabIndex = 18;
-            // 
-            // panel59
-            // 
-            this.panel59.Controls.Add(this.listBoxRT);
-            this.panel59.Controls.Add(this.panel60);
-            this.panel59.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel59.Location = new System.Drawing.Point(0, 2002);
-            this.panel59.Name = "panel59";
-            this.panel59.Size = new System.Drawing.Size(946, 106);
-            this.panel59.TabIndex = 53;
-            // 
-            // listBoxRT
-            // 
-            this.listBoxRT.BackColor = System.Drawing.Color.Black;
-            this.listBoxRT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBoxRT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxRT.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBoxRT.ForeColor = System.Drawing.Color.White;
-            this.listBoxRT.FormattingEnabled = true;
-            this.listBoxRT.ItemHeight = 18;
-            this.listBoxRT.Location = new System.Drawing.Point(356, 0);
-            this.listBoxRT.Name = "listBoxRT";
-            this.listBoxRT.ScrollAlwaysVisible = true;
-            this.listBoxRT.Size = new System.Drawing.Size(590, 106);
-            this.listBoxRT.TabIndex = 27;
-            // 
-            // panel60
-            // 
-            this.panel60.Controls.Add(this.textBox2);
-            this.panel60.Controls.Add(this.label32);
-            this.panel60.Controls.Add(this.button10);
-            this.panel60.Controls.Add(this.button11);
-            this.panel60.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel60.Location = new System.Drawing.Point(0, 0);
-            this.panel60.Name = "panel60";
-            this.panel60.Size = new System.Drawing.Size(356, 106);
-            this.panel60.TabIndex = 26;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label32.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label32.ForeColor = System.Drawing.Color.White;
-            this.label32.Location = new System.Drawing.Point(0, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(98, 19);
-            this.label32.TabIndex = 12;
-            this.label32.Text = "Pozostałe tagi";
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(264, 50);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 28);
-            this.button10.TabIndex = 22;
-            this.button10.Text = "Usuń";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(264, 16);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 28);
-            this.button11.TabIndex = 21;
-            this.button11.Text = "Dodaj";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.Black;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(10, 28);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 16);
-            this.textBox2.TabIndex = 23;
-            // 
             // TitileAddTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2512,6 +2513,9 @@
             this.panelEp2.ResumeLayout(false);
             this.panel58.ResumeLayout(false);
             this.panel56.ResumeLayout(false);
+            this.panel59.ResumeLayout(false);
+            this.panel60.ResumeLayout(false);
+            this.panel60.PerformLayout();
             this.panel53.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
@@ -2576,9 +2580,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEpNum)).EndInit();
             this.panel57.ResumeLayout(false);
             this.panel57.PerformLayout();
-            this.panel59.ResumeLayout(false);
-            this.panel60.ResumeLayout(false);
-            this.panel60.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2665,9 +2666,9 @@
         private ListBox listBox_typesOfCharacters;
         private Panel panel28;
         private Label label14;
-        private Button button1;
-        private ComboBox comboBox3;
-        private Button button3;
+        private Button button_Remove_typesOfCharacters;
+        private ComboBox comboBox_TypeOfCharacter;
+        private Button button_Add_typesOfCharacters;
         private ComboBox comboBox2;
         private Panel panel26;
         private Panel panel27;
