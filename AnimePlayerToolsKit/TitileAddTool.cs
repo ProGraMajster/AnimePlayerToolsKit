@@ -13,11 +13,14 @@ namespace AnimePlayerToolsKit
 {
     public partial class TitileAddTool : Form
     {
+        AnimePlayer.Class.PreviewTitleClass previewTitleClass;
+        AnimePlayer.Class.PageItemData pageItemData;
+
         public TitileAddTool()
         {
             InitializeComponent();
-            //panelEp1.Show();
-            //panelEp1.BringToFront();
+            panelEp1.Show();
+            panelEp1.BringToFront();
         }
 
         private void TitileAddTool_FormClosed(object sender, FormClosedEventArgs e)
@@ -46,77 +49,6 @@ namespace AnimePlayerToolsKit
             }
         }
 
-        private void buttonEp1ShowMoreSetting_Click(object sender, EventArgs e)
-        {
-            
-            panelEp1MoreSetting.Visible = !panelEp1MoreSetting.Visible;
-        }
-
-        private void buttonEndEp1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (textBox_title.Text.Length == 0)
-                {
-                    MessageBox.Show("Nie podano tytułu!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-                string name = textBox_title.Text;
-                string ico = "null;";
-                if (textBox_iconlink.Text.Length == 0)
-                {
-                    ico = "null;";
-                }
-                else
-                {
-                    ico = textBox_iconlink.Text + ";";
-                }
-
-                string link = "null;";
-                if (textBox_sitelink.Text.Length == 0)
-                {
-                    link = "null;";
-                }
-                else
-                {
-                    link = textBox_sitelink.Text + ";";
-                }
-
-                string conId = "null;";
-                if (textBox_contentId.Text.Length == 0)
-                {
-                    conId = "null;";
-                }
-                else
-                {
-                    conId = textBox_contentId.Text + ";";
-                }
-
-
-                string code = null;
-                code += "Name;\n" + name + ";\nIcon;\n" + ico + "\nLink;\n" + link + "\nContentId;\n" + conId + "\n";
-
-
-                string path = null;
-                FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-                if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
-                {
-                    path = folderBrowserDialog.SelectedPath;
-                }
-                folderBrowserDialog.Dispose();
-                if (path == null)
-                {
-                    path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-                }
-                File.WriteAllText(path + "\\" + name + "_item.txt", code);
-                MessageBox.Show("Utworzono plik! Scieżka do niego: " + path+ "\\"+name+"_item.txt");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-        }
-
         private void buttonNextToEp2_Click(object sender, EventArgs e)
         {
             if (textBox_title.Text.Length == 0)
@@ -124,6 +56,14 @@ namespace AnimePlayerToolsKit
                 MessageBox.Show("Wymagane jest podanie tytułu!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
+            previewTitleClass.Title = textBox_title.Text;
+            foreach(var item in listBoxIconsLinks.Items)
+            {
+                previewTitleClass.LinkToIcon.Add(item.ToString());
+            }
+
+            previewTitleClass.S_ID = "PreviewItems/"+previewTitleClass.Title.Replace(' ', '_').Replace(':', '_');
             panelEp2.Show();
             panelEp2.BringToFront();
         }
@@ -143,7 +83,17 @@ namespace AnimePlayerToolsKit
                 try
                 {
                     buttonEp1VI.Text = textBox_title.Text;
-                    pictureBoxEp1VI.ImageLocation = textBox_iconlink.Text;
+                    if(textBox_iconlink.Text.Length > 1)
+                    {
+                        pictureBoxEp1VI.ImageLocation = textBox_iconlink.Text;
+                    }
+                    else
+                    {
+                        if(listBoxIconsLinks.Items.Count > 0)
+                        {
+                            pictureBoxEp1VI.ImageLocation = listBoxIconsLinks.Items[0].ToString();
+                        }
+                    }
                 }
                 catch(Exception ex)
                 {
@@ -217,62 +167,47 @@ namespace AnimePlayerToolsKit
             listBox_Species.Items.Remove(listBox_Species.SelectedItem);
         }
 
-        private void buttonNextToEp3_Click(object sender, EventArgs e)
-        {
-            panelEp3.Show();
-            panelEp3.BringToFront();
-        }
-
         private void panel6_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void buttonBackToEp2_Click(object sender, EventArgs e)
+        private void buttonEndCreator_Click(object sender, EventArgs e)
         {
-            panelEp2.Show();
-            panelEp2.BringToFront();
+
         }
 
-        private void buttonAddEp_Click(object sender, EventArgs e)
+        private void buttonAddIconLinkToList_Click(object sender, EventArgs e)
         {
-            int quality = comboBoxEpQuality.SelectedIndex + 1;
-            string script = "EpisodeListed;\n" + comboBoxServiceHost.SelectedItem.ToString() + ";\n" +
-                comboBoxTypeEpTra.SelectedItem.ToString() + ";\n" +
-                textBoxTlumacz.Text + ";\n" + "null;\n" +
-                numericUpDownEpNum.Value.ToString() + ";\n" +
-                quality + ";\n";
-            if(quality == 1)
+            if(textBox_iconlink.Text.Length <= 1)
             {
-                script += "360p;\n";
-                script += textBoxEpLink.Text + ";\n";
+                MessageBox.Show("Podaj link do ikony", "Błąd", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else if ( quality == 2)
+            try
             {
-                script += "480p;\n";
-                script += textBoxEpLink.Text + ";\n";
-                script += "360p;\n";
-                script += textBoxEpLink.Text + ";\n";
+                listBoxIconsLinks.Items.Add(textBox_iconlink.Text);
+                textBox_iconlink.Text = "";
             }
-            else if ( quality == 3)
+            catch(Exception ex)
             {
-                script += "720p;\n";
-                script += textBoxEpLink.Text + ";\n";
-                script += "480p;\n";
-                script += textBoxEpLink.Text + ";\n";
-                script += "360p;\n";
-                script += textBoxEpLink.Text + ";\n";
+                Console.Error.WriteLine(ex.ToString());
             }
-            else if ( quality == 4)
+        }
+
+        private void buttonRemoveLinkInList_Click(object sender, EventArgs e)
+        {
+            try
             {
-                script += "1080p;\n";
-                script += textBoxEpLink.Text + ";\n";
-                script += "720p;\n";
-                script += textBoxEpLink.Text + ";\n";
-                script += "480p;\n";
-                script += textBoxEpLink.Text + ";\n";
-                script += "360p;\n";
-                script += textBoxEpLink.Text + ";\n";
+                if (listBoxIconsLinks.SelectedItem == null)
+                {
+                    return;
+                }
+                listBoxIconsLinks.Items.Remove(listBoxIconsLinks.SelectedItem);
+            }
+            catch(Exception ex)
+            {
+                Console.Error.WriteLine(ex.ToString());
             }
         }
 

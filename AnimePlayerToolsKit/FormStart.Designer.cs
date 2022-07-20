@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buttonToolNewsCreator = new System.Windows.Forms.Button();
             this.buttonEpCreator = new System.Windows.Forms.Button();
+            this.buttonDefinitions = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -115,12 +116,28 @@
             this.buttonEpCreator.UseVisualStyleBackColor = false;
             this.buttonEpCreator.Click += new System.EventHandler(this.buttonEpCreator_Click);
             // 
+            // buttonDefinitions
+            // 
+            this.buttonDefinitions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.buttonDefinitions.FlatAppearance.BorderSize = 0;
+            this.buttonDefinitions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDefinitions.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonDefinitions.ForeColor = System.Drawing.Color.White;
+            this.buttonDefinitions.Location = new System.Drawing.Point(35, 261);
+            this.buttonDefinitions.Name = "buttonDefinitions";
+            this.buttonDefinitions.Size = new System.Drawing.Size(161, 35);
+            this.buttonDefinitions.TabIndex = 6;
+            this.buttonDefinitions.Text = "Tool Definitions";
+            this.buttonDefinitions.UseVisualStyleBackColor = false;
+            this.buttonDefinitions.Click += new System.EventHandler(this.buttonDefinitions_Click);
+            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonDefinitions);
             this.Controls.Add(this.buttonEpCreator);
             this.Controls.Add(this.buttonToolNewsCreator);
             this.Controls.Add(this.button1);
@@ -145,5 +162,6 @@
         private Button button1;
         private Button buttonToolNewsCreator;
         private Button buttonEpCreator;
+        private Button buttonDefinitions;
     }
 }
