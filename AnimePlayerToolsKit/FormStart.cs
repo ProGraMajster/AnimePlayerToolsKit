@@ -43,5 +43,12 @@ namespace AnimePlayerToolsKit
             tool_Definitions.Show();
             GC.Collect();
         }
+
+        private void buttonPageItemData_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PageItemCreator pageItemCreator = new PageItemCreator();
+            pageItemCreator.Show();
+        }
     }
 }

@@ -58,10 +58,10 @@ namespace AnimePlayerToolsKit
             }
 
             previewTitleClass.Title = textBox_title.Text;
-            foreach(var item in listBoxIconsLinks.Items)
+            /*foreach(var item in listBoxIconsLinks.Items)
             {
                 previewTitleClass.LinkToIcon.Add(item.ToString());
-            }
+            }*/
 
             previewTitleClass.S_ID = "PreviewItems/"+previewTitleClass.Title.Replace(' ', '_').Replace(':', '_');
             panelEp2.Show();
@@ -89,9 +89,9 @@ namespace AnimePlayerToolsKit
                     }
                     else
                     {
-                        if(listBoxIconsLinks.Items.Count > 0)
+                        //if(listBoxIconsLinks.Items.Count > 0)
                         {
-                            pictureBoxEp1VI.ImageLocation = listBoxIconsLinks.Items[0].ToString();
+                           // pictureBoxEp1VI.ImageLocation = listBoxIconsLinks.Items[0].ToString();
                         }
                     }
                 }
@@ -154,7 +154,7 @@ namespace AnimePlayerToolsKit
                 return;
             }
             comboBox.Items.Add(listBox.SelectedItem);
-            comboBox.Items.Remove(listBox.SelectedItem);
+            listBox.Items.Remove(listBox.SelectedItem);
         }
 
         private void buttonRemoveSpecies_Click(object sender, EventArgs e)
@@ -186,7 +186,7 @@ namespace AnimePlayerToolsKit
             }
             try
             {
-                listBoxIconsLinks.Items.Add(textBox_iconlink.Text);
+                //listBoxIconsLinks.Items.Add(textBox_iconlink.Text);
                 textBox_iconlink.Text = "";
             }
             catch(Exception ex)
@@ -199,11 +199,11 @@ namespace AnimePlayerToolsKit
         {
             try
             {
-                if (listBoxIconsLinks.SelectedItem == null)
+                //if (listBoxIconsLinks.SelectedItem == null)
                 {
                     return;
                 }
-                listBoxIconsLinks.Items.Remove(listBoxIconsLinks.SelectedItem);
+                //listBoxIconsLinks.Items.Remove(listBoxIconsLinks.SelectedItem);
             }
             catch(Exception ex)
             {
@@ -217,7 +217,7 @@ namespace AnimePlayerToolsKit
         {
             try
             {
-                listBoxRT.Items.Add(textBox2.Text);
+               // listBoxRT.Items.Add(textBox2.Text);
             }
             catch(Exception ex)
             {
@@ -229,7 +229,7 @@ namespace AnimePlayerToolsKit
         {
             try
             {
-                listBoxRT.Items.Remove(listBoxRT.SelectedItem);
+                //listBoxRT.Items.Remove(listBoxRT.SelectedItem);
             }
             catch(Exception ex)
             {
@@ -242,7 +242,7 @@ namespace AnimePlayerToolsKit
         {
             try
             {
-                string sid = AnimePlayer.Core.Replacer.Names(textBoxTit.Text);
+                /*string sid = AnimePlayer.Core.Replacer.Names(textBoxTit.Text);
                 PageItemData data = new PageItemData();
                 data.S_ID = sid;
                 TitleInformation titleInformation = new TitleInformation();
@@ -252,7 +252,7 @@ namespace AnimePlayerToolsKit
                 {
                     strings.Add(listBox_OtherTitle.Items[i].ToString());
                 }
-                titleInformation.OtherTitle = strings.ToArray();
+                titleInformation.OtherTitle = strings.ToArray();*/
             }
             catch (Exception ex)
             {
