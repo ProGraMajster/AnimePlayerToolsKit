@@ -17,6 +17,8 @@ namespace AnimePlayerToolsKit
             Stream stream = new FileStream(path, FileMode.Open, FileAccess.Read);
             IFormatter formattter = new BinaryFormatter();
             object obj = formattter.Deserialize(stream);
+            stream.Close();
+            stream.Dispose();
             return obj;
         }
 

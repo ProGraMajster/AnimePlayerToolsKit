@@ -28,14 +28,6 @@ namespace AnimePlayerToolsKit
             GC.Collect();
         }
 
-        private void buttonEpCreator_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Tool_EpCreator _ = new Tool_EpCreator();
-            _.Show();
-            GC.Collect();
-        }
-
         private void buttonDefinitions_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -49,6 +41,14 @@ namespace AnimePlayerToolsKit
             this.Hide();
             PageItemCreator pageItemCreator = new PageItemCreator();
             pageItemCreator.Show();
+        }
+
+        private void buttonToolEpisode_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ToolEpisode toolEpisode = new ToolEpisode();
+            toolEpisode.Show();
+            GC.Collect();
         }
     }
 }

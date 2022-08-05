@@ -33,9 +33,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonToolNewsCreator = new System.Windows.Forms.Button();
-            this.buttonEpCreator = new System.Windows.Forms.Button();
             this.buttonDefinitions = new System.Windows.Forms.Button();
             this.buttonPageItemData = new System.Windows.Forms.Button();
+            this.buttonToolEpisode = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -103,21 +103,6 @@
             this.buttonToolNewsCreator.UseVisualStyleBackColor = false;
             this.buttonToolNewsCreator.Click += new System.EventHandler(this.buttonToolNewsCreator_Click);
             // 
-            // buttonEpCreator
-            // 
-            this.buttonEpCreator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonEpCreator.FlatAppearance.BorderSize = 0;
-            this.buttonEpCreator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEpCreator.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonEpCreator.ForeColor = System.Drawing.Color.White;
-            this.buttonEpCreator.Location = new System.Drawing.Point(35, 208);
-            this.buttonEpCreator.Name = "buttonEpCreator";
-            this.buttonEpCreator.Size = new System.Drawing.Size(161, 35);
-            this.buttonEpCreator.TabIndex = 5;
-            this.buttonEpCreator.Text = "Tool EpCreator";
-            this.buttonEpCreator.UseVisualStyleBackColor = false;
-            this.buttonEpCreator.Click += new System.EventHandler(this.buttonEpCreator_Click);
-            // 
             // buttonDefinitions
             // 
             this.buttonDefinitions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -148,15 +133,30 @@
             this.buttonPageItemData.UseVisualStyleBackColor = false;
             this.buttonPageItemData.Click += new System.EventHandler(this.buttonPageItemData_Click);
             // 
+            // buttonToolEpisode
+            // 
+            this.buttonToolEpisode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.buttonToolEpisode.FlatAppearance.BorderSize = 0;
+            this.buttonToolEpisode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonToolEpisode.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonToolEpisode.ForeColor = System.Drawing.Color.White;
+            this.buttonToolEpisode.Location = new System.Drawing.Point(35, 208);
+            this.buttonToolEpisode.Name = "buttonToolEpisode";
+            this.buttonToolEpisode.Size = new System.Drawing.Size(161, 35);
+            this.buttonToolEpisode.TabIndex = 8;
+            this.buttonToolEpisode.Text = "Tool Episode";
+            this.buttonToolEpisode.UseVisualStyleBackColor = false;
+            this.buttonToolEpisode.Click += new System.EventHandler(this.buttonToolEpisode_Click);
+            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonToolEpisode);
             this.Controls.Add(this.buttonPageItemData);
             this.Controls.Add(this.buttonDefinitions);
-            this.Controls.Add(this.buttonEpCreator);
             this.Controls.Add(this.buttonToolNewsCreator);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
@@ -179,8 +179,8 @@
         private Panel panel1;
         private Button button1;
         private Button buttonToolNewsCreator;
-        private Button buttonEpCreator;
         private Button buttonDefinitions;
         private Button buttonPageItemData;
+        private Button buttonToolEpisode;
     }
 }
