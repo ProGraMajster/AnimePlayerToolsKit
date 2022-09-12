@@ -1287,6 +1287,11 @@
             this.numericUpDownEpCount.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDownEpCount.ForeColor = System.Drawing.Color.White;
             this.numericUpDownEpCount.Location = new System.Drawing.Point(12, 34);
+            this.numericUpDownEpCount.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.numericUpDownEpCount.Name = "numericUpDownEpCount";
             this.numericUpDownEpCount.Size = new System.Drawing.Size(120, 22);
             this.numericUpDownEpCount.TabIndex = 19;
@@ -1442,6 +1447,11 @@
             this.numericUpDownDlugoscEp.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.numericUpDownDlugoscEp.ForeColor = System.Drawing.Color.White;
             this.numericUpDownDlugoscEp.Location = new System.Drawing.Point(12, 31);
+            this.numericUpDownDlugoscEp.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.numericUpDownDlugoscEp.Name = "numericUpDownDlugoscEp";
             this.numericUpDownDlugoscEp.Size = new System.Drawing.Size(120, 22);
             this.numericUpDownDlugoscEp.TabIndex = 20;
@@ -1491,7 +1501,8 @@
             "NC-17",
             "PG",
             "PG-13",
-            "R"});
+            "R",
+            "R+"});
             this.comboBoxMPAA.Location = new System.Drawing.Point(12, 36);
             this.comboBoxMPAA.Name = "comboBoxMPAA";
             this.comboBoxMPAA.Size = new System.Drawing.Size(174, 25);

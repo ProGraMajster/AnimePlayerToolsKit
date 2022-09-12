@@ -30,6 +30,7 @@ namespace AnimePlayerToolsKit
                         MessageBox.Show("Pole tytułu nie może być puste!");
                         return;
                     }
+                    Guid guid = Guid.NewGuid();
                     Episode episode = new Episode();
                     episode.Title = textBoxTitle.Text;
                     episode.TitleOfEpisode = textBoxTitleOfEpisode.Text;
@@ -41,7 +42,8 @@ namespace AnimePlayerToolsKit
                     episode.TranslationCreator = textBoxT.Text;
                     episode.TranslationCreatorAdditionalInformation = richTextBoxAddniotalInformaion.Text;
                     SerializationAndDeserialization.Serialization(episode,
-                        folderBrowserDialog1.SelectedPath+"\\"+Replacer.Names(episode.Title)+".dat");
+                        folderBrowserDialog1.SelectedPath+"\\"+Replacer.Names(episode.Title)+"--Guid_"+guid.ToString()+".dat");
+                    labelPath.Text="Zapisano! Scieżka do pliku: "+folderBrowserDialog1.SelectedPath+"\\"+Replacer.Names(episode.Title)+"--Guid_"+guid.ToString()+".dat";
                 }
             }
             catch(Exception ex)
