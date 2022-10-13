@@ -83,7 +83,7 @@
             this.button1.Location = new System.Drawing.Point(765, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(35, 35);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 6;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -98,7 +98,7 @@
             this.buttonToolNewsCreator.Location = new System.Drawing.Point(35, 157);
             this.buttonToolNewsCreator.Name = "buttonToolNewsCreator";
             this.buttonToolNewsCreator.Size = new System.Drawing.Size(161, 35);
-            this.buttonToolNewsCreator.TabIndex = 4;
+            this.buttonToolNewsCreator.TabIndex = 2;
             this.buttonToolNewsCreator.Text = "Tool NewsCreator";
             this.buttonToolNewsCreator.UseVisualStyleBackColor = false;
             this.buttonToolNewsCreator.Click += new System.EventHandler(this.buttonToolNewsCreator_Click);
@@ -113,7 +113,7 @@
             this.buttonDefinitions.Location = new System.Drawing.Point(35, 261);
             this.buttonDefinitions.Name = "buttonDefinitions";
             this.buttonDefinitions.Size = new System.Drawing.Size(161, 35);
-            this.buttonDefinitions.TabIndex = 6;
+            this.buttonDefinitions.TabIndex = 4;
             this.buttonDefinitions.Text = "Tool Definitions";
             this.buttonDefinitions.UseVisualStyleBackColor = false;
             this.buttonDefinitions.Click += new System.EventHandler(this.buttonDefinitions_Click);
@@ -128,7 +128,7 @@
             this.buttonPageItemData.Location = new System.Drawing.Point(35, 312);
             this.buttonPageItemData.Name = "buttonPageItemData";
             this.buttonPageItemData.Size = new System.Drawing.Size(161, 35);
-            this.buttonPageItemData.TabIndex = 7;
+            this.buttonPageItemData.TabIndex = 5;
             this.buttonPageItemData.Text = "Tool PageItemData";
             this.buttonPageItemData.UseVisualStyleBackColor = false;
             this.buttonPageItemData.Click += new System.EventHandler(this.buttonPageItemData_Click);
@@ -143,7 +143,7 @@
             this.buttonToolEpisode.Location = new System.Drawing.Point(35, 208);
             this.buttonToolEpisode.Name = "buttonToolEpisode";
             this.buttonToolEpisode.Size = new System.Drawing.Size(161, 35);
-            this.buttonToolEpisode.TabIndex = 8;
+            this.buttonToolEpisode.TabIndex = 3;
             this.buttonToolEpisode.Text = "Tool Episode";
             this.buttonToolEpisode.UseVisualStyleBackColor = false;
             this.buttonToolEpisode.Click += new System.EventHandler(this.buttonToolEpisode_Click);

@@ -43,7 +43,7 @@ namespace AnimePlayerToolsKit
                     episode.TranslationCreatorAdditionalInformation = richTextBoxAddniotalInformaion.Text;
                     SerializationAndDeserialization.Serialization(episode,
                         folderBrowserDialog1.SelectedPath+"\\"+Replacer.Names(episode.Title)+"--Guid_"+guid.ToString()+".dat");
-                    labelPath.Text="Zapisano! Scieżka do pliku: "+folderBrowserDialog1.SelectedPath+"\\"+Replacer.Names(episode.Title)+"--Guid_"+guid.ToString()+".dat";
+                    labelPath.Text="Zapisano! Scieżka do pliku: \n"+folderBrowserDialog1.SelectedPath+"\\"+Replacer.Names(episode.Title)+"--Guid_"+guid.ToString()+".dat";
                 }
             }
             catch(Exception ex)
