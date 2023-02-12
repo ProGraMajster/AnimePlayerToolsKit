@@ -15,26 +15,6 @@ namespace AnimePlayerToolsKit
         public Tool_NewsCreator()
         {
             InitializeComponent();
-            splitContainer1.Panel2Collapsed = true;
-        }
-
-        private void buttonPreview_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Form form = new Form();
-                form.Show();
-                AnimePlayerLibrary.PanelNews panelNews = new AnimePlayerLibrary.PanelNews(textBox_Title.Text,
-                    textBox_Dis.Text, textBox_LinkImage.Text);
-                panelNews.Show();
-                panelNews.Dock = DockStyle.Fill;
-                form.Controls.Add(panelNews);
-                form.Show();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
         }
 
         private void Tool_NewsCreator_FormClosed(object sender, FormClosedEventArgs e)

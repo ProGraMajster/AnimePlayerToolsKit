@@ -16,7 +16,9 @@ namespace AnimePlayerToolsKit
 
             Stream stream = new FileStream(path, FileMode.Open, FileAccess.Read);
             IFormatter formattter = new BinaryFormatter();
+#pragma warning disable SYSLIB0011 // Typ lub składowa jest przestarzała
             object obj = formattter.Deserialize(stream);
+#pragma warning restore SYSLIB0011 // Typ lub składowa jest przestarzała
             stream.Close();
             stream.Dispose();
             return obj;
@@ -26,7 +28,9 @@ namespace AnimePlayerToolsKit
         {
             IFormatter formatter = new BinaryFormatter();
             Stream stream = new FileStream(path, FileMode.Create, FileAccess.Write);
+#pragma warning disable SYSLIB0011 // Typ lub składowa jest przestarzała
             formatter.Serialize(stream, obj);
+#pragma warning restore SYSLIB0011 // Typ lub składowa jest przestarzała
             stream.Close();
             stream.Dispose();
         }

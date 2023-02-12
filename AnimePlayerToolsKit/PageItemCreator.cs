@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnimePlayer.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -223,8 +224,10 @@ namespace AnimePlayerToolsKit
                     Application.DoEvents();
                     if(comboBoxFileFormat.SelectedItem.ToString() == ".json")
                     {
-                        SerializationAndDeserialization.SerializationJson(pageItemData, folderBrowserDialog1.SelectedPath+
-                        "\\"+pageItemData.S_ID+".json", typeof(AnimePlayer.Class.PageItemData));
+                        string json =
+                            AnimePlayer.Core.SerializationAndDeserialization.SerializationJsonEx(pageItemData, typeof(PageItemData));
+                        File.WriteAllText(folderBrowserDialog1.SelectedPath+
+                        "\\"+pageItemData.S_ID+".json", json);
 
                         labelProgress.Text = "Zapisano! Scieżka do zapisanego pliku:"+folderBrowserDialog1.SelectedPath+
                             "\\"+pageItemData.S_ID+".json";
@@ -264,8 +267,26 @@ namespace AnimePlayerToolsKit
                 OpenFileDialog openFileDialog = new OpenFileDialog();
                 if(openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    AnimePlayer.Class.PageItemData pageItemData = 
+                    AnimePlayer.Class.PageItemData pageItemData=null;
+                    if(openFileDialog.FileName.EndsWith(".dat"))
+                    {
+                        pageItemData =
                         (AnimePlayer.Class.PageItemData)SerializationAndDeserialization.Deserialization(openFileDialog.FileName);
+                    }
+                    else if(openFileDialog.FileName.EndsWith(".json"))
+                    {
+                        pageItemData=
+                            (PageItemData)AnimePlayer.Core.SerializationAndDeserialization.DeserializationJsonEx(openFileDialog.FileName,
+                            typeof(PageItemData));
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nie obsługiwany plik!",
+                            "Errro",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                        return;
+                    }
                     if(pageItemData == null)
                     {
                         pageItemData = (AnimePlayer.Class.PageItemData)SerializationAndDeserialization.DeserializationJson(

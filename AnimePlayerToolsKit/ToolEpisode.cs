@@ -41,8 +41,9 @@ namespace AnimePlayerToolsKit
                     episode.LinkToEpisode = textBoxLinkToEpisode.Text;
                     episode.TranslationCreator = textBoxT.Text;
                     episode.TranslationCreatorAdditionalInformation = richTextBoxAddniotalInformaion.Text;
-                    SerializationAndDeserialization.Serialization(episode,
-                        folderBrowserDialog1.SelectedPath+"\\"+Replacer.Names(episode.Title)+"--Guid_"+guid.ToString()+".dat");
+                    string json = AnimePlayer.Core.SerializationAndDeserialization.SerializationJsonEx(episode,typeof(Episode));
+                    File.WriteAllText(folderBrowserDialog1.SelectedPath + "\\" + Replacer.Names(episode.Title) + "--Guid_" + guid.ToString() + ".json",
+                        json);
                     labelPath.Text="Zapisano! Scieżka do pliku: \n"+folderBrowserDialog1.SelectedPath+"\\"+Replacer.Names(episode.Title)+"--Guid_"+guid.ToString()+".dat";
                 }
             }

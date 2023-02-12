@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>disable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -10,7 +10,10 @@
 
   <ItemGroup>
     <Reference Include="AnimePlayer.Class">
-      <HintPath>..\..\ProGraMajster\AnimePlayer\AnimePlayer.HostApp\bin\Debug\net6.0-windows\AnimePlayer.Class.dll</HintPath>
+      <HintPath>..\..\ProGraMajster\AnimePlayer\AnimePlayer.Class\bin\Debug\net6.0-windows\AnimePlayer.Class.dll</HintPath>
+    </Reference>
+    <Reference Include="AnimePlayer.Core">
+      <HintPath>..\..\ProGraMajster\AnimePlayer\AnimePlayer.Core\bin\Debug\net6.0-windows\AnimePlayer.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 
