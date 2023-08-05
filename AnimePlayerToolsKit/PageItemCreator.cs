@@ -1,4 +1,5 @@
 ﻿using AnimePlayer.Class;
+using AnimePlayer.Core;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,8 +41,8 @@ namespace AnimePlayerToolsKit
         }
         public void AddItemToListBox(ComboBox comboBox, ListBox listBox)
         {
-            if (comboBox.Items.Count == 0||
-                comboBox.SelectedIndex == -1 || 
+            if (comboBox.Items.Count == 0 ||
+                comboBox.SelectedIndex == -1 ||
                 comboBox.SelectedItem == null)
             {
                 return;
@@ -218,34 +219,34 @@ namespace AnimePlayerToolsKit
                 labelProgress.Text = "Przetwarzanie... 100%";
                 Application.DoEvents();
 
-                if(folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+                if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
                 {
                     labelProgress.Text = "Zapisywanie...";
                     Application.DoEvents();
-                    if(comboBoxFileFormat.SelectedItem.ToString() == ".json")
+                    if (comboBoxFileFormat.SelectedItem.ToString() == ".json")
                     {
                         string json =
                             AnimePlayer.Core.SerializationAndDeserialization.SerializationJsonEx(pageItemData, typeof(PageItemData));
-                        File.WriteAllText(folderBrowserDialog1.SelectedPath+
-                        "\\"+pageItemData.S_ID+".json", json);
+                        File.WriteAllText(folderBrowserDialog1.SelectedPath +
+                        "\\" + pageItemData.S_ID + ".json", json);
 
-                        labelProgress.Text = "Zapisano! Scieżka do zapisanego pliku:"+folderBrowserDialog1.SelectedPath+
-                            "\\"+pageItemData.S_ID+".json";
+                        labelProgress.Text = "Zapisano! Scieżka do zapisanego pliku:" + folderBrowserDialog1.SelectedPath +
+                            "\\" + pageItemData.S_ID + ".json";
                     }
                     else
                     {
-                        SerializationAndDeserialization.Serialization(pageItemData, folderBrowserDialog1.SelectedPath+
-                        "\\"+pageItemData.S_ID+".dat");
+                        SerializationAndDeserialization.Serialization(pageItemData, folderBrowserDialog1.SelectedPath +
+                        "\\" + pageItemData.S_ID + ".dat");
 
-                        labelProgress.Text = "Zapisano! Scieżka do zapisanego pliku:"+folderBrowserDialog1.SelectedPath+
-                            "\\"+pageItemData.S_ID+".dat";
+                        labelProgress.Text = "Zapisano! Scieżka do zapisanego pliku:" + folderBrowserDialog1.SelectedPath +
+                            "\\" + pageItemData.S_ID + ".dat";
                     }
                 }
                 progressBar1.Hide();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                labelProgress.Text = "Error:"+ex.Message;
+                labelProgress.Text = "Error:" + ex.Message;
                 Console.Error.WriteLine(ex.ToString());
             }
         }
@@ -265,17 +266,17 @@ namespace AnimePlayerToolsKit
             try
             {
                 OpenFileDialog openFileDialog = new OpenFileDialog();
-                if(openFileDialog.ShowDialog() == DialogResult.OK)
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    AnimePlayer.Class.PageItemData pageItemData=null;
-                    if(openFileDialog.FileName.EndsWith(".dat"))
+                    AnimePlayer.Class.PageItemData pageItemData = null;
+                    if (openFileDialog.FileName.EndsWith(".dat"))
                     {
                         pageItemData =
                         (AnimePlayer.Class.PageItemData)SerializationAndDeserialization.Deserialization(openFileDialog.FileName);
                     }
-                    else if(openFileDialog.FileName.EndsWith(".json"))
+                    else if (openFileDialog.FileName.EndsWith(".json"))
                     {
-                        pageItemData=
+                        pageItemData =
                             (PageItemData)AnimePlayer.Core.SerializationAndDeserialization.DeserializationJsonEx(openFileDialog.FileName,
                             typeof(PageItemData));
                     }
@@ -287,12 +288,12 @@ namespace AnimePlayerToolsKit
                             MessageBoxIcon.Error);
                         return;
                     }
-                    if(pageItemData == null)
+                    if (pageItemData == null)
                     {
                         pageItemData = (AnimePlayer.Class.PageItemData)SerializationAndDeserialization.DeserializationJson(
                             openFileDialog.FileName,
                             typeof(AnimePlayer.Class.PageItemData));
-                        if(pageItemData == null)
+                        if (pageItemData == null)
                         {
                             MessageBox.Show("Nie udało się załadować pliku", "Error");
                             return;
@@ -300,25 +301,25 @@ namespace AnimePlayerToolsKit
                     }
 
                     textBoxTitle.Text = pageItemData.TitleInformation.Title;
-                    foreach(var item in pageItemData.TitleInformation.OtherTitle)
+                    foreach (var item in pageItemData.TitleInformation.OtherTitle)
                     {
                         listBox_OtherTitle.Items.Add(item);
                     }
                     richTextBoxDescription.Text = pageItemData.TitleInformation.Description;
-                    foreach(var item in pageItemData.TitleInformation.Species)
+                    foreach (var item in pageItemData.TitleInformation.Species)
                     {
                         listBox_Species.Items.Add(item);
                     }
                     comboBoxTargetGroup.SelectedItem = pageItemData.TitleInformation.TargetGroups;
-                    foreach(var item in pageItemData.TitleInformation.TypesOfCharacters)
+                    foreach (var item in pageItemData.TitleInformation.TypesOfCharacters)
                     {
                         listBox_typesOfCharacters.Items.Add(item);
                     }
-                    foreach(var item in pageItemData.TitleInformation.PlaceAndTime)
+                    foreach (var item in pageItemData.TitleInformation.PlaceAndTime)
                     {
                         listBox_PlaceAndTime.Items.Add(item);
                     }
-                    foreach(var item in pageItemData.TitleInformation.OtherTags)
+                    foreach (var item in pageItemData.TitleInformation.OtherTags)
                     {
                         listBox_OtherTags.Items.Add(item);
                     }
@@ -329,7 +330,7 @@ namespace AnimePlayerToolsKit
                     dateTimePickerStartEmition.Value = DateTime.Parse(pageItemData.TitleInformation.DateOfIssue);
                     dateTimePickerEndEmition.Value = DateTime.Parse(pageItemData.TitleInformation.EndOfIssue);
                     numericUpDownEpCount.Value = int.Parse(pageItemData.TitleInformation.NumberOfEpisodes);
-                    foreach(var item in pageItemData.TitleInformation.Studio)
+                    foreach (var item in pageItemData.TitleInformation.Studio)
                     {
                         listBoxStudios.Items.Add(item);
                     }
@@ -337,10 +338,21 @@ namespace AnimePlayerToolsKit
                     textBoxTitle.Text = pageItemData.TitleInformation.Title;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.Error.WriteLine(ex.ToString());
             }
+        }
+
+        private void panel30_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PageItemCreator_Load(object sender, EventArgs e)
+        {
+            comboBoxFileFormat.SelectedIndex = 1;
+            comboBoxFileFormat.Visible = false;
         }
     }
 }

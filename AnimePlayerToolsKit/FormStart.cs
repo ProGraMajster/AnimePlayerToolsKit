@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace AnimePlayerToolsKit
 {
     public partial class FormStart : Form
@@ -49,6 +51,11 @@ namespace AnimePlayerToolsKit
             ToolEpisode toolEpisode = new ToolEpisode();
             toolEpisode.Show();
             GC.Collect();
+        }
+
+        private void buttonSendFileToDiscord_Click(object sender, EventArgs e)
+        {
+            Process.Start("cmd", "/C start \"\" https://discord.gg/YpwXkPyyc3 ");
         }
     }
 }

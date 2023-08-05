@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using AnimePlayer.Class;
+using AnimePlayer.Core;
 
 namespace AnimePlayerToolsKit
 {
@@ -44,7 +44,7 @@ namespace AnimePlayerToolsKit
                     string json = AnimePlayer.Core.SerializationAndDeserialization.SerializationJsonEx(episode,typeof(Episode));
                     File.WriteAllText(folderBrowserDialog1.SelectedPath + "\\" + Replacer.Names(episode.Title) + "--Guid_" + guid.ToString() + ".json",
                         json);
-                    labelPath.Text="Zapisano! Scieżka do pliku: \n"+folderBrowserDialog1.SelectedPath+"\\"+Replacer.Names(episode.Title)+"--Guid_"+guid.ToString()+".dat";
+                    labelPath.Text="Zapisano! Scieżka do pliku: \n"+folderBrowserDialog1.SelectedPath+"\\"+Replacer.Names(episode.Title)+"--Guid_"+guid.ToString()+".json";
                 }
             }
             catch(Exception ex)
@@ -72,7 +72,16 @@ namespace AnimePlayerToolsKit
                 OpenFileDialog openFileDialog = new OpenFileDialog();
                 if(openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    Episode episode =(Episode)SerializationAndDeserialization.Deserialization(openFileDialog.FileName);
+                    Episode episode = null;
+                    if (openFileDialog.FileName.EndsWith(".dat"))
+                    {
+                        episode = (Episode)SerializationAndDeserialization.Deserialization(openFileDialog.FileName);
+                    }
+                    else if(openFileDialog.FileName.EndsWith(".json"))
+                    {
+                        episode = (Episode)SerializationAndDeserialization.DeserializationJsonEx(openFileDialog.FileName, typeof(Episode));
+                    }
+
                     if(episode == null)
                     {
                         return;

@@ -28,148 +28,164 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonTAT = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.buttonToolNewsCreator = new System.Windows.Forms.Button();
-            this.buttonDefinitions = new System.Windows.Forms.Button();
-            this.buttonPageItemData = new System.Windows.Forms.Button();
-            this.buttonToolEpisode = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            label1 = new Label();
+            buttonTAT = new Button();
+            panel1 = new Panel();
+            button1 = new Button();
+            buttonToolNewsCreator = new Button();
+            buttonDefinitions = new Button();
+            buttonPageItemData = new Button();
+            buttonToolEpisode = new Button();
+            buttonSendFileToDiscord = new Button();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "AnimePlayerToolsKit";
+            label1.AutoSize = true;
+            label1.Font = new Font("Comic Sans MS", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(35, 35);
+            label1.Name = "label1";
+            label1.Size = new Size(189, 26);
+            label1.TabIndex = 0;
+            label1.Text = "AnimePlayerToolsKit";
             // 
             // buttonTAT
             // 
-            this.buttonTAT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonTAT.FlatAppearance.BorderSize = 0;
-            this.buttonTAT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTAT.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonTAT.ForeColor = System.Drawing.Color.White;
-            this.buttonTAT.Location = new System.Drawing.Point(35, 104);
-            this.buttonTAT.Name = "buttonTAT";
-            this.buttonTAT.Size = new System.Drawing.Size(161, 35);
-            this.buttonTAT.TabIndex = 1;
-            this.buttonTAT.Text = "Tool TitleCreator";
-            this.buttonTAT.UseVisualStyleBackColor = false;
-            this.buttonTAT.Visible = false;
-            this.buttonTAT.Click += new System.EventHandler(this.buttonTAT_Click);
+            buttonTAT.BackColor = Color.FromArgb(28, 28, 28);
+            buttonTAT.FlatAppearance.BorderSize = 0;
+            buttonTAT.FlatStyle = FlatStyle.Flat;
+            buttonTAT.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonTAT.ForeColor = Color.White;
+            buttonTAT.Location = new Point(615, 350);
+            buttonTAT.Name = "buttonTAT";
+            buttonTAT.Size = new Size(161, 35);
+            buttonTAT.TabIndex = 1;
+            buttonTAT.Text = "Tool TitleCreator";
+            buttonTAT.UseVisualStyleBackColor = false;
+            buttonTAT.Visible = false;
+            buttonTAT.Click += buttonTAT_Click;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(20, 70);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 1);
-            this.panel1.TabIndex = 2;
+            panel1.BackColor = Color.White;
+            panel1.Location = new Point(20, 70);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 1);
+            panel1.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(765, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 35);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.BackColor = Color.FromArgb(25, 25, 25);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.Red;
+            button1.Location = new Point(765, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(35, 35);
+            button1.TabIndex = 6;
+            button1.Text = "X";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // buttonToolNewsCreator
             // 
-            this.buttonToolNewsCreator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonToolNewsCreator.FlatAppearance.BorderSize = 0;
-            this.buttonToolNewsCreator.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonToolNewsCreator.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonToolNewsCreator.ForeColor = System.Drawing.Color.White;
-            this.buttonToolNewsCreator.Location = new System.Drawing.Point(35, 157);
-            this.buttonToolNewsCreator.Name = "buttonToolNewsCreator";
-            this.buttonToolNewsCreator.Size = new System.Drawing.Size(161, 35);
-            this.buttonToolNewsCreator.TabIndex = 2;
-            this.buttonToolNewsCreator.Text = "Tool NewsCreator";
-            this.buttonToolNewsCreator.UseVisualStyleBackColor = false;
-            this.buttonToolNewsCreator.Click += new System.EventHandler(this.buttonToolNewsCreator_Click);
+            buttonToolNewsCreator.BackColor = Color.FromArgb(28, 28, 28);
+            buttonToolNewsCreator.FlatAppearance.BorderSize = 0;
+            buttonToolNewsCreator.FlatStyle = FlatStyle.Flat;
+            buttonToolNewsCreator.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonToolNewsCreator.ForeColor = Color.White;
+            buttonToolNewsCreator.Location = new Point(431, 350);
+            buttonToolNewsCreator.Name = "buttonToolNewsCreator";
+            buttonToolNewsCreator.Size = new Size(161, 35);
+            buttonToolNewsCreator.TabIndex = 2;
+            buttonToolNewsCreator.Text = "Tool NewsCreator";
+            buttonToolNewsCreator.UseVisualStyleBackColor = false;
+            buttonToolNewsCreator.Visible = false;
+            buttonToolNewsCreator.Click += buttonToolNewsCreator_Click;
             // 
             // buttonDefinitions
             // 
-            this.buttonDefinitions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonDefinitions.FlatAppearance.BorderSize = 0;
-            this.buttonDefinitions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDefinitions.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonDefinitions.ForeColor = System.Drawing.Color.White;
-            this.buttonDefinitions.Location = new System.Drawing.Point(35, 261);
-            this.buttonDefinitions.Name = "buttonDefinitions";
-            this.buttonDefinitions.Size = new System.Drawing.Size(161, 35);
-            this.buttonDefinitions.TabIndex = 4;
-            this.buttonDefinitions.Text = "Tool Definitions";
-            this.buttonDefinitions.UseVisualStyleBackColor = false;
-            this.buttonDefinitions.Click += new System.EventHandler(this.buttonDefinitions_Click);
+            buttonDefinitions.BackColor = Color.FromArgb(28, 28, 28);
+            buttonDefinitions.FlatAppearance.BorderSize = 0;
+            buttonDefinitions.FlatStyle = FlatStyle.Flat;
+            buttonDefinitions.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonDefinitions.ForeColor = Color.White;
+            buttonDefinitions.Location = new Point(451, 90);
+            buttonDefinitions.Name = "buttonDefinitions";
+            buttonDefinitions.Size = new Size(161, 35);
+            buttonDefinitions.TabIndex = 4;
+            buttonDefinitions.Text = "Dodaj definicje";
+            buttonDefinitions.UseVisualStyleBackColor = false;
+            buttonDefinitions.Click += buttonDefinitions_Click;
             // 
             // buttonPageItemData
             // 
-            this.buttonPageItemData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonPageItemData.FlatAppearance.BorderSize = 0;
-            this.buttonPageItemData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPageItemData.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonPageItemData.ForeColor = System.Drawing.Color.White;
-            this.buttonPageItemData.Location = new System.Drawing.Point(35, 312);
-            this.buttonPageItemData.Name = "buttonPageItemData";
-            this.buttonPageItemData.Size = new System.Drawing.Size(161, 35);
-            this.buttonPageItemData.TabIndex = 5;
-            this.buttonPageItemData.Text = "Tool PageItemData";
-            this.buttonPageItemData.UseVisualStyleBackColor = false;
-            this.buttonPageItemData.Click += new System.EventHandler(this.buttonPageItemData_Click);
+            buttonPageItemData.BackColor = Color.FromArgb(28, 28, 28);
+            buttonPageItemData.FlatAppearance.BorderSize = 0;
+            buttonPageItemData.FlatStyle = FlatStyle.Flat;
+            buttonPageItemData.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonPageItemData.ForeColor = Color.White;
+            buttonPageItemData.Location = new Point(221, 90);
+            buttonPageItemData.Name = "buttonPageItemData";
+            buttonPageItemData.Size = new Size(201, 35);
+            buttonPageItemData.TabIndex = 5;
+            buttonPageItemData.Text = "Dodaj informacje o tytule";
+            buttonPageItemData.UseVisualStyleBackColor = false;
+            buttonPageItemData.Click += buttonPageItemData_Click;
             // 
             // buttonToolEpisode
             // 
-            this.buttonToolEpisode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.buttonToolEpisode.FlatAppearance.BorderSize = 0;
-            this.buttonToolEpisode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonToolEpisode.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonToolEpisode.ForeColor = System.Drawing.Color.White;
-            this.buttonToolEpisode.Location = new System.Drawing.Point(35, 208);
-            this.buttonToolEpisode.Name = "buttonToolEpisode";
-            this.buttonToolEpisode.Size = new System.Drawing.Size(161, 35);
-            this.buttonToolEpisode.TabIndex = 3;
-            this.buttonToolEpisode.Text = "Tool Episode";
-            this.buttonToolEpisode.UseVisualStyleBackColor = false;
-            this.buttonToolEpisode.Click += new System.EventHandler(this.buttonToolEpisode_Click);
+            buttonToolEpisode.BackColor = Color.FromArgb(28, 28, 28);
+            buttonToolEpisode.FlatAppearance.BorderSize = 0;
+            buttonToolEpisode.FlatStyle = FlatStyle.Flat;
+            buttonToolEpisode.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonToolEpisode.ForeColor = Color.White;
+            buttonToolEpisode.Location = new Point(35, 90);
+            buttonToolEpisode.Name = "buttonToolEpisode";
+            buttonToolEpisode.Size = new Size(161, 35);
+            buttonToolEpisode.TabIndex = 3;
+            buttonToolEpisode.Text = "Dodaj odcinek";
+            buttonToolEpisode.UseVisualStyleBackColor = false;
+            buttonToolEpisode.Click += buttonToolEpisode_Click;
+            // 
+            // buttonSendFileToDiscord
+            // 
+            buttonSendFileToDiscord.BackColor = Color.FromArgb(45, 45, 45);
+            buttonSendFileToDiscord.FlatAppearance.BorderSize = 0;
+            buttonSendFileToDiscord.FlatStyle = FlatStyle.Flat;
+            buttonSendFileToDiscord.ForeColor = Color.White;
+            buttonSendFileToDiscord.Location = new Point(35, 259);
+            buttonSendFileToDiscord.Name = "buttonSendFileToDiscord";
+            buttonSendFileToDiscord.Size = new Size(189, 44);
+            buttonSendFileToDiscord.TabIndex = 7;
+            buttonSendFileToDiscord.Text = "Prześlij pliki na discord'a";
+            buttonSendFileToDiscord.UseVisualStyleBackColor = false;
+            buttonSendFileToDiscord.Click += buttonSendFileToDiscord_Click;
             // 
             // FormStart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.buttonToolEpisode);
-            this.Controls.Add(this.buttonPageItemData);
-            this.Controls.Add(this.buttonDefinitions);
-            this.Controls.Add(this.buttonToolNewsCreator);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.buttonTAT);
-            this.Controls.Add(this.label1);
-            this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormStart";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AnimePlayerToolsKit";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(25, 25, 25);
+            ClientSize = new Size(800, 450);
+            Controls.Add(buttonSendFileToDiscord);
+            Controls.Add(buttonToolEpisode);
+            Controls.Add(buttonPageItemData);
+            Controls.Add(buttonDefinitions);
+            Controls.Add(buttonToolNewsCreator);
+            Controls.Add(button1);
+            Controls.Add(panel1);
+            Controls.Add(buttonTAT);
+            Controls.Add(label1);
+            DoubleBuffered = true;
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FormStart";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "AnimePlayerToolsKit";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -182,5 +198,6 @@
         private Button buttonDefinitions;
         private Button buttonPageItemData;
         private Button buttonToolEpisode;
+        private Button buttonSendFileToDiscord;
     }
 }

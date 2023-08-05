@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AnimePlayer.Core;
+using AnimePlayer.Class;
 
 namespace AnimePlayerToolsKit
 {
@@ -60,13 +62,15 @@ namespace AnimePlayerToolsKit
                 FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
                 if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
                 {
-                    SerializationAndDeserialization.Serialization(definition,folderBrowserDialog.SelectedPath +
-                        "\\"+ textBox1.Text
+                    string j =SerializationAndDeserialization.SerializationJsonEx(definition,typeof(Definition));
+
+                    File.WriteAllText(folderBrowserDialog.SelectedPath +
+                        "\\" + textBox1.Text
                         .Replace('/', '_')
                         .Replace('\\', '_')
-                        .Replace(':','_')
-                        .Replace(';','_')   
-                        .Replace(' ','_')+".dat");
+                        .Replace(':', '_')
+                        .Replace(';', '_')
+                        .Replace(' ', '_') + ".json", j);
 
                     folderBrowserDialog.Dispose();
                     MessageBox.Show("Zapisano plik");

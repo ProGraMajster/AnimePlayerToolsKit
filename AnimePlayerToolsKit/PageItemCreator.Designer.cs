@@ -28,1710 +28,1445 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.buttonEditFile = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.listBox_OtherTitle = new System.Windows.Forms.ListBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.buttonRemoveOtherTitle = new System.Windows.Forms.Button();
-            this.textBox_OtherTitle = new System.Windows.Forms.TextBox();
-            this.buttonAddOtherTitle = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.richTextBoxDescription = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.listBox_Species = new System.Windows.Forms.ListBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.buttonSpeciesRemove = new System.Windows.Forms.Button();
-            this.buttonSpeciesAdd = new System.Windows.Forms.Button();
-            this.comboBoxSpecies = new System.Windows.Forms.ComboBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.comboBoxTargetGroup = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.listBox_typesOfCharacters = new System.Windows.Forms.ListBox();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button_Remove_typesOfCharacters = new System.Windows.Forms.Button();
-            this.comboBox_TypeOfCharacter = new System.Windows.Forms.ComboBox();
-            this.button_Add_typesOfCharacters = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.listBox_PlaceAndTime = new System.Windows.Forms.ListBox();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.buttonPlaceAndTimeRemove = new System.Windows.Forms.Button();
-            this.comboBoxPlaceAndTime = new System.Windows.Forms.ComboBox();
-            this.buttonPlaceAndTimeAdd = new System.Windows.Forms.Button();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.listBox_OtherTags = new System.Windows.Forms.ListBox();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.buttonOtherTagsRemove = new System.Windows.Forms.Button();
-            this.comboBoxOtherTags = new System.Windows.Forms.ComboBox();
-            this.buttonOtherTagsAdd = new System.Windows.Forms.Button();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.comboBoxArchetype = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.comboBoxType = new System.Windows.Forms.ComboBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.comboBoxState = new System.Windows.Forms.ComboBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.dateTimePickerStartEmition = new System.Windows.Forms.DateTimePicker();
-            this.label20 = new System.Windows.Forms.Label();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.dateTimePickerEndEmition = new System.Windows.Forms.DateTimePicker();
-            this.label21 = new System.Windows.Forms.Label();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.numericUpDownEpCount = new System.Windows.Forms.NumericUpDown();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.listBoxStudios = new System.Windows.Forms.ListBox();
-            this.panel55 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.buttonStudioRemove = new System.Windows.Forms.Button();
-            this.textBoxStudio = new System.Windows.Forms.TextBox();
-            this.buttonStudioAdd = new System.Windows.Forms.Button();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.numericUpDownDlugoscEp = new System.Windows.Forms.NumericUpDown();
-            this.label24 = new System.Windows.Forms.Label();
-            this.panel36 = new System.Windows.Forms.Panel();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.comboBoxMPAA = new System.Windows.Forms.ComboBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.panel38 = new System.Windows.Forms.Panel();
-            this.panel56 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBoxFileFormat = new System.Windows.Forms.ComboBox();
-            this.buttonSave = new System.Windows.Forms.Button();
-            this.labelProgress = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.panel39 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxTitle = new System.Windows.Forms.TextBox();
-            this.panel41 = new System.Windows.Forms.Panel();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel28.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel29.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel34.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.panel30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEpCount)).BeginInit();
-            this.panel32.SuspendLayout();
-            this.panel55.SuspendLayout();
-            this.panel35.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDlugoscEp)).BeginInit();
-            this.panel37.SuspendLayout();
-            this.panel56.SuspendLayout();
-            this.panel39.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            buttonEditFile = new Button();
+            button1 = new Button();
+            panel2 = new Panel();
+            listBox_OtherTitle = new ListBox();
+            panel7 = new Panel();
+            label9 = new Label();
+            buttonRemoveOtherTitle = new Button();
+            textBox_OtherTitle = new TextBox();
+            buttonAddOtherTitle = new Button();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            richTextBoxDescription = new RichTextBox();
+            label1 = new Label();
+            panel5 = new Panel();
+            panel6 = new Panel();
+            listBox_Species = new ListBox();
+            panel8 = new Panel();
+            label2 = new Label();
+            buttonSpeciesRemove = new Button();
+            buttonSpeciesAdd = new Button();
+            comboBoxSpecies = new ComboBox();
+            panel9 = new Panel();
+            panel10 = new Panel();
+            comboBoxTargetGroup = new ComboBox();
+            label13 = new Label();
+            panel11 = new Panel();
+            panel12 = new Panel();
+            listBox_typesOfCharacters = new ListBox();
+            panel28 = new Panel();
+            label14 = new Label();
+            button_Remove_typesOfCharacters = new Button();
+            comboBox_TypeOfCharacter = new ComboBox();
+            button_Add_typesOfCharacters = new Button();
+            comboBox2 = new ComboBox();
+            panel13 = new Panel();
+            panel14 = new Panel();
+            listBox_PlaceAndTime = new ListBox();
+            panel29 = new Panel();
+            label15 = new Label();
+            buttonPlaceAndTimeRemove = new Button();
+            comboBoxPlaceAndTime = new ComboBox();
+            buttonPlaceAndTimeAdd = new Button();
+            panel15 = new Panel();
+            panel16 = new Panel();
+            listBox_OtherTags = new ListBox();
+            panel34 = new Panel();
+            label16 = new Label();
+            buttonOtherTagsRemove = new Button();
+            comboBoxOtherTags = new ComboBox();
+            buttonOtherTagsAdd = new Button();
+            panel17 = new Panel();
+            panel18 = new Panel();
+            comboBoxArchetype = new ComboBox();
+            label17 = new Label();
+            panel19 = new Panel();
+            panel20 = new Panel();
+            comboBoxType = new ComboBox();
+            label18 = new Label();
+            panel21 = new Panel();
+            panel22 = new Panel();
+            comboBoxState = new ComboBox();
+            label19 = new Label();
+            panel23 = new Panel();
+            panel24 = new Panel();
+            dateTimePickerStartEmition = new DateTimePicker();
+            label20 = new Label();
+            panel25 = new Panel();
+            panel26 = new Panel();
+            dateTimePickerEndEmition = new DateTimePicker();
+            label21 = new Label();
+            panel27 = new Panel();
+            panel30 = new Panel();
+            numericUpDownEpCount = new NumericUpDown();
+            label22 = new Label();
+            panel31 = new Panel();
+            panel32 = new Panel();
+            listBoxStudios = new ListBox();
+            panel55 = new Panel();
+            label23 = new Label();
+            buttonStudioRemove = new Button();
+            textBoxStudio = new TextBox();
+            buttonStudioAdd = new Button();
+            panel33 = new Panel();
+            panel35 = new Panel();
+            label25 = new Label();
+            numericUpDownDlugoscEp = new NumericUpDown();
+            label24 = new Label();
+            panel36 = new Panel();
+            panel37 = new Panel();
+            comboBoxMPAA = new ComboBox();
+            label26 = new Label();
+            panel38 = new Panel();
+            panel56 = new Panel();
+            label4 = new Label();
+            comboBoxFileFormat = new ComboBox();
+            buttonSave = new Button();
+            labelProgress = new Label();
+            progressBar1 = new ProgressBar();
+            panel39 = new Panel();
+            label3 = new Label();
+            textBoxTitle = new TextBox();
+            panel41 = new Panel();
+            folderBrowserDialog1 = new FolderBrowserDialog();
+            label5 = new Label();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel7.SuspendLayout();
+            panel4.SuspendLayout();
+            panel6.SuspendLayout();
+            panel8.SuspendLayout();
+            panel10.SuspendLayout();
+            panel12.SuspendLayout();
+            panel28.SuspendLayout();
+            panel14.SuspendLayout();
+            panel29.SuspendLayout();
+            panel16.SuspendLayout();
+            panel34.SuspendLayout();
+            panel18.SuspendLayout();
+            panel20.SuspendLayout();
+            panel22.SuspendLayout();
+            panel24.SuspendLayout();
+            panel26.SuspendLayout();
+            panel30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownEpCount).BeginInit();
+            panel32.SuspendLayout();
+            panel55.SuspendLayout();
+            panel35.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownDlugoscEp).BeginInit();
+            panel37.SuspendLayout();
+            panel56.SuspendLayout();
+            panel39.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.buttonEditFile);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(783, 45);
-            this.panel1.TabIndex = 0;
+            panel1.Controls.Add(buttonEditFile);
+            panel1.Controls.Add(button1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(783, 45);
+            panel1.TabIndex = 0;
             // 
             // buttonEditFile
             // 
-            this.buttonEditFile.BackColor = System.Drawing.Color.Black;
-            this.buttonEditFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditFile.Location = new System.Drawing.Point(203, 5);
-            this.buttonEditFile.Name = "buttonEditFile";
-            this.buttonEditFile.Size = new System.Drawing.Size(165, 30);
-            this.buttonEditFile.TabIndex = 1;
-            this.buttonEditFile.Text = "Edytuj istniejący";
-            this.buttonEditFile.UseVisualStyleBackColor = false;
-            this.buttonEditFile.Click += new System.EventHandler(this.buttonEditFile_Click);
+            buttonEditFile.BackColor = Color.Black;
+            buttonEditFile.FlatStyle = FlatStyle.Flat;
+            buttonEditFile.Location = new Point(203, 5);
+            buttonEditFile.Name = "buttonEditFile";
+            buttonEditFile.Size = new Size(165, 30);
+            buttonEditFile.TabIndex = 1;
+            buttonEditFile.Text = "Edytuj istniejący";
+            buttonEditFile.UseVisualStyleBackColor = false;
+            buttonEditFile.Click += buttonEditFile_Click;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 30);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "<- Wróć";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.BackColor = Color.Black;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(12, 5);
+            button1.Name = "button1";
+            button1.Size = new Size(90, 30);
+            button1.TabIndex = 0;
+            button1.Text = "<- Wróć";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.listBox_OtherTitle);
-            this.panel2.Controls.Add(this.panel7);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 114);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(783, 100);
-            this.panel2.TabIndex = 20;
+            panel2.Controls.Add(listBox_OtherTitle);
+            panel2.Controls.Add(panel7);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 114);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(783, 100);
+            panel2.TabIndex = 20;
             // 
             // listBox_OtherTitle
             // 
-            this.listBox_OtherTitle.BackColor = System.Drawing.Color.Black;
-            this.listBox_OtherTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox_OtherTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox_OtherTitle.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBox_OtherTitle.ForeColor = System.Drawing.Color.White;
-            this.listBox_OtherTitle.FormattingEnabled = true;
-            this.listBox_OtherTitle.ItemHeight = 18;
-            this.listBox_OtherTitle.Location = new System.Drawing.Point(554, 0);
-            this.listBox_OtherTitle.Name = "listBox_OtherTitle";
-            this.listBox_OtherTitle.ScrollAlwaysVisible = true;
-            this.listBox_OtherTitle.Size = new System.Drawing.Size(229, 100);
-            this.listBox_OtherTitle.TabIndex = 19;
+            listBox_OtherTitle.BackColor = Color.Black;
+            listBox_OtherTitle.BorderStyle = BorderStyle.None;
+            listBox_OtherTitle.Dock = DockStyle.Fill;
+            listBox_OtherTitle.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            listBox_OtherTitle.ForeColor = Color.White;
+            listBox_OtherTitle.FormattingEnabled = true;
+            listBox_OtherTitle.ItemHeight = 18;
+            listBox_OtherTitle.Location = new Point(554, 0);
+            listBox_OtherTitle.Name = "listBox_OtherTitle";
+            listBox_OtherTitle.ScrollAlwaysVisible = true;
+            listBox_OtherTitle.Size = new Size(229, 100);
+            listBox_OtherTitle.TabIndex = 19;
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Controls.Add(this.buttonRemoveOtherTitle);
-            this.panel7.Controls.Add(this.textBox_OtherTitle);
-            this.panel7.Controls.Add(this.buttonAddOtherTitle);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(554, 100);
-            this.panel7.TabIndex = 21;
+            panel7.Controls.Add(label9);
+            panel7.Controls.Add(buttonRemoveOtherTitle);
+            panel7.Controls.Add(textBox_OtherTitle);
+            panel7.Controls.Add(buttonAddOtherTitle);
+            panel7.Dock = DockStyle.Left;
+            panel7.Location = new Point(0, 0);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(554, 100);
+            panel7.TabIndex = 21;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(0, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 19);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Inne tytuły";
+            label9.AutoSize = true;
+            label9.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(0, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(139, 19);
+            label9.TabIndex = 9;
+            label9.Text = "Alternatywne tytuły";
             // 
             // buttonRemoveOtherTitle
             // 
-            this.buttonRemoveOtherTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.buttonRemoveOtherTitle.FlatAppearance.BorderSize = 0;
-            this.buttonRemoveOtherTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonRemoveOtherTitle.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonRemoveOtherTitle.ForeColor = System.Drawing.Color.White;
-            this.buttonRemoveOtherTitle.Location = new System.Drawing.Point(478, 20);
-            this.buttonRemoveOtherTitle.Name = "buttonRemoveOtherTitle";
-            this.buttonRemoveOtherTitle.Size = new System.Drawing.Size(75, 28);
-            this.buttonRemoveOtherTitle.TabIndex = 20;
-            this.buttonRemoveOtherTitle.Text = "Usuń";
-            this.buttonRemoveOtherTitle.UseVisualStyleBackColor = false;
-            this.buttonRemoveOtherTitle.Click += new System.EventHandler(this.buttonRemoveOtherTitle_Click);
+            buttonRemoveOtherTitle.BackColor = Color.FromArgb(33, 33, 33);
+            buttonRemoveOtherTitle.FlatAppearance.BorderSize = 0;
+            buttonRemoveOtherTitle.FlatStyle = FlatStyle.Flat;
+            buttonRemoveOtherTitle.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonRemoveOtherTitle.ForeColor = Color.White;
+            buttonRemoveOtherTitle.Location = new Point(478, 20);
+            buttonRemoveOtherTitle.Name = "buttonRemoveOtherTitle";
+            buttonRemoveOtherTitle.Size = new Size(75, 28);
+            buttonRemoveOtherTitle.TabIndex = 20;
+            buttonRemoveOtherTitle.Text = "Usuń";
+            buttonRemoveOtherTitle.UseVisualStyleBackColor = false;
+            buttonRemoveOtherTitle.Click += buttonRemoveOtherTitle_Click;
             // 
             // textBox_OtherTitle
             // 
-            this.textBox_OtherTitle.BackColor = System.Drawing.Color.Black;
-            this.textBox_OtherTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_OtherTitle.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox_OtherTitle.ForeColor = System.Drawing.Color.White;
-            this.textBox_OtherTitle.Location = new System.Drawing.Point(3, 20);
-            this.textBox_OtherTitle.Name = "textBox_OtherTitle";
-            this.textBox_OtherTitle.Size = new System.Drawing.Size(396, 19);
-            this.textBox_OtherTitle.TabIndex = 8;
+            textBox_OtherTitle.BackColor = Color.Black;
+            textBox_OtherTitle.BorderStyle = BorderStyle.None;
+            textBox_OtherTitle.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox_OtherTitle.ForeColor = Color.White;
+            textBox_OtherTitle.Location = new Point(3, 20);
+            textBox_OtherTitle.Name = "textBox_OtherTitle";
+            textBox_OtherTitle.Size = new Size(396, 19);
+            textBox_OtherTitle.TabIndex = 8;
             // 
             // buttonAddOtherTitle
             // 
-            this.buttonAddOtherTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.buttonAddOtherTitle.FlatAppearance.BorderSize = 0;
-            this.buttonAddOtherTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAddOtherTitle.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonAddOtherTitle.ForeColor = System.Drawing.Color.White;
-            this.buttonAddOtherTitle.Location = new System.Drawing.Point(405, 20);
-            this.buttonAddOtherTitle.Name = "buttonAddOtherTitle";
-            this.buttonAddOtherTitle.Size = new System.Drawing.Size(75, 28);
-            this.buttonAddOtherTitle.TabIndex = 18;
-            this.buttonAddOtherTitle.Text = "Dodaj";
-            this.buttonAddOtherTitle.UseVisualStyleBackColor = false;
-            this.buttonAddOtherTitle.Click += new System.EventHandler(this.buttonAddOtherTitle_Click);
+            buttonAddOtherTitle.BackColor = Color.FromArgb(33, 33, 33);
+            buttonAddOtherTitle.FlatAppearance.BorderSize = 0;
+            buttonAddOtherTitle.FlatStyle = FlatStyle.Flat;
+            buttonAddOtherTitle.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonAddOtherTitle.ForeColor = Color.White;
+            buttonAddOtherTitle.Location = new Point(405, 20);
+            buttonAddOtherTitle.Name = "buttonAddOtherTitle";
+            buttonAddOtherTitle.Size = new Size(75, 28);
+            buttonAddOtherTitle.TabIndex = 18;
+            buttonAddOtherTitle.Text = "Dodaj";
+            buttonAddOtherTitle.UseVisualStyleBackColor = false;
+            buttonAddOtherTitle.Click += buttonAddOtherTitle_Click;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 214);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(783, 10);
-            this.panel3.TabIndex = 21;
+            panel3.BackColor = SystemColors.WindowFrame;
+            panel3.Dock = DockStyle.Top;
+            panel3.Location = new Point(0, 214);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(783, 10);
+            panel3.TabIndex = 21;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.richTextBoxDescription);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 224);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(783, 160);
-            this.panel4.TabIndex = 22;
+            panel4.Controls.Add(richTextBoxDescription);
+            panel4.Controls.Add(label1);
+            panel4.Dock = DockStyle.Top;
+            panel4.Location = new Point(0, 224);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(783, 160);
+            panel4.TabIndex = 22;
             // 
             // richTextBoxDescription
             // 
-            this.richTextBoxDescription.BackColor = System.Drawing.Color.Black;
-            this.richTextBoxDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBoxDescription.ForeColor = System.Drawing.Color.White;
-            this.richTextBoxDescription.Location = new System.Drawing.Point(0, 23);
-            this.richTextBoxDescription.Name = "richTextBoxDescription";
-            this.richTextBoxDescription.Size = new System.Drawing.Size(783, 137);
-            this.richTextBoxDescription.TabIndex = 1;
-            this.richTextBoxDescription.Text = "";
+            richTextBoxDescription.BackColor = Color.Black;
+            richTextBoxDescription.BorderStyle = BorderStyle.None;
+            richTextBoxDescription.Dock = DockStyle.Fill;
+            richTextBoxDescription.ForeColor = Color.White;
+            richTextBoxDescription.Location = new Point(0, 23);
+            richTextBoxDescription.Name = "richTextBoxDescription";
+            richTextBoxDescription.Size = new Size(783, 137);
+            richTextBoxDescription.TabIndex = 1;
+            richTextBoxDescription.Text = "";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Opis";
+            label1.AutoSize = true;
+            label1.Dock = DockStyle.Top;
+            label1.Font = new Font("Comic Sans MS", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(44, 23);
+            label1.TabIndex = 0;
+            label1.Text = "Opis";
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 384);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(783, 10);
-            this.panel5.TabIndex = 23;
+            panel5.BackColor = SystemColors.WindowFrame;
+            panel5.Dock = DockStyle.Top;
+            panel5.Location = new Point(0, 384);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(783, 10);
+            panel5.TabIndex = 23;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.listBox_Species);
-            this.panel6.Controls.Add(this.panel8);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 394);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(783, 124);
-            this.panel6.TabIndex = 24;
+            panel6.Controls.Add(listBox_Species);
+            panel6.Controls.Add(panel8);
+            panel6.Dock = DockStyle.Top;
+            panel6.Location = new Point(0, 394);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(783, 124);
+            panel6.TabIndex = 24;
             // 
             // listBox_Species
             // 
-            this.listBox_Species.BackColor = System.Drawing.Color.Black;
-            this.listBox_Species.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox_Species.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox_Species.ForeColor = System.Drawing.Color.White;
-            this.listBox_Species.FormattingEnabled = true;
-            this.listBox_Species.ItemHeight = 17;
-            this.listBox_Species.Location = new System.Drawing.Point(395, 0);
-            this.listBox_Species.Name = "listBox_Species";
-            this.listBox_Species.Size = new System.Drawing.Size(388, 124);
-            this.listBox_Species.TabIndex = 1;
+            listBox_Species.BackColor = Color.Black;
+            listBox_Species.BorderStyle = BorderStyle.None;
+            listBox_Species.Dock = DockStyle.Fill;
+            listBox_Species.ForeColor = Color.White;
+            listBox_Species.FormattingEnabled = true;
+            listBox_Species.ItemHeight = 17;
+            listBox_Species.Location = new Point(395, 0);
+            listBox_Species.Name = "listBox_Species";
+            listBox_Species.Size = new Size(388, 124);
+            listBox_Species.TabIndex = 1;
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.buttonSpeciesRemove);
-            this.panel8.Controls.Add(this.buttonSpeciesAdd);
-            this.panel8.Controls.Add(this.comboBoxSpecies);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(395, 124);
-            this.panel8.TabIndex = 0;
+            panel8.Controls.Add(label2);
+            panel8.Controls.Add(buttonSpeciesRemove);
+            panel8.Controls.Add(buttonSpeciesAdd);
+            panel8.Controls.Add(comboBoxSpecies);
+            panel8.Dock = DockStyle.Left;
+            panel8.Location = new Point(0, 0);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(395, 124);
+            panel8.TabIndex = 0;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(12, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 19);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Gatunki";
+            label2.AutoSize = true;
+            label2.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(12, 14);
+            label2.Name = "label2";
+            label2.Size = new Size(59, 19);
+            label2.TabIndex = 23;
+            label2.Text = "Gatunki";
             // 
             // buttonSpeciesRemove
             // 
-            this.buttonSpeciesRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.buttonSpeciesRemove.FlatAppearance.BorderSize = 0;
-            this.buttonSpeciesRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSpeciesRemove.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonSpeciesRemove.ForeColor = System.Drawing.Color.White;
-            this.buttonSpeciesRemove.Location = new System.Drawing.Point(317, 33);
-            this.buttonSpeciesRemove.Name = "buttonSpeciesRemove";
-            this.buttonSpeciesRemove.Size = new System.Drawing.Size(75, 28);
-            this.buttonSpeciesRemove.TabIndex = 22;
-            this.buttonSpeciesRemove.Text = "Usuń";
-            this.buttonSpeciesRemove.UseVisualStyleBackColor = false;
-            this.buttonSpeciesRemove.Click += new System.EventHandler(this.buttonSpeciesRemove_Click);
+            buttonSpeciesRemove.BackColor = Color.FromArgb(33, 33, 33);
+            buttonSpeciesRemove.FlatAppearance.BorderSize = 0;
+            buttonSpeciesRemove.FlatStyle = FlatStyle.Flat;
+            buttonSpeciesRemove.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSpeciesRemove.ForeColor = Color.White;
+            buttonSpeciesRemove.Location = new Point(317, 33);
+            buttonSpeciesRemove.Name = "buttonSpeciesRemove";
+            buttonSpeciesRemove.Size = new Size(75, 28);
+            buttonSpeciesRemove.TabIndex = 22;
+            buttonSpeciesRemove.Text = "Usuń";
+            buttonSpeciesRemove.UseVisualStyleBackColor = false;
+            buttonSpeciesRemove.Click += buttonSpeciesRemove_Click;
             // 
             // buttonSpeciesAdd
             // 
-            this.buttonSpeciesAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.buttonSpeciesAdd.FlatAppearance.BorderSize = 0;
-            this.buttonSpeciesAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSpeciesAdd.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonSpeciesAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonSpeciesAdd.Location = new System.Drawing.Point(240, 33);
-            this.buttonSpeciesAdd.Name = "buttonSpeciesAdd";
-            this.buttonSpeciesAdd.Size = new System.Drawing.Size(75, 28);
-            this.buttonSpeciesAdd.TabIndex = 21;
-            this.buttonSpeciesAdd.Text = "Dodaj";
-            this.buttonSpeciesAdd.UseVisualStyleBackColor = false;
-            this.buttonSpeciesAdd.Click += new System.EventHandler(this.buttonSpeciesAdd_Click);
+            buttonSpeciesAdd.BackColor = Color.FromArgb(33, 33, 33);
+            buttonSpeciesAdd.FlatAppearance.BorderSize = 0;
+            buttonSpeciesAdd.FlatStyle = FlatStyle.Flat;
+            buttonSpeciesAdd.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonSpeciesAdd.ForeColor = Color.White;
+            buttonSpeciesAdd.Location = new Point(240, 33);
+            buttonSpeciesAdd.Name = "buttonSpeciesAdd";
+            buttonSpeciesAdd.Size = new Size(75, 28);
+            buttonSpeciesAdd.TabIndex = 21;
+            buttonSpeciesAdd.Text = "Dodaj";
+            buttonSpeciesAdd.UseVisualStyleBackColor = false;
+            buttonSpeciesAdd.Click += buttonSpeciesAdd_Click;
             // 
             // comboBoxSpecies
             // 
-            this.comboBoxSpecies.BackColor = System.Drawing.Color.Black;
-            this.comboBoxSpecies.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSpecies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxSpecies.ForeColor = System.Drawing.Color.White;
-            this.comboBoxSpecies.FormattingEnabled = true;
-            this.comboBoxSpecies.Items.AddRange(new object[] {
-            "Akcja",
-            "Cyberpunk",
-            "Dramat",
-            "Ecchi",
-            "Eksperymentalne",
-            "Fantasy",
-            "Harem",
-            "Hentai",
-            "Historyczne",
-            "Horror",
-            "Komedia",
-            "Kryminalne",
-            "Magia",
-            "Mecha",
-            "Męski harem",
-            "Muzyczne",
-            "Nadprzyrodzone",
-            "Obłęd",
-            "Okruchy życia",
-            "Parodia",
-            "Przygodowe",
-            "Psychologiczne",
-            "Romans",
-            "Sci-Fi",
-            "Shoujo-ai",
-            "Shounen-ai",
-            "Space opera",
-            "Sportowe",
-            "Steampunk",
-            "Szkolne",
-            "Sztuki walki",
-            "Tajemnica",
-            "Thriller",
-            "Wojskowe",
-            "Yaoi",
-            "Yuri"});
-            this.comboBoxSpecies.Location = new System.Drawing.Point(10, 36);
-            this.comboBoxSpecies.Name = "comboBoxSpecies";
-            this.comboBoxSpecies.Size = new System.Drawing.Size(224, 25);
-            this.comboBoxSpecies.Sorted = true;
-            this.comboBoxSpecies.TabIndex = 0;
+            comboBoxSpecies.BackColor = Color.Black;
+            comboBoxSpecies.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxSpecies.FlatStyle = FlatStyle.Flat;
+            comboBoxSpecies.ForeColor = Color.White;
+            comboBoxSpecies.FormattingEnabled = true;
+            comboBoxSpecies.Items.AddRange(new object[] { "Akcja", "Cyberpunk", "Dramat", "Ecchi", "Eksperymentalne", "Fantasy", "Harem", "Hentai", "Historyczne", "Horror", "Komedia", "Kryminalne", "Magia", "Mecha", "Męski harem", "Muzyczne", "Nadprzyrodzone", "Obłęd", "Okruchy życia", "Parodia", "Przygodowe", "Psychologiczne", "Romans", "Sci-Fi", "Shoujo-ai", "Shounen-ai", "Space opera", "Sportowe", "Steampunk", "Szkolne", "Sztuki walki", "Tajemnica", "Thriller", "Wojskowe", "Yaoi", "Yuri" });
+            comboBoxSpecies.Location = new Point(10, 36);
+            comboBoxSpecies.Name = "comboBoxSpecies";
+            comboBoxSpecies.Size = new Size(224, 25);
+            comboBoxSpecies.Sorted = true;
+            comboBoxSpecies.TabIndex = 0;
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 518);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(783, 10);
-            this.panel9.TabIndex = 25;
+            panel9.BackColor = SystemColors.WindowFrame;
+            panel9.Dock = DockStyle.Top;
+            panel9.Location = new Point(0, 518);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(783, 10);
+            panel9.TabIndex = 25;
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.comboBoxTargetGroup);
-            this.panel10.Controls.Add(this.label13);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 528);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(783, 76);
-            this.panel10.TabIndex = 26;
+            panel10.Controls.Add(comboBoxTargetGroup);
+            panel10.Controls.Add(label13);
+            panel10.Dock = DockStyle.Top;
+            panel10.Location = new Point(0, 528);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(783, 76);
+            panel10.TabIndex = 26;
             // 
             // comboBoxTargetGroup
             // 
-            this.comboBoxTargetGroup.BackColor = System.Drawing.Color.Black;
-            this.comboBoxTargetGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxTargetGroup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxTargetGroup.ForeColor = System.Drawing.Color.White;
-            this.comboBoxTargetGroup.FormattingEnabled = true;
-            this.comboBoxTargetGroup.Items.AddRange(new object[] {
-            "Dla dzieci",
-            "Josei",
-            "Seinen",
-            "Shoujo",
-            "Shounen"});
-            this.comboBoxTargetGroup.Location = new System.Drawing.Point(10, 22);
-            this.comboBoxTargetGroup.Name = "comboBoxTargetGroup";
-            this.comboBoxTargetGroup.Size = new System.Drawing.Size(174, 25);
-            this.comboBoxTargetGroup.Sorted = true;
-            this.comboBoxTargetGroup.TabIndex = 13;
+            comboBoxTargetGroup.BackColor = Color.Black;
+            comboBoxTargetGroup.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxTargetGroup.FlatStyle = FlatStyle.Flat;
+            comboBoxTargetGroup.ForeColor = Color.White;
+            comboBoxTargetGroup.FormattingEnabled = true;
+            comboBoxTargetGroup.Items.AddRange(new object[] { "Dla dzieci", "Josei", "Seinen", "Shoujo", "Shounen" });
+            comboBoxTargetGroup.Location = new Point(10, 22);
+            comboBoxTargetGroup.Name = "comboBoxTargetGroup";
+            comboBoxTargetGroup.Size = new Size(174, 25);
+            comboBoxTargetGroup.Sorted = true;
+            comboBoxTargetGroup.TabIndex = 13;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label13.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(0, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(109, 19);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Grupa docelowa";
+            label13.AutoSize = true;
+            label13.Dock = DockStyle.Top;
+            label13.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.ForeColor = Color.White;
+            label13.Location = new Point(0, 0);
+            label13.Name = "label13";
+            label13.Size = new Size(109, 19);
+            label13.TabIndex = 11;
+            label13.Text = "Grupa docelowa";
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 604);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(783, 10);
-            this.panel11.TabIndex = 27;
+            panel11.BackColor = SystemColors.WindowFrame;
+            panel11.Dock = DockStyle.Top;
+            panel11.Location = new Point(0, 604);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(783, 10);
+            panel11.TabIndex = 27;
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.listBox_typesOfCharacters);
-            this.panel12.Controls.Add(this.panel28);
-            this.panel12.Controls.Add(this.comboBox2);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 614);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(783, 106);
-            this.panel12.TabIndex = 28;
+            panel12.Controls.Add(listBox_typesOfCharacters);
+            panel12.Controls.Add(panel28);
+            panel12.Controls.Add(comboBox2);
+            panel12.Dock = DockStyle.Top;
+            panel12.Location = new Point(0, 614);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(783, 106);
+            panel12.TabIndex = 28;
             // 
             // listBox_typesOfCharacters
             // 
-            this.listBox_typesOfCharacters.BackColor = System.Drawing.Color.Black;
-            this.listBox_typesOfCharacters.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox_typesOfCharacters.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox_typesOfCharacters.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBox_typesOfCharacters.ForeColor = System.Drawing.Color.White;
-            this.listBox_typesOfCharacters.FormattingEnabled = true;
-            this.listBox_typesOfCharacters.ItemHeight = 18;
-            this.listBox_typesOfCharacters.Location = new System.Drawing.Point(356, 0);
-            this.listBox_typesOfCharacters.Name = "listBox_typesOfCharacters";
-            this.listBox_typesOfCharacters.ScrollAlwaysVisible = true;
-            this.listBox_typesOfCharacters.Size = new System.Drawing.Size(427, 106);
-            this.listBox_typesOfCharacters.TabIndex = 25;
+            listBox_typesOfCharacters.BackColor = Color.Black;
+            listBox_typesOfCharacters.BorderStyle = BorderStyle.None;
+            listBox_typesOfCharacters.Dock = DockStyle.Fill;
+            listBox_typesOfCharacters.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            listBox_typesOfCharacters.ForeColor = Color.White;
+            listBox_typesOfCharacters.FormattingEnabled = true;
+            listBox_typesOfCharacters.ItemHeight = 18;
+            listBox_typesOfCharacters.Location = new Point(356, 0);
+            listBox_typesOfCharacters.Name = "listBox_typesOfCharacters";
+            listBox_typesOfCharacters.ScrollAlwaysVisible = true;
+            listBox_typesOfCharacters.Size = new Size(427, 106);
+            listBox_typesOfCharacters.TabIndex = 25;
             // 
             // panel28
             // 
-            this.panel28.Controls.Add(this.label14);
-            this.panel28.Controls.Add(this.button_Remove_typesOfCharacters);
-            this.panel28.Controls.Add(this.comboBox_TypeOfCharacter);
-            this.panel28.Controls.Add(this.button_Add_typesOfCharacters);
-            this.panel28.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel28.Location = new System.Drawing.Point(0, 0);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(356, 106);
-            this.panel28.TabIndex = 24;
+            panel28.Controls.Add(label14);
+            panel28.Controls.Add(button_Remove_typesOfCharacters);
+            panel28.Controls.Add(comboBox_TypeOfCharacter);
+            panel28.Controls.Add(button_Add_typesOfCharacters);
+            panel28.Dock = DockStyle.Left;
+            panel28.Location = new Point(0, 0);
+            panel28.Name = "panel28";
+            panel28.Size = new Size(356, 106);
+            panel28.TabIndex = 24;
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label14.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(0, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(111, 19);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "Rodzaje postaci";
+            label14.AutoSize = true;
+            label14.Dock = DockStyle.Top;
+            label14.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(0, 0);
+            label14.Name = "label14";
+            label14.Size = new Size(111, 19);
+            label14.TabIndex = 12;
+            label14.Text = "Rodzaje postaci";
             // 
             // button_Remove_typesOfCharacters
             // 
-            this.button_Remove_typesOfCharacters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.button_Remove_typesOfCharacters.FlatAppearance.BorderSize = 0;
-            this.button_Remove_typesOfCharacters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Remove_typesOfCharacters.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_Remove_typesOfCharacters.ForeColor = System.Drawing.Color.White;
-            this.button_Remove_typesOfCharacters.Location = new System.Drawing.Point(264, 18);
-            this.button_Remove_typesOfCharacters.Name = "button_Remove_typesOfCharacters";
-            this.button_Remove_typesOfCharacters.Size = new System.Drawing.Size(75, 28);
-            this.button_Remove_typesOfCharacters.TabIndex = 22;
-            this.button_Remove_typesOfCharacters.Text = "Usuń";
-            this.button_Remove_typesOfCharacters.UseVisualStyleBackColor = false;
-            this.button_Remove_typesOfCharacters.Click += new System.EventHandler(this.button_Remove_typesOfCharacters_Click);
+            button_Remove_typesOfCharacters.BackColor = Color.FromArgb(33, 33, 33);
+            button_Remove_typesOfCharacters.FlatAppearance.BorderSize = 0;
+            button_Remove_typesOfCharacters.FlatStyle = FlatStyle.Flat;
+            button_Remove_typesOfCharacters.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            button_Remove_typesOfCharacters.ForeColor = Color.White;
+            button_Remove_typesOfCharacters.Location = new Point(264, 18);
+            button_Remove_typesOfCharacters.Name = "button_Remove_typesOfCharacters";
+            button_Remove_typesOfCharacters.Size = new Size(75, 28);
+            button_Remove_typesOfCharacters.TabIndex = 22;
+            button_Remove_typesOfCharacters.Text = "Usuń";
+            button_Remove_typesOfCharacters.UseVisualStyleBackColor = false;
+            button_Remove_typesOfCharacters.Click += button_Remove_typesOfCharacters_Click;
             // 
             // comboBox_TypeOfCharacter
             // 
-            this.comboBox_TypeOfCharacter.BackColor = System.Drawing.Color.Black;
-            this.comboBox_TypeOfCharacter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox_TypeOfCharacter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox_TypeOfCharacter.ForeColor = System.Drawing.Color.White;
-            this.comboBox_TypeOfCharacter.FormattingEnabled = true;
-            this.comboBox_TypeOfCharacter.Items.AddRange(new object[] {
-            "Aktorzy",
-            "Albinos",
-            "Androidy",
-            "Anioły",
-            "Artyści",
-            "Arystokracja",
-            "Bishoujo",
-            "Bishounen",
-            "Bóstwa",
-            "Chibi",
-            "Chuunibyou",
-            "Cyborgi",
-            "Czarodzieje",
-            "Dandere/Kuudere",
-            "Delikwenci",
-            "Demonów",
-            "Demony",
-            "Dere-Dere",
-            "Detektywi",
-            "Doktor",
-            "Dorośli",
-            "Duchy",
-            "Dzieci",
-            "Egzorcyści",
-            "Elfy",
-            "Futanari",
-            "GAR",
-            "Geniusz",
-            "Genki",
-            "Gracze",
-            "Gyaru",
-            "Heterochromia",
-            "Hikikomori",
-            "Hybryda",
-            "Idole",
-            "Imouto",
-            "Insekty",
-            "Kapłani",
-            "Kemonomimi",
-            "Kitsune",
-            "Kosmici",
-            "Koty",
-            "Lokaje",
-            "Loli",
-            "Łowcy nagród",
-            "Magiczne",
-            "Mahou shoujo",
-            "Mayadere",
-            "Meganekko",
-            "Młodzież",
-            "Moe",
-            "Morderca",
-            "Mówiące zwierzęta",
-            "Najemnicy",
-            "Nauczyciele",
-            "NEET",
-            "Nekomata",
-            "Niewolnicy",
-            "Ninja",
-            "Ochroniarz",
-            "OP postać",
-            "Otaku",
-            "Otouto",
-            "Piraci",
-            "Pokojówki",
-            "Policjanci",
-            "Potwory",
-            "Pracownicy biurowi",
-            "Przestępcy",
-            "Roboty",
-            "Rycerze",
-            "Samuraje",
-            "Shinigami",
-            "Sieroty",
-            "Slime",
-            "Smoki",
-            "Studenci",
-            "Superbohaterzy",
-            "Syreny",
-            "Szpiedzy",
-            "Tengu",
-            "Transwestyta",
-            "Tsundere",
-            "Uczniowie",
-            "Wampiry",
-            "Wiedźmy",
-            "Wilkołaki",
-            "Władca",
-            "Wróżki",
-            "Yandere/Yangire",
-            "Youkai",
-            "Zamiana płci",
-            "Zombie",
-            "Zwierzęta",
-            "Żołnierze"});
-            this.comboBox_TypeOfCharacter.Location = new System.Drawing.Point(10, 22);
-            this.comboBox_TypeOfCharacter.Name = "comboBox_TypeOfCharacter";
-            this.comboBox_TypeOfCharacter.Size = new System.Drawing.Size(174, 25);
-            this.comboBox_TypeOfCharacter.Sorted = true;
-            this.comboBox_TypeOfCharacter.TabIndex = 12;
+            comboBox_TypeOfCharacter.BackColor = Color.Black;
+            comboBox_TypeOfCharacter.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox_TypeOfCharacter.FlatStyle = FlatStyle.Flat;
+            comboBox_TypeOfCharacter.ForeColor = Color.White;
+            comboBox_TypeOfCharacter.FormattingEnabled = true;
+            comboBox_TypeOfCharacter.Items.AddRange(new object[] { "Aktorzy", "Albinos", "Androidy", "Anioły", "Artyści", "Arystokracja", "Bishoujo", "Bishounen", "Bóstwa", "Chibi", "Chuunibyou", "Cyborgi", "Czarodzieje", "Dandere/Kuudere", "Delikwenci", "Demonów", "Demony", "Dere-Dere", "Detektywi", "Doktor", "Dorośli", "Duchy", "Dzieci", "Egzorcyści", "Elfy", "Futanari", "GAR", "Geniusz", "Genki", "Gracze", "Gyaru", "Heterochromia", "Hikikomori", "Hybryda", "Idole", "Imouto", "Insekty", "Kapłani", "Kemonomimi", "Kitsune", "Kosmici", "Koty", "Lokaje", "Loli", "Łowcy nagród", "Magiczne", "Mahou shoujo", "Mayadere", "Meganekko", "Młodzież", "Moe", "Morderca", "Mówiące zwierzęta", "Najemnicy", "Nauczyciele", "NEET", "Nekomata", "Niewolnicy", "Ninja", "Ochroniarz", "OP postać", "Otaku", "Otouto", "Piraci", "Pokojówki", "Policjanci", "Potwory", "Pracownicy biurowi", "Przestępcy", "Roboty", "Rycerze", "Samuraje", "Shinigami", "Sieroty", "Slime", "Smoki", "Studenci", "Superbohaterzy", "Syreny", "Szpiedzy", "Tengu", "Transwestyta", "Tsundere", "Uczniowie", "Wampiry", "Wiedźmy", "Wilkołaki", "Władca", "Wróżki", "Yandere/Yangire", "Youkai", "Zamiana płci", "Zombie", "Zwierzęta", "Żołnierze" });
+            comboBox_TypeOfCharacter.Location = new Point(10, 22);
+            comboBox_TypeOfCharacter.Name = "comboBox_TypeOfCharacter";
+            comboBox_TypeOfCharacter.Size = new Size(174, 25);
+            comboBox_TypeOfCharacter.Sorted = true;
+            comboBox_TypeOfCharacter.TabIndex = 12;
             // 
             // button_Add_typesOfCharacters
             // 
-            this.button_Add_typesOfCharacters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.button_Add_typesOfCharacters.FlatAppearance.BorderSize = 0;
-            this.button_Add_typesOfCharacters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Add_typesOfCharacters.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_Add_typesOfCharacters.ForeColor = System.Drawing.Color.White;
-            this.button_Add_typesOfCharacters.Location = new System.Drawing.Point(183, 18);
-            this.button_Add_typesOfCharacters.Name = "button_Add_typesOfCharacters";
-            this.button_Add_typesOfCharacters.Size = new System.Drawing.Size(75, 28);
-            this.button_Add_typesOfCharacters.TabIndex = 21;
-            this.button_Add_typesOfCharacters.Text = "Dodaj";
-            this.button_Add_typesOfCharacters.UseVisualStyleBackColor = false;
-            this.button_Add_typesOfCharacters.Click += new System.EventHandler(this.button_Add_typesOfCharacters_Click);
+            button_Add_typesOfCharacters.BackColor = Color.FromArgb(33, 33, 33);
+            button_Add_typesOfCharacters.FlatAppearance.BorderSize = 0;
+            button_Add_typesOfCharacters.FlatStyle = FlatStyle.Flat;
+            button_Add_typesOfCharacters.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            button_Add_typesOfCharacters.ForeColor = Color.White;
+            button_Add_typesOfCharacters.Location = new Point(183, 18);
+            button_Add_typesOfCharacters.Name = "button_Add_typesOfCharacters";
+            button_Add_typesOfCharacters.Size = new Size(75, 28);
+            button_Add_typesOfCharacters.TabIndex = 21;
+            button_Add_typesOfCharacters.Text = "Dodaj";
+            button_Add_typesOfCharacters.UseVisualStyleBackColor = false;
+            button_Add_typesOfCharacters.Click += button_Add_typesOfCharacters_Click;
             // 
             // comboBox2
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.Black;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.ForeColor = System.Drawing.Color.White;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(12, 30);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(174, 25);
-            this.comboBox2.Sorted = true;
-            this.comboBox2.TabIndex = 14;
+            comboBox2.BackColor = Color.Black;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.FlatStyle = FlatStyle.Flat;
+            comboBox2.ForeColor = Color.White;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(12, 30);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(174, 25);
+            comboBox2.Sorted = true;
+            comboBox2.TabIndex = 14;
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 720);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(783, 10);
-            this.panel13.TabIndex = 29;
+            panel13.BackColor = SystemColors.WindowFrame;
+            panel13.Dock = DockStyle.Top;
+            panel13.Location = new Point(0, 720);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(783, 10);
+            panel13.TabIndex = 29;
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.listBox_PlaceAndTime);
-            this.panel14.Controls.Add(this.panel29);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel14.Location = new System.Drawing.Point(0, 730);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(783, 106);
-            this.panel14.TabIndex = 30;
+            panel14.Controls.Add(listBox_PlaceAndTime);
+            panel14.Controls.Add(panel29);
+            panel14.Dock = DockStyle.Top;
+            panel14.Location = new Point(0, 730);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(783, 106);
+            panel14.TabIndex = 30;
             // 
             // listBox_PlaceAndTime
             // 
-            this.listBox_PlaceAndTime.BackColor = System.Drawing.Color.Black;
-            this.listBox_PlaceAndTime.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox_PlaceAndTime.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox_PlaceAndTime.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBox_PlaceAndTime.ForeColor = System.Drawing.Color.White;
-            this.listBox_PlaceAndTime.FormattingEnabled = true;
-            this.listBox_PlaceAndTime.ItemHeight = 18;
-            this.listBox_PlaceAndTime.Location = new System.Drawing.Point(356, 0);
-            this.listBox_PlaceAndTime.Name = "listBox_PlaceAndTime";
-            this.listBox_PlaceAndTime.ScrollAlwaysVisible = true;
-            this.listBox_PlaceAndTime.Size = new System.Drawing.Size(427, 106);
-            this.listBox_PlaceAndTime.TabIndex = 26;
+            listBox_PlaceAndTime.BackColor = Color.Black;
+            listBox_PlaceAndTime.BorderStyle = BorderStyle.None;
+            listBox_PlaceAndTime.Dock = DockStyle.Fill;
+            listBox_PlaceAndTime.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            listBox_PlaceAndTime.ForeColor = Color.White;
+            listBox_PlaceAndTime.FormattingEnabled = true;
+            listBox_PlaceAndTime.ItemHeight = 18;
+            listBox_PlaceAndTime.Location = new Point(356, 0);
+            listBox_PlaceAndTime.Name = "listBox_PlaceAndTime";
+            listBox_PlaceAndTime.ScrollAlwaysVisible = true;
+            listBox_PlaceAndTime.Size = new Size(427, 106);
+            listBox_PlaceAndTime.TabIndex = 26;
             // 
             // panel29
             // 
-            this.panel29.Controls.Add(this.label15);
-            this.panel29.Controls.Add(this.buttonPlaceAndTimeRemove);
-            this.panel29.Controls.Add(this.comboBoxPlaceAndTime);
-            this.panel29.Controls.Add(this.buttonPlaceAndTimeAdd);
-            this.panel29.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel29.Location = new System.Drawing.Point(0, 0);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(356, 106);
-            this.panel29.TabIndex = 25;
+            panel29.Controls.Add(label15);
+            panel29.Controls.Add(buttonPlaceAndTimeRemove);
+            panel29.Controls.Add(comboBoxPlaceAndTime);
+            panel29.Controls.Add(buttonPlaceAndTimeAdd);
+            panel29.Dock = DockStyle.Left;
+            panel29.Location = new Point(0, 0);
+            panel29.Name = "panel29";
+            panel29.Size = new Size(356, 106);
+            panel29.TabIndex = 25;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label15.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(0, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(101, 19);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "Miejsce i czas";
+            label15.AutoSize = true;
+            label15.Dock = DockStyle.Top;
+            label15.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label15.ForeColor = Color.White;
+            label15.Location = new Point(0, 0);
+            label15.Name = "label15";
+            label15.Size = new Size(101, 19);
+            label15.TabIndex = 12;
+            label15.Text = "Miejsce i czas";
             // 
             // buttonPlaceAndTimeRemove
             // 
-            this.buttonPlaceAndTimeRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.buttonPlaceAndTimeRemove.FlatAppearance.BorderSize = 0;
-            this.buttonPlaceAndTimeRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPlaceAndTimeRemove.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonPlaceAndTimeRemove.ForeColor = System.Drawing.Color.White;
-            this.buttonPlaceAndTimeRemove.Location = new System.Drawing.Point(264, 18);
-            this.buttonPlaceAndTimeRemove.Name = "buttonPlaceAndTimeRemove";
-            this.buttonPlaceAndTimeRemove.Size = new System.Drawing.Size(75, 28);
-            this.buttonPlaceAndTimeRemove.TabIndex = 22;
-            this.buttonPlaceAndTimeRemove.Text = "Usuń";
-            this.buttonPlaceAndTimeRemove.UseVisualStyleBackColor = false;
-            this.buttonPlaceAndTimeRemove.Click += new System.EventHandler(this.buttonPlaceAndTimeRemove_Click);
+            buttonPlaceAndTimeRemove.BackColor = Color.FromArgb(33, 33, 33);
+            buttonPlaceAndTimeRemove.FlatAppearance.BorderSize = 0;
+            buttonPlaceAndTimeRemove.FlatStyle = FlatStyle.Flat;
+            buttonPlaceAndTimeRemove.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonPlaceAndTimeRemove.ForeColor = Color.White;
+            buttonPlaceAndTimeRemove.Location = new Point(264, 18);
+            buttonPlaceAndTimeRemove.Name = "buttonPlaceAndTimeRemove";
+            buttonPlaceAndTimeRemove.Size = new Size(75, 28);
+            buttonPlaceAndTimeRemove.TabIndex = 22;
+            buttonPlaceAndTimeRemove.Text = "Usuń";
+            buttonPlaceAndTimeRemove.UseVisualStyleBackColor = false;
+            buttonPlaceAndTimeRemove.Click += buttonPlaceAndTimeRemove_Click;
             // 
             // comboBoxPlaceAndTime
             // 
-            this.comboBoxPlaceAndTime.BackColor = System.Drawing.Color.Black;
-            this.comboBoxPlaceAndTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxPlaceAndTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxPlaceAndTime.ForeColor = System.Drawing.Color.White;
-            this.comboBoxPlaceAndTime.FormattingEnabled = true;
-            this.comboBoxPlaceAndTime.Items.AddRange(new object[] {
-            "Alternatywna Ziemia",
-            "Ameryka Północna",
-            "Budynek mieszkalny",
-            "Chiny",
-            "Dungeon",
-            "Dystopia",
-            "Europa",
-            "Feudalna Japonia",
-            "Jak gra",
-            "Jak średniowiecze",
-            "Japonia",
-            "kawiarnia/restauracja/bar/sklep",
-            "Kosmos",
-            "Miasto",
-            "Ocean",
-            "Podróż",
-            "Postapokaliptyczne",
-            "Przyszłość",
-            "Szkoła dla chłopców",
-            "Szkoła dla dziewcząt",
-            "Świat alternatywny",
-            "W grze / VR",
-            "Wieś",
-            "Współczesność",
-            "Wyspy"});
-            this.comboBoxPlaceAndTime.Location = new System.Drawing.Point(10, 22);
-            this.comboBoxPlaceAndTime.Name = "comboBoxPlaceAndTime";
-            this.comboBoxPlaceAndTime.Size = new System.Drawing.Size(174, 25);
-            this.comboBoxPlaceAndTime.Sorted = true;
-            this.comboBoxPlaceAndTime.TabIndex = 12;
+            comboBoxPlaceAndTime.BackColor = Color.Black;
+            comboBoxPlaceAndTime.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxPlaceAndTime.FlatStyle = FlatStyle.Flat;
+            comboBoxPlaceAndTime.ForeColor = Color.White;
+            comboBoxPlaceAndTime.FormattingEnabled = true;
+            comboBoxPlaceAndTime.Items.AddRange(new object[] { "Alternatywna Ziemia", "Ameryka Północna", "Budynek mieszkalny", "Chiny", "Dungeon", "Dystopia", "Europa", "Feudalna Japonia", "Jak gra", "Jak średniowiecze", "Japonia", "kawiarnia/restauracja/bar/sklep", "Kosmos", "Miasto", "Ocean", "Podróż", "Postapokaliptyczne", "Przyszłość", "Szkoła dla chłopców", "Szkoła dla dziewcząt", "Świat alternatywny", "W grze / VR", "Wieś", "Współczesność", "Wyspy" });
+            comboBoxPlaceAndTime.Location = new Point(10, 22);
+            comboBoxPlaceAndTime.Name = "comboBoxPlaceAndTime";
+            comboBoxPlaceAndTime.Size = new Size(174, 25);
+            comboBoxPlaceAndTime.Sorted = true;
+            comboBoxPlaceAndTime.TabIndex = 12;
             // 
             // buttonPlaceAndTimeAdd
             // 
-            this.buttonPlaceAndTimeAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.buttonPlaceAndTimeAdd.FlatAppearance.BorderSize = 0;
-            this.buttonPlaceAndTimeAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPlaceAndTimeAdd.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonPlaceAndTimeAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonPlaceAndTimeAdd.Location = new System.Drawing.Point(183, 18);
-            this.buttonPlaceAndTimeAdd.Name = "buttonPlaceAndTimeAdd";
-            this.buttonPlaceAndTimeAdd.Size = new System.Drawing.Size(75, 28);
-            this.buttonPlaceAndTimeAdd.TabIndex = 21;
-            this.buttonPlaceAndTimeAdd.Text = "Dodaj";
-            this.buttonPlaceAndTimeAdd.UseVisualStyleBackColor = false;
-            this.buttonPlaceAndTimeAdd.Click += new System.EventHandler(this.buttonPlaceAndTimeAdd_Click);
+            buttonPlaceAndTimeAdd.BackColor = Color.FromArgb(33, 33, 33);
+            buttonPlaceAndTimeAdd.FlatAppearance.BorderSize = 0;
+            buttonPlaceAndTimeAdd.FlatStyle = FlatStyle.Flat;
+            buttonPlaceAndTimeAdd.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonPlaceAndTimeAdd.ForeColor = Color.White;
+            buttonPlaceAndTimeAdd.Location = new Point(183, 18);
+            buttonPlaceAndTimeAdd.Name = "buttonPlaceAndTimeAdd";
+            buttonPlaceAndTimeAdd.Size = new Size(75, 28);
+            buttonPlaceAndTimeAdd.TabIndex = 21;
+            buttonPlaceAndTimeAdd.Text = "Dodaj";
+            buttonPlaceAndTimeAdd.UseVisualStyleBackColor = false;
+            buttonPlaceAndTimeAdd.Click += buttonPlaceAndTimeAdd_Click;
             // 
             // panel15
             // 
-            this.panel15.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel15.Location = new System.Drawing.Point(0, 836);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(783, 10);
-            this.panel15.TabIndex = 31;
+            panel15.BackColor = SystemColors.WindowFrame;
+            panel15.Dock = DockStyle.Top;
+            panel15.Location = new Point(0, 836);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(783, 10);
+            panel15.TabIndex = 31;
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.listBox_OtherTags);
-            this.panel16.Controls.Add(this.panel34);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel16.Location = new System.Drawing.Point(0, 846);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(783, 106);
-            this.panel16.TabIndex = 32;
+            panel16.Controls.Add(listBox_OtherTags);
+            panel16.Controls.Add(panel34);
+            panel16.Dock = DockStyle.Top;
+            panel16.Location = new Point(0, 846);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(783, 106);
+            panel16.TabIndex = 32;
             // 
             // listBox_OtherTags
             // 
-            this.listBox_OtherTags.BackColor = System.Drawing.Color.Black;
-            this.listBox_OtherTags.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBox_OtherTags.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox_OtherTags.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listBox_OtherTags.ForeColor = System.Drawing.Color.White;
-            this.listBox_OtherTags.FormattingEnabled = true;
-            this.listBox_OtherTags.ItemHeight = 18;
-            this.listBox_OtherTags.Location = new System.Drawing.Point(356, 0);
-            this.listBox_OtherTags.Name = "listBox_OtherTags";
-            this.listBox_OtherTags.ScrollAlwaysVisible = true;
-            this.listBox_OtherTags.Size = new System.Drawing.Size(427, 106);
-            this.listBox_OtherTags.TabIndex = 27;
+            listBox_OtherTags.BackColor = Color.Black;
+            listBox_OtherTags.BorderStyle = BorderStyle.None;
+            listBox_OtherTags.Dock = DockStyle.Fill;
+            listBox_OtherTags.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            listBox_OtherTags.ForeColor = Color.White;
+            listBox_OtherTags.FormattingEnabled = true;
+            listBox_OtherTags.ItemHeight = 18;
+            listBox_OtherTags.Location = new Point(356, 0);
+            listBox_OtherTags.Name = "listBox_OtherTags";
+            listBox_OtherTags.ScrollAlwaysVisible = true;
+            listBox_OtherTags.Size = new Size(427, 106);
+            listBox_OtherTags.TabIndex = 27;
             // 
             // panel34
             // 
-            this.panel34.Controls.Add(this.label16);
-            this.panel34.Controls.Add(this.buttonOtherTagsRemove);
-            this.panel34.Controls.Add(this.comboBoxOtherTags);
-            this.panel34.Controls.Add(this.buttonOtherTagsAdd);
-            this.panel34.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel34.Location = new System.Drawing.Point(0, 0);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(356, 106);
-            this.panel34.TabIndex = 26;
+            panel34.Controls.Add(label16);
+            panel34.Controls.Add(buttonOtherTagsRemove);
+            panel34.Controls.Add(comboBoxOtherTags);
+            panel34.Controls.Add(buttonOtherTagsAdd);
+            panel34.Dock = DockStyle.Left;
+            panel34.Location = new Point(0, 0);
+            panel34.Name = "panel34";
+            panel34.Size = new Size(356, 106);
+            panel34.TabIndex = 26;
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label16.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(0, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(98, 19);
-            this.label16.TabIndex = 12;
-            this.label16.Text = "Pozostałe tagi";
+            label16.AutoSize = true;
+            label16.Dock = DockStyle.Top;
+            label16.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(0, 0);
+            label16.Name = "label16";
+            label16.Size = new Size(98, 19);
+            label16.TabIndex = 12;
+            label16.Text = "Pozostałe tagi";
             // 
             // buttonOtherTagsRemove
             // 
-            this.buttonOtherTagsRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.buttonOtherTagsRemove.FlatAppearance.BorderSize = 0;
-            this.buttonOtherTagsRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOtherTagsRemove.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonOtherTagsRemove.ForeColor = System.Drawing.Color.White;
-            this.buttonOtherTagsRemove.Location = new System.Drawing.Point(264, 18);
-            this.buttonOtherTagsRemove.Name = "buttonOtherTagsRemove";
-            this.buttonOtherTagsRemove.Size = new System.Drawing.Size(75, 28);
-            this.buttonOtherTagsRemove.TabIndex = 22;
-            this.buttonOtherTagsRemove.Text = "Usuń";
-            this.buttonOtherTagsRemove.UseVisualStyleBackColor = false;
-            this.buttonOtherTagsRemove.Click += new System.EventHandler(this.buttonOtherTagsRemove_Click);
+            buttonOtherTagsRemove.BackColor = Color.FromArgb(33, 33, 33);
+            buttonOtherTagsRemove.FlatAppearance.BorderSize = 0;
+            buttonOtherTagsRemove.FlatStyle = FlatStyle.Flat;
+            buttonOtherTagsRemove.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonOtherTagsRemove.ForeColor = Color.White;
+            buttonOtherTagsRemove.Location = new Point(264, 18);
+            buttonOtherTagsRemove.Name = "buttonOtherTagsRemove";
+            buttonOtherTagsRemove.Size = new Size(75, 28);
+            buttonOtherTagsRemove.TabIndex = 22;
+            buttonOtherTagsRemove.Text = "Usuń";
+            buttonOtherTagsRemove.UseVisualStyleBackColor = false;
+            buttonOtherTagsRemove.Click += buttonOtherTagsRemove_Click;
             // 
             // comboBoxOtherTags
             // 
-            this.comboBoxOtherTags.BackColor = System.Drawing.Color.Black;
-            this.comboBoxOtherTags.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxOtherTags.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxOtherTags.ForeColor = System.Drawing.Color.White;
-            this.comboBoxOtherTags.FormattingEnabled = true;
-            this.comboBoxOtherTags.Items.AddRange(new object[] {
-            "Alchemia",
-            "Amnezja",
-            "Bejsbol",
-            "Boks",
-            "Broń Palna",
-            "Buddyzm",
-            "Choroba",
-            "Crossdressing",
-            "Death Game",
-            "Dzielenie ciała",
-            "Edukacyjne",
-            "Ekonomia",
-            "Eksperymenty na ludziach",
-            "Fantastyka współczesna",
-            "Gildie",
-            "Gimnastyka",
-            "Gore",
-            "Gra o wysoką stawkę",
-            "Gry karciane",
-            "Hazard",
-            "Isekai",
-            "Iyashikei",
-            "Kanibalizm",
-            "Kazirodztwo",
-            "Kendo",
-            "Klub szkolny",
-            "Kolarstwo",
-            "Koszykówka",
-            "Kulinaria",
-            "Lotnictwo",
-            "Łucznictwo",
-            "Łyżwiarstwo",
-            "Mafia",
-            "Mahjong",
-            "Manipulacja czasem i przestrzenią",
-            "Mitologia chrześcijańska",
-            "Mitologia japońska",
-            "O grach",
-            "Opieka nad dzieckiem",
-            "Pan i Sługa",
-            "Panty shots",
-            "Piłka nożna",
-            "Pociągi",
-            "Podróże w czasie",
-            "Przemoc",
-            "Reinkarnacja",
-            "Rolnictwo",
-            "Samochodowe",
-            "Samochody",
-            "Samorząd uczniowski",
-            "Seks",
-            "Siatkówka",
-            "Spisek",
-            "Strzelaniny",
-            "Supermoce",
-            "Taniec",
-            "Tatuaże",
-            "Tenis",
-            "Trójkąt miłosny",
-            "Walka wręcz",
-            "Wątek romantyczny",
-            "Wojna",
-            "Wykorzystywanie seksualne",
-            "Wyraźny seks",
-            "Wyścigi",
-            "Yakuza",
-            "Zaaranżowany związek",
-            "Zamiana ciałami",
-            "Zemsta",
-            "Znęcanie nad zwierzętami",
-            "Znęcanie się",
-            "Życie pośmiertne"});
-            this.comboBoxOtherTags.Location = new System.Drawing.Point(3, 22);
-            this.comboBoxOtherTags.Name = "comboBoxOtherTags";
-            this.comboBoxOtherTags.Size = new System.Drawing.Size(174, 25);
-            this.comboBoxOtherTags.Sorted = true;
-            this.comboBoxOtherTags.TabIndex = 12;
+            comboBoxOtherTags.BackColor = Color.Black;
+            comboBoxOtherTags.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxOtherTags.FlatStyle = FlatStyle.Flat;
+            comboBoxOtherTags.ForeColor = Color.White;
+            comboBoxOtherTags.FormattingEnabled = true;
+            comboBoxOtherTags.Items.AddRange(new object[] { "Alchemia", "Amnezja", "Bejsbol", "Boks", "Broń Palna", "Buddyzm", "Choroba", "Crossdressing", "Death Game", "Dzielenie ciała", "Edukacyjne", "Ekonomia", "Eksperymenty na ludziach", "Fantastyka współczesna", "Gildie", "Gimnastyka", "Gore", "Gra o wysoką stawkę", "Gry karciane", "Hazard", "Isekai", "Iyashikei", "Kanibalizm", "Kazirodztwo", "Kendo", "Klub szkolny", "Kolarstwo", "Koszykówka", "Kulinaria", "Lotnictwo", "Łucznictwo", "Łyżwiarstwo", "Mafia", "Mahjong", "Manipulacja czasem i przestrzenią", "Mitologia chrześcijańska", "Mitologia japońska", "O grach", "Opieka nad dzieckiem", "Pan i Sługa", "Panty shots", "Piłka nożna", "Pociągi", "Podróże w czasie", "Przemoc", "Reinkarnacja", "Rolnictwo", "Samochodowe", "Samochody", "Samorząd uczniowski", "Seks", "Siatkówka", "Spisek", "Strzelaniny", "Supermoce", "Taniec", "Tatuaże", "Tenis", "Trójkąt miłosny", "Walka wręcz", "Wątek romantyczny", "Wojna", "Wykorzystywanie seksualne", "Wyraźny seks", "Wyścigi", "Yakuza", "Zaaranżowany związek", "Zamiana ciałami", "Zemsta", "Znęcanie nad zwierzętami", "Znęcanie się", "Życie pośmiertne" });
+            comboBoxOtherTags.Location = new Point(3, 22);
+            comboBoxOtherTags.Name = "comboBoxOtherTags";
+            comboBoxOtherTags.Size = new Size(174, 25);
+            comboBoxOtherTags.Sorted = true;
+            comboBoxOtherTags.TabIndex = 12;
             // 
             // buttonOtherTagsAdd
             // 
-            this.buttonOtherTagsAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.buttonOtherTagsAdd.FlatAppearance.BorderSize = 0;
-            this.buttonOtherTagsAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOtherTagsAdd.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonOtherTagsAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonOtherTagsAdd.Location = new System.Drawing.Point(183, 18);
-            this.buttonOtherTagsAdd.Name = "buttonOtherTagsAdd";
-            this.buttonOtherTagsAdd.Size = new System.Drawing.Size(75, 28);
-            this.buttonOtherTagsAdd.TabIndex = 21;
-            this.buttonOtherTagsAdd.Text = "Dodaj";
-            this.buttonOtherTagsAdd.UseVisualStyleBackColor = false;
-            this.buttonOtherTagsAdd.Click += new System.EventHandler(this.buttonOtherTagsAdd_Click);
+            buttonOtherTagsAdd.BackColor = Color.FromArgb(33, 33, 33);
+            buttonOtherTagsAdd.FlatAppearance.BorderSize = 0;
+            buttonOtherTagsAdd.FlatStyle = FlatStyle.Flat;
+            buttonOtherTagsAdd.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonOtherTagsAdd.ForeColor = Color.White;
+            buttonOtherTagsAdd.Location = new Point(183, 18);
+            buttonOtherTagsAdd.Name = "buttonOtherTagsAdd";
+            buttonOtherTagsAdd.Size = new Size(75, 28);
+            buttonOtherTagsAdd.TabIndex = 21;
+            buttonOtherTagsAdd.Text = "Dodaj";
+            buttonOtherTagsAdd.UseVisualStyleBackColor = false;
+            buttonOtherTagsAdd.Click += buttonOtherTagsAdd_Click;
             // 
             // panel17
             // 
-            this.panel17.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel17.Location = new System.Drawing.Point(0, 952);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(783, 10);
-            this.panel17.TabIndex = 33;
+            panel17.BackColor = SystemColors.WindowFrame;
+            panel17.Dock = DockStyle.Top;
+            panel17.Location = new Point(0, 952);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(783, 10);
+            panel17.TabIndex = 33;
             // 
             // panel18
             // 
-            this.panel18.Controls.Add(this.comboBoxArchetype);
-            this.panel18.Controls.Add(this.label17);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel18.Location = new System.Drawing.Point(0, 962);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(783, 75);
-            this.panel18.TabIndex = 34;
+            panel18.Controls.Add(comboBoxArchetype);
+            panel18.Controls.Add(label17);
+            panel18.Dock = DockStyle.Top;
+            panel18.Location = new Point(0, 962);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(783, 75);
+            panel18.TabIndex = 34;
             // 
             // comboBoxArchetype
             // 
-            this.comboBoxArchetype.BackColor = System.Drawing.Color.Black;
-            this.comboBoxArchetype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxArchetype.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxArchetype.ForeColor = System.Drawing.Color.White;
-            this.comboBoxArchetype.FormattingEnabled = true;
-            this.comboBoxArchetype.Items.AddRange(new object[] {
-            "Anime",
-            "Gra komputerowa",
-            "Gry (inne)",
-            "Inne",
-            "Karcianka",
-            "Książka",
-            "Light novel",
-            "Manga",
-            "Manga 4-koma",
-            "Novel",
-            "Seria oryginalna",
-            "Visual novel",
-            "Web manga"});
-            this.comboBoxArchetype.Location = new System.Drawing.Point(10, 29);
-            this.comboBoxArchetype.Name = "comboBoxArchetype";
-            this.comboBoxArchetype.Size = new System.Drawing.Size(174, 25);
-            this.comboBoxArchetype.Sorted = true;
-            this.comboBoxArchetype.TabIndex = 14;
+            comboBoxArchetype.BackColor = Color.Black;
+            comboBoxArchetype.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxArchetype.FlatStyle = FlatStyle.Flat;
+            comboBoxArchetype.ForeColor = Color.White;
+            comboBoxArchetype.FormattingEnabled = true;
+            comboBoxArchetype.Items.AddRange(new object[] { "Anime", "Gra komputerowa", "Gry (inne)", "Inne", "Karcianka", "Książka", "Light novel", "Manga", "Manga 4-koma", "Novel", "Seria oryginalna", "Visual novel", "Web manga" });
+            comboBoxArchetype.Location = new Point(10, 29);
+            comboBoxArchetype.Name = "comboBoxArchetype";
+            comboBoxArchetype.Size = new Size(174, 25);
+            comboBoxArchetype.Sorted = true;
+            comboBoxArchetype.TabIndex = 14;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label17.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(0, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(83, 19);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Pierwowzór";
+            label17.AutoSize = true;
+            label17.Dock = DockStyle.Top;
+            label17.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label17.ForeColor = Color.White;
+            label17.Location = new Point(0, 0);
+            label17.Name = "label17";
+            label17.Size = new Size(83, 19);
+            label17.TabIndex = 12;
+            label17.Text = "Pierwowzór";
             // 
             // panel19
             // 
-            this.panel19.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel19.Location = new System.Drawing.Point(0, 1037);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(783, 10);
-            this.panel19.TabIndex = 35;
+            panel19.BackColor = SystemColors.WindowFrame;
+            panel19.Dock = DockStyle.Top;
+            panel19.Location = new Point(0, 1037);
+            panel19.Name = "panel19";
+            panel19.Size = new Size(783, 10);
+            panel19.TabIndex = 35;
             // 
             // panel20
             // 
-            this.panel20.Controls.Add(this.comboBoxType);
-            this.panel20.Controls.Add(this.label18);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel20.Location = new System.Drawing.Point(0, 1047);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(783, 75);
-            this.panel20.TabIndex = 36;
+            panel20.Controls.Add(comboBoxType);
+            panel20.Controls.Add(label18);
+            panel20.Dock = DockStyle.Top;
+            panel20.Location = new Point(0, 1047);
+            panel20.Name = "panel20";
+            panel20.Size = new Size(783, 75);
+            panel20.TabIndex = 36;
             // 
             // comboBoxType
             // 
-            this.comboBoxType.BackColor = System.Drawing.Color.Black;
-            this.comboBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxType.ForeColor = System.Drawing.Color.White;
-            this.comboBoxType.FormattingEnabled = true;
-            this.comboBoxType.Items.AddRange(new object[] {
-            "Film",
-            "Muzyczne",
-            "Odcinek Specjalny",
-            "ONA",
-            "OVA",
-            "TV"});
-            this.comboBoxType.Location = new System.Drawing.Point(10, 33);
-            this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(174, 25);
-            this.comboBoxType.Sorted = true;
-            this.comboBoxType.TabIndex = 15;
+            comboBoxType.BackColor = Color.Black;
+            comboBoxType.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxType.FlatStyle = FlatStyle.Flat;
+            comboBoxType.ForeColor = Color.White;
+            comboBoxType.FormattingEnabled = true;
+            comboBoxType.Items.AddRange(new object[] { "Film", "Muzyczne", "Odcinek Specjalny", "ONA", "OVA", "TV" });
+            comboBoxType.Location = new Point(10, 33);
+            comboBoxType.Name = "comboBoxType";
+            comboBoxType.Size = new Size(174, 25);
+            comboBoxType.Sorted = true;
+            comboBoxType.TabIndex = 15;
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label18.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(0, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(33, 19);
-            this.label18.TabIndex = 13;
-            this.label18.Text = "Typ";
+            label18.AutoSize = true;
+            label18.Dock = DockStyle.Top;
+            label18.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(0, 0);
+            label18.Name = "label18";
+            label18.Size = new Size(33, 19);
+            label18.TabIndex = 13;
+            label18.Text = "Typ";
             // 
             // panel21
             // 
-            this.panel21.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(0, 1122);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(783, 10);
-            this.panel21.TabIndex = 37;
+            panel21.BackColor = SystemColors.WindowFrame;
+            panel21.Dock = DockStyle.Top;
+            panel21.Location = new Point(0, 1122);
+            panel21.Name = "panel21";
+            panel21.Size = new Size(783, 10);
+            panel21.TabIndex = 37;
             // 
             // panel22
             // 
-            this.panel22.Controls.Add(this.comboBoxState);
-            this.panel22.Controls.Add(this.label19);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel22.Location = new System.Drawing.Point(0, 1132);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(783, 75);
-            this.panel22.TabIndex = 38;
+            panel22.Controls.Add(comboBoxState);
+            panel22.Controls.Add(label19);
+            panel22.Dock = DockStyle.Top;
+            panel22.Location = new Point(0, 1132);
+            panel22.Name = "panel22";
+            panel22.Size = new Size(783, 75);
+            panel22.TabIndex = 38;
             // 
             // comboBoxState
             // 
-            this.comboBoxState.BackColor = System.Drawing.Color.Black;
-            this.comboBoxState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxState.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxState.ForeColor = System.Drawing.Color.White;
-            this.comboBoxState.FormattingEnabled = true;
-            this.comboBoxState.Items.AddRange(new object[] {
-            "Deklaracja",
-            "Emitowane",
-            "Zakończone",
-            "Zapowiedź"});
-            this.comboBoxState.Location = new System.Drawing.Point(10, 33);
-            this.comboBoxState.Name = "comboBoxState";
-            this.comboBoxState.Size = new System.Drawing.Size(174, 25);
-            this.comboBoxState.Sorted = true;
-            this.comboBoxState.TabIndex = 16;
+            comboBoxState.BackColor = Color.Black;
+            comboBoxState.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxState.FlatStyle = FlatStyle.Flat;
+            comboBoxState.ForeColor = Color.White;
+            comboBoxState.FormattingEnabled = true;
+            comboBoxState.Items.AddRange(new object[] { "Deklaracja", "Emitowane", "Zakończone", "Zapowiedź" });
+            comboBoxState.Location = new Point(10, 33);
+            comboBoxState.Name = "comboBoxState";
+            comboBoxState.Size = new Size(174, 25);
+            comboBoxState.Sorted = true;
+            comboBoxState.TabIndex = 16;
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label19.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(0, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(54, 19);
-            this.label19.TabIndex = 14;
-            this.label19.Text = "Status";
+            label19.AutoSize = true;
+            label19.Dock = DockStyle.Top;
+            label19.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label19.ForeColor = Color.White;
+            label19.Location = new Point(0, 0);
+            label19.Name = "label19";
+            label19.Size = new Size(54, 19);
+            label19.TabIndex = 14;
+            label19.Text = "Status";
             // 
             // panel23
             // 
-            this.panel23.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel23.Location = new System.Drawing.Point(0, 1207);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(783, 10);
-            this.panel23.TabIndex = 39;
+            panel23.BackColor = SystemColors.WindowFrame;
+            panel23.Dock = DockStyle.Top;
+            panel23.Location = new Point(0, 1207);
+            panel23.Name = "panel23";
+            panel23.Size = new Size(783, 10);
+            panel23.TabIndex = 39;
             // 
             // panel24
             // 
-            this.panel24.Controls.Add(this.dateTimePickerStartEmition);
-            this.panel24.Controls.Add(this.label20);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(0, 1217);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(783, 76);
-            this.panel24.TabIndex = 40;
+            panel24.Controls.Add(dateTimePickerStartEmition);
+            panel24.Controls.Add(label20);
+            panel24.Dock = DockStyle.Top;
+            panel24.Location = new Point(0, 1217);
+            panel24.Name = "panel24";
+            panel24.Size = new Size(783, 76);
+            panel24.TabIndex = 40;
             // 
             // dateTimePickerStartEmition
             // 
-            this.dateTimePickerStartEmition.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePickerStartEmition.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerStartEmition.Location = new System.Drawing.Point(10, 26);
-            this.dateTimePickerStartEmition.Name = "dateTimePickerStartEmition";
-            this.dateTimePickerStartEmition.Size = new System.Drawing.Size(101, 26);
-            this.dateTimePickerStartEmition.TabIndex = 17;
+            dateTimePickerStartEmition.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            dateTimePickerStartEmition.Format = DateTimePickerFormat.Short;
+            dateTimePickerStartEmition.Location = new Point(10, 26);
+            dateTimePickerStartEmition.Name = "dateTimePickerStartEmition";
+            dateTimePickerStartEmition.Size = new Size(101, 26);
+            dateTimePickerStartEmition.TabIndex = 17;
             // 
             // label20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label20.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(0, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(84, 19);
-            this.label20.TabIndex = 15;
-            this.label20.Text = "Data emisji";
+            label20.AutoSize = true;
+            label20.Dock = DockStyle.Top;
+            label20.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label20.ForeColor = Color.White;
+            label20.Location = new Point(0, 0);
+            label20.Name = "label20";
+            label20.Size = new Size(84, 19);
+            label20.TabIndex = 15;
+            label20.Text = "Data emisji";
             // 
             // panel25
             // 
-            this.panel25.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel25.Location = new System.Drawing.Point(0, 1293);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(783, 10);
-            this.panel25.TabIndex = 41;
+            panel25.BackColor = SystemColors.WindowFrame;
+            panel25.Dock = DockStyle.Top;
+            panel25.Location = new Point(0, 1293);
+            panel25.Name = "panel25";
+            panel25.Size = new Size(783, 10);
+            panel25.TabIndex = 41;
             // 
             // panel26
             // 
-            this.panel26.Controls.Add(this.dateTimePickerEndEmition);
-            this.panel26.Controls.Add(this.label21);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel26.Location = new System.Drawing.Point(0, 1303);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(783, 76);
-            this.panel26.TabIndex = 42;
+            panel26.Controls.Add(dateTimePickerEndEmition);
+            panel26.Controls.Add(label21);
+            panel26.Dock = DockStyle.Top;
+            panel26.Location = new Point(0, 1303);
+            panel26.Name = "panel26";
+            panel26.Size = new Size(783, 76);
+            panel26.TabIndex = 42;
             // 
             // dateTimePickerEndEmition
             // 
-            this.dateTimePickerEndEmition.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePickerEndEmition.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerEndEmition.Location = new System.Drawing.Point(10, 28);
-            this.dateTimePickerEndEmition.Name = "dateTimePickerEndEmition";
-            this.dateTimePickerEndEmition.Size = new System.Drawing.Size(101, 26);
-            this.dateTimePickerEndEmition.TabIndex = 18;
+            dateTimePickerEndEmition.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            dateTimePickerEndEmition.Format = DateTimePickerFormat.Short;
+            dateTimePickerEndEmition.Location = new Point(10, 28);
+            dateTimePickerEndEmition.Name = "dateTimePickerEndEmition";
+            dateTimePickerEndEmition.Size = new Size(101, 26);
+            dateTimePickerEndEmition.TabIndex = 18;
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
-            this.label21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label21.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(0, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(95, 19);
-            this.label21.TabIndex = 16;
-            this.label21.Text = "Koniec emisji";
+            label21.AutoSize = true;
+            label21.Dock = DockStyle.Top;
+            label21.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label21.ForeColor = Color.White;
+            label21.Location = new Point(0, 0);
+            label21.Name = "label21";
+            label21.Size = new Size(95, 19);
+            label21.TabIndex = 16;
+            label21.Text = "Koniec emisji";
             // 
             // panel27
             // 
-            this.panel27.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel27.Location = new System.Drawing.Point(0, 1379);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(783, 10);
-            this.panel27.TabIndex = 43;
+            panel27.BackColor = SystemColors.WindowFrame;
+            panel27.Dock = DockStyle.Top;
+            panel27.Location = new Point(0, 1379);
+            panel27.Name = "panel27";
+            panel27.Size = new Size(783, 10);
+            panel27.TabIndex = 43;
             // 
             // panel30
             // 
-            this.panel30.Controls.Add(this.numericUpDownEpCount);
-            this.panel30.Controls.Add(this.label22);
-            this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel30.Location = new System.Drawing.Point(0, 1389);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(783, 75);
-            this.panel30.TabIndex = 44;
+            panel30.Controls.Add(numericUpDownEpCount);
+            panel30.Controls.Add(label22);
+            panel30.Dock = DockStyle.Top;
+            panel30.Location = new Point(0, 1389);
+            panel30.Name = "panel30";
+            panel30.Size = new Size(783, 75);
+            panel30.TabIndex = 44;
+            panel30.Paint += panel30_Paint;
             // 
             // numericUpDownEpCount
             // 
-            this.numericUpDownEpCount.BackColor = System.Drawing.Color.Black;
-            this.numericUpDownEpCount.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericUpDownEpCount.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDownEpCount.ForeColor = System.Drawing.Color.White;
-            this.numericUpDownEpCount.Location = new System.Drawing.Point(12, 34);
-            this.numericUpDownEpCount.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numericUpDownEpCount.Name = "numericUpDownEpCount";
-            this.numericUpDownEpCount.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDownEpCount.TabIndex = 19;
-            this.numericUpDownEpCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDownEpCount.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            numericUpDownEpCount.BackColor = Color.Black;
+            numericUpDownEpCount.BorderStyle = BorderStyle.None;
+            numericUpDownEpCount.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            numericUpDownEpCount.ForeColor = Color.White;
+            numericUpDownEpCount.Location = new Point(12, 34);
+            numericUpDownEpCount.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            numericUpDownEpCount.Name = "numericUpDownEpCount";
+            numericUpDownEpCount.Size = new Size(120, 22);
+            numericUpDownEpCount.TabIndex = 19;
+            numericUpDownEpCount.TextAlign = HorizontalAlignment.Center;
+            numericUpDownEpCount.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // label22
             // 
-            this.label22.AutoSize = true;
-            this.label22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label22.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(0, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(112, 19);
-            this.label22.TabIndex = 17;
-            this.label22.Text = "Liczba odcinków";
+            label22.AutoSize = true;
+            label22.Dock = DockStyle.Top;
+            label22.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label22.ForeColor = Color.White;
+            label22.Location = new Point(0, 0);
+            label22.Name = "label22";
+            label22.Size = new Size(112, 19);
+            label22.TabIndex = 17;
+            label22.Text = "Liczba odcinków";
             // 
             // panel31
             // 
-            this.panel31.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel31.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel31.Location = new System.Drawing.Point(0, 1464);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(783, 10);
-            this.panel31.TabIndex = 45;
+            panel31.BackColor = SystemColors.WindowFrame;
+            panel31.Dock = DockStyle.Top;
+            panel31.Location = new Point(0, 1464);
+            panel31.Name = "panel31";
+            panel31.Size = new Size(783, 10);
+            panel31.TabIndex = 45;
             // 
             // panel32
             // 
-            this.panel32.Controls.Add(this.listBoxStudios);
-            this.panel32.Controls.Add(this.panel55);
-            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel32.Location = new System.Drawing.Point(0, 1474);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(783, 106);
-            this.panel32.TabIndex = 46;
+            panel32.Controls.Add(listBoxStudios);
+            panel32.Controls.Add(panel55);
+            panel32.Dock = DockStyle.Top;
+            panel32.Location = new Point(0, 1474);
+            panel32.Name = "panel32";
+            panel32.Size = new Size(783, 106);
+            panel32.TabIndex = 46;
             // 
             // listBoxStudios
             // 
-            this.listBoxStudios.BackColor = System.Drawing.Color.Black;
-            this.listBoxStudios.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBoxStudios.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxStudios.ForeColor = System.Drawing.Color.White;
-            this.listBoxStudios.ItemHeight = 17;
-            this.listBoxStudios.Location = new System.Drawing.Point(540, 0);
-            this.listBoxStudios.Name = "listBoxStudios";
-            this.listBoxStudios.Size = new System.Drawing.Size(243, 106);
-            this.listBoxStudios.TabIndex = 0;
+            listBoxStudios.BackColor = Color.Black;
+            listBoxStudios.BorderStyle = BorderStyle.None;
+            listBoxStudios.Dock = DockStyle.Fill;
+            listBoxStudios.ForeColor = Color.White;
+            listBoxStudios.ItemHeight = 17;
+            listBoxStudios.Location = new Point(540, 0);
+            listBoxStudios.Name = "listBoxStudios";
+            listBoxStudios.Size = new Size(243, 106);
+            listBoxStudios.TabIndex = 0;
             // 
             // panel55
             // 
-            this.panel55.Controls.Add(this.label23);
-            this.panel55.Controls.Add(this.buttonStudioRemove);
-            this.panel55.Controls.Add(this.textBoxStudio);
-            this.panel55.Controls.Add(this.buttonStudioAdd);
-            this.panel55.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel55.Location = new System.Drawing.Point(0, 0);
-            this.panel55.Name = "panel55";
-            this.panel55.Size = new System.Drawing.Size(540, 106);
-            this.panel55.TabIndex = 22;
+            panel55.Controls.Add(label5);
+            panel55.Controls.Add(label23);
+            panel55.Controls.Add(buttonStudioRemove);
+            panel55.Controls.Add(textBoxStudio);
+            panel55.Controls.Add(buttonStudioAdd);
+            panel55.Dock = DockStyle.Left;
+            panel55.Location = new Point(0, 0);
+            panel55.Name = "panel55";
+            panel55.Size = new Size(540, 106);
+            panel55.TabIndex = 22;
             // 
             // label23
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label23.ForeColor = System.Drawing.Color.White;
-            this.label23.Location = new System.Drawing.Point(0, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(52, 19);
-            this.label23.TabIndex = 9;
-            this.label23.Text = "Studio";
+            label23.AutoSize = true;
+            label23.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label23.ForeColor = Color.White;
+            label23.Location = new Point(0, 0);
+            label23.Name = "label23";
+            label23.Size = new Size(52, 19);
+            label23.TabIndex = 9;
+            label23.Text = "Studio";
             // 
             // buttonStudioRemove
             // 
-            this.buttonStudioRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.buttonStudioRemove.FlatAppearance.BorderSize = 0;
-            this.buttonStudioRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStudioRemove.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonStudioRemove.ForeColor = System.Drawing.Color.White;
-            this.buttonStudioRemove.Location = new System.Drawing.Point(455, 20);
-            this.buttonStudioRemove.Name = "buttonStudioRemove";
-            this.buttonStudioRemove.Size = new System.Drawing.Size(75, 28);
-            this.buttonStudioRemove.TabIndex = 20;
-            this.buttonStudioRemove.Text = "Usuń";
-            this.buttonStudioRemove.UseVisualStyleBackColor = false;
-            this.buttonStudioRemove.Click += new System.EventHandler(this.buttonStudioRemove_Click);
+            buttonStudioRemove.BackColor = Color.FromArgb(33, 33, 33);
+            buttonStudioRemove.FlatAppearance.BorderSize = 0;
+            buttonStudioRemove.FlatStyle = FlatStyle.Flat;
+            buttonStudioRemove.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonStudioRemove.ForeColor = Color.White;
+            buttonStudioRemove.Location = new Point(455, 20);
+            buttonStudioRemove.Name = "buttonStudioRemove";
+            buttonStudioRemove.Size = new Size(75, 28);
+            buttonStudioRemove.TabIndex = 20;
+            buttonStudioRemove.Text = "Usuń";
+            buttonStudioRemove.UseVisualStyleBackColor = false;
+            buttonStudioRemove.Click += buttonStudioRemove_Click;
             // 
             // textBoxStudio
             // 
-            this.textBoxStudio.BackColor = System.Drawing.Color.Black;
-            this.textBoxStudio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxStudio.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxStudio.ForeColor = System.Drawing.Color.White;
-            this.textBoxStudio.Location = new System.Drawing.Point(0, 22);
-            this.textBoxStudio.Name = "textBoxStudio";
-            this.textBoxStudio.Size = new System.Drawing.Size(368, 19);
-            this.textBoxStudio.TabIndex = 8;
+            textBoxStudio.BackColor = Color.Black;
+            textBoxStudio.BorderStyle = BorderStyle.None;
+            textBoxStudio.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxStudio.ForeColor = Color.White;
+            textBoxStudio.Location = new Point(0, 22);
+            textBoxStudio.Name = "textBoxStudio";
+            textBoxStudio.Size = new Size(368, 19);
+            textBoxStudio.TabIndex = 8;
             // 
             // buttonStudioAdd
             // 
-            this.buttonStudioAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.buttonStudioAdd.FlatAppearance.BorderSize = 0;
-            this.buttonStudioAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonStudioAdd.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonStudioAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonStudioAdd.Location = new System.Drawing.Point(374, 20);
-            this.buttonStudioAdd.Name = "buttonStudioAdd";
-            this.buttonStudioAdd.Size = new System.Drawing.Size(75, 28);
-            this.buttonStudioAdd.TabIndex = 18;
-            this.buttonStudioAdd.Text = "Dodaj";
-            this.buttonStudioAdd.UseVisualStyleBackColor = false;
-            this.buttonStudioAdd.Click += new System.EventHandler(this.buttonStudioAdd_Click);
+            buttonStudioAdd.BackColor = Color.FromArgb(33, 33, 33);
+            buttonStudioAdd.FlatAppearance.BorderSize = 0;
+            buttonStudioAdd.FlatStyle = FlatStyle.Flat;
+            buttonStudioAdd.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonStudioAdd.ForeColor = Color.White;
+            buttonStudioAdd.Location = new Point(374, 20);
+            buttonStudioAdd.Name = "buttonStudioAdd";
+            buttonStudioAdd.Size = new Size(75, 28);
+            buttonStudioAdd.TabIndex = 18;
+            buttonStudioAdd.Text = "Dodaj";
+            buttonStudioAdd.UseVisualStyleBackColor = false;
+            buttonStudioAdd.Click += buttonStudioAdd_Click;
             // 
             // panel33
             // 
-            this.panel33.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel33.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel33.Location = new System.Drawing.Point(0, 1580);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(783, 10);
-            this.panel33.TabIndex = 47;
+            panel33.BackColor = SystemColors.WindowFrame;
+            panel33.Dock = DockStyle.Top;
+            panel33.Location = new Point(0, 1580);
+            panel33.Name = "panel33";
+            panel33.Size = new Size(783, 10);
+            panel33.TabIndex = 47;
             // 
             // panel35
             // 
-            this.panel35.Controls.Add(this.label25);
-            this.panel35.Controls.Add(this.numericUpDownDlugoscEp);
-            this.panel35.Controls.Add(this.label24);
-            this.panel35.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel35.Location = new System.Drawing.Point(0, 1590);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(783, 106);
-            this.panel35.TabIndex = 48;
+            panel35.Controls.Add(label25);
+            panel35.Controls.Add(numericUpDownDlugoscEp);
+            panel35.Controls.Add(label24);
+            panel35.Dock = DockStyle.Top;
+            panel35.Location = new Point(0, 1590);
+            panel35.Name = "panel35";
+            panel35.Size = new Size(783, 106);
+            panel35.TabIndex = 48;
             // 
             // label25
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label25.ForeColor = System.Drawing.Color.White;
-            this.label25.Location = new System.Drawing.Point(138, 34);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(45, 19);
-            this.label25.TabIndex = 21;
-            this.label25.Text = "minut";
+            label25.AutoSize = true;
+            label25.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label25.ForeColor = Color.White;
+            label25.Location = new Point(138, 34);
+            label25.Name = "label25";
+            label25.Size = new Size(45, 19);
+            label25.TabIndex = 21;
+            label25.Text = "minut";
             // 
             // numericUpDownDlugoscEp
             // 
-            this.numericUpDownDlugoscEp.BackColor = System.Drawing.Color.Black;
-            this.numericUpDownDlugoscEp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.numericUpDownDlugoscEp.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numericUpDownDlugoscEp.ForeColor = System.Drawing.Color.White;
-            this.numericUpDownDlugoscEp.Location = new System.Drawing.Point(12, 31);
-            this.numericUpDownDlugoscEp.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numericUpDownDlugoscEp.Name = "numericUpDownDlugoscEp";
-            this.numericUpDownDlugoscEp.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDownDlugoscEp.TabIndex = 20;
-            this.numericUpDownDlugoscEp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            numericUpDownDlugoscEp.BackColor = Color.Black;
+            numericUpDownDlugoscEp.BorderStyle = BorderStyle.None;
+            numericUpDownDlugoscEp.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            numericUpDownDlugoscEp.ForeColor = Color.White;
+            numericUpDownDlugoscEp.Location = new Point(12, 31);
+            numericUpDownDlugoscEp.Maximum = new decimal(new int[] { 1000000, 0, 0, 0 });
+            numericUpDownDlugoscEp.Name = "numericUpDownDlugoscEp";
+            numericUpDownDlugoscEp.Size = new Size(120, 22);
+            numericUpDownDlugoscEp.TabIndex = 20;
+            numericUpDownDlugoscEp.TextAlign = HorizontalAlignment.Center;
             // 
             // label24
             // 
-            this.label24.AutoSize = true;
-            this.label24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label24.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.ForeColor = System.Drawing.Color.White;
-            this.label24.Location = new System.Drawing.Point(0, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(109, 19);
-            this.label24.TabIndex = 18;
-            this.label24.Text = "Długość odcinka";
+            label24.AutoSize = true;
+            label24.Dock = DockStyle.Top;
+            label24.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label24.ForeColor = Color.White;
+            label24.Location = new Point(0, 0);
+            label24.Name = "label24";
+            label24.Size = new Size(109, 19);
+            label24.TabIndex = 18;
+            label24.Text = "Długość odcinka";
             // 
             // panel36
             // 
-            this.panel36.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel36.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel36.Location = new System.Drawing.Point(0, 1696);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(783, 10);
-            this.panel36.TabIndex = 49;
+            panel36.BackColor = SystemColors.WindowFrame;
+            panel36.Dock = DockStyle.Top;
+            panel36.Location = new Point(0, 1696);
+            panel36.Name = "panel36";
+            panel36.Size = new Size(783, 10);
+            panel36.TabIndex = 49;
             // 
             // panel37
             // 
-            this.panel37.Controls.Add(this.comboBoxMPAA);
-            this.panel37.Controls.Add(this.label26);
-            this.panel37.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel37.Location = new System.Drawing.Point(0, 1706);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(783, 94);
-            this.panel37.TabIndex = 50;
+            panel37.Controls.Add(comboBoxMPAA);
+            panel37.Controls.Add(label26);
+            panel37.Dock = DockStyle.Top;
+            panel37.Location = new Point(0, 1706);
+            panel37.Name = "panel37";
+            panel37.Size = new Size(783, 94);
+            panel37.TabIndex = 50;
             // 
             // comboBoxMPAA
             // 
-            this.comboBoxMPAA.BackColor = System.Drawing.Color.Black;
-            this.comboBoxMPAA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxMPAA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxMPAA.ForeColor = System.Drawing.Color.White;
-            this.comboBoxMPAA.FormattingEnabled = true;
-            this.comboBoxMPAA.Items.AddRange(new object[] {
-            "G",
-            "N/A",
-            "NC-17",
-            "PG",
-            "PG-13",
-            "R",
-            "R+"});
-            this.comboBoxMPAA.Location = new System.Drawing.Point(12, 36);
-            this.comboBoxMPAA.Name = "comboBoxMPAA";
-            this.comboBoxMPAA.Size = new System.Drawing.Size(174, 25);
-            this.comboBoxMPAA.Sorted = true;
-            this.comboBoxMPAA.TabIndex = 20;
+            comboBoxMPAA.BackColor = Color.Black;
+            comboBoxMPAA.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxMPAA.FlatStyle = FlatStyle.Flat;
+            comboBoxMPAA.ForeColor = Color.White;
+            comboBoxMPAA.FormattingEnabled = true;
+            comboBoxMPAA.Items.AddRange(new object[] { "G", "N/A", "NC-17", "PG", "PG-13", "R", "R+" });
+            comboBoxMPAA.Location = new Point(12, 36);
+            comboBoxMPAA.Name = "comboBoxMPAA";
+            comboBoxMPAA.Size = new Size(174, 25);
+            comboBoxMPAA.Sorted = true;
+            comboBoxMPAA.TabIndex = 20;
             // 
             // label26
             // 
-            this.label26.AutoSize = true;
-            this.label26.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label26.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.ForeColor = System.Drawing.Color.White;
-            this.label26.Location = new System.Drawing.Point(0, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(46, 19);
-            this.label26.TabIndex = 19;
-            this.label26.Text = "MPAA";
+            label26.AutoSize = true;
+            label26.Dock = DockStyle.Top;
+            label26.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label26.ForeColor = Color.White;
+            label26.Location = new Point(0, 0);
+            label26.Name = "label26";
+            label26.Size = new Size(46, 19);
+            label26.TabIndex = 19;
+            label26.Text = "MPAA";
             // 
             // panel38
             // 
-            this.panel38.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel38.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel38.Location = new System.Drawing.Point(0, 1810);
-            this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(783, 10);
-            this.panel38.TabIndex = 51;
+            panel38.BackColor = SystemColors.WindowFrame;
+            panel38.Dock = DockStyle.Top;
+            panel38.Location = new Point(0, 1810);
+            panel38.Name = "panel38";
+            panel38.Size = new Size(783, 10);
+            panel38.TabIndex = 51;
             // 
             // panel56
             // 
-            this.panel56.Controls.Add(this.label4);
-            this.panel56.Controls.Add(this.comboBoxFileFormat);
-            this.panel56.Controls.Add(this.buttonSave);
-            this.panel56.Controls.Add(this.labelProgress);
-            this.panel56.Controls.Add(this.progressBar1);
-            this.panel56.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel56.Location = new System.Drawing.Point(0, 1820);
-            this.panel56.Name = "panel56";
-            this.panel56.Padding = new System.Windows.Forms.Padding(20);
-            this.panel56.Size = new System.Drawing.Size(783, 106);
-            this.panel56.TabIndex = 52;
+            panel56.Controls.Add(label4);
+            panel56.Controls.Add(comboBoxFileFormat);
+            panel56.Controls.Add(buttonSave);
+            panel56.Controls.Add(labelProgress);
+            panel56.Controls.Add(progressBar1);
+            panel56.Dock = DockStyle.Top;
+            panel56.Location = new Point(0, 1820);
+            panel56.Name = "panel56";
+            panel56.Padding = new Padding(20);
+            panel56.Size = new Size(783, 106);
+            panel56.TabIndex = 52;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(468, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Format pliku";
+            label4.AutoSize = true;
+            label4.Location = new Point(468, 30);
+            label4.Name = "label4";
+            label4.Size = new Size(77, 17);
+            label4.TabIndex = 4;
+            label4.Text = "Format pliku";
             // 
             // comboBoxFileFormat
             // 
-            this.comboBoxFileFormat.BackColor = System.Drawing.Color.Black;
-            this.comboBoxFileFormat.ForeColor = System.Drawing.Color.White;
-            this.comboBoxFileFormat.FormattingEnabled = true;
-            this.comboBoxFileFormat.Items.AddRange(new object[] {
-            ".dat",
-            ".json"});
-            this.comboBoxFileFormat.Location = new System.Drawing.Point(468, 37);
-            this.comboBoxFileFormat.Name = "comboBoxFileFormat";
-            this.comboBoxFileFormat.Size = new System.Drawing.Size(121, 25);
-            this.comboBoxFileFormat.TabIndex = 3;
+            comboBoxFileFormat.BackColor = Color.Black;
+            comboBoxFileFormat.ForeColor = Color.White;
+            comboBoxFileFormat.FormattingEnabled = true;
+            comboBoxFileFormat.Items.AddRange(new object[] { ".dat", ".json" });
+            comboBoxFileFormat.Location = new Point(468, 58);
+            comboBoxFileFormat.Name = "comboBoxFileFormat";
+            comboBoxFileFormat.Size = new Size(121, 25);
+            comboBoxFileFormat.TabIndex = 3;
             // 
             // buttonSave
             // 
-            this.buttonSave.BackColor = System.Drawing.Color.Black;
-            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSave.Location = new System.Drawing.Point(281, 30);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(152, 32);
-            this.buttonSave.TabIndex = 2;
-            this.buttonSave.Text = "Zapisz";
-            this.buttonSave.UseVisualStyleBackColor = false;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            buttonSave.BackColor = Color.Black;
+            buttonSave.FlatStyle = FlatStyle.Flat;
+            buttonSave.Location = new Point(281, 30);
+            buttonSave.Name = "buttonSave";
+            buttonSave.Size = new Size(152, 32);
+            buttonSave.TabIndex = 2;
+            buttonSave.Text = "Zapisz";
+            buttonSave.UseVisualStyleBackColor = false;
+            buttonSave.Click += buttonSave_Click;
             // 
             // labelProgress
             // 
-            this.labelProgress.AutoSize = true;
-            this.labelProgress.Location = new System.Drawing.Point(23, 10);
-            this.labelProgress.Name = "labelProgress";
-            this.labelProgress.Size = new System.Drawing.Size(13, 17);
-            this.labelProgress.TabIndex = 1;
-            this.labelProgress.Text = "|";
+            labelProgress.AutoSize = true;
+            labelProgress.Location = new Point(23, 10);
+            labelProgress.Name = "labelProgress";
+            labelProgress.Size = new Size(13, 17);
+            labelProgress.TabIndex = 1;
+            labelProgress.Text = "|";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(23, 30);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(211, 23);
-            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar1.TabIndex = 0;
-            this.progressBar1.Visible = false;
+            progressBar1.Location = new Point(23, 30);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(211, 23);
+            progressBar1.Style = ProgressBarStyle.Marquee;
+            progressBar1.TabIndex = 0;
+            progressBar1.Visible = false;
             // 
             // panel39
             // 
-            this.panel39.Controls.Add(this.label3);
-            this.panel39.Controls.Add(this.textBoxTitle);
-            this.panel39.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel39.Location = new System.Drawing.Point(0, 45);
-            this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(783, 69);
-            this.panel39.TabIndex = 22;
+            panel39.Controls.Add(label3);
+            panel39.Controls.Add(textBoxTitle);
+            panel39.Dock = DockStyle.Top;
+            panel39.Location = new Point(0, 45);
+            panel39.Name = "panel39";
+            panel39.Size = new Size(783, 69);
+            panel39.TabIndex = 22;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(10, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 19);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Tytuł";
+            label3.AutoSize = true;
+            label3.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(10, 3);
+            label3.Name = "label3";
+            label3.Size = new Size(43, 19);
+            label3.TabIndex = 10;
+            label3.Text = "Tytuł";
             // 
             // textBoxTitle
             // 
-            this.textBoxTitle.BackColor = System.Drawing.Color.Black;
-            this.textBoxTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxTitle.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxTitle.ForeColor = System.Drawing.Color.White;
-            this.textBoxTitle.Location = new System.Drawing.Point(3, 25);
-            this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.Size = new System.Drawing.Size(396, 19);
-            this.textBoxTitle.TabIndex = 8;
+            textBoxTitle.BackColor = Color.Black;
+            textBoxTitle.BorderStyle = BorderStyle.None;
+            textBoxTitle.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxTitle.ForeColor = Color.White;
+            textBoxTitle.Location = new Point(3, 25);
+            textBoxTitle.Name = "textBoxTitle";
+            textBoxTitle.Size = new Size(396, 19);
+            textBoxTitle.TabIndex = 8;
             // 
             // panel41
             // 
-            this.panel41.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel41.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel41.Location = new System.Drawing.Point(0, 1800);
-            this.panel41.Name = "panel41";
-            this.panel41.Size = new System.Drawing.Size(783, 10);
-            this.panel41.TabIndex = 53;
+            panel41.BackColor = SystemColors.WindowFrame;
+            panel41.Dock = DockStyle.Top;
+            panel41.Location = new Point(0, 1800);
+            panel41.Name = "panel41";
+            panel41.Size = new Size(783, 10);
+            panel41.TabIndex = 53;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(12, 44);
+            label5.Name = "label5";
+            label5.Size = new Size(168, 17);
+            label5.TabIndex = 21;
+            label5.Text = "* Dodawaj pojedynczo studia!";
             // 
             // PageItemCreator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.ClientSize = new System.Drawing.Size(800, 510);
-            this.Controls.Add(this.panel56);
-            this.Controls.Add(this.panel38);
-            this.Controls.Add(this.panel41);
-            this.Controls.Add(this.panel37);
-            this.Controls.Add(this.panel36);
-            this.Controls.Add(this.panel35);
-            this.Controls.Add(this.panel33);
-            this.Controls.Add(this.panel32);
-            this.Controls.Add(this.panel31);
-            this.Controls.Add(this.panel30);
-            this.Controls.Add(this.panel27);
-            this.Controls.Add(this.panel26);
-            this.Controls.Add(this.panel25);
-            this.Controls.Add(this.panel24);
-            this.Controls.Add(this.panel23);
-            this.Controls.Add(this.panel22);
-            this.Controls.Add(this.panel21);
-            this.Controls.Add(this.panel20);
-            this.Controls.Add(this.panel19);
-            this.Controls.Add(this.panel18);
-            this.Controls.Add(this.panel17);
-            this.Controls.Add(this.panel16);
-            this.Controls.Add(this.panel15);
-            this.Controls.Add(this.panel14);
-            this.Controls.Add(this.panel13);
-            this.Controls.Add(this.panel12);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel39);
-            this.Controls.Add(this.panel1);
-            this.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.Color.White;
-            this.Name = "PageItemCreator";
-            this.Text = "PageItemCreator";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PageItemCreator_FormClosed);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel28.ResumeLayout(false);
-            this.panel28.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel29.ResumeLayout(false);
-            this.panel29.PerformLayout();
-            this.panel16.ResumeLayout(false);
-            this.panel34.ResumeLayout(false);
-            this.panel34.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.panel26.ResumeLayout(false);
-            this.panel26.PerformLayout();
-            this.panel30.ResumeLayout(false);
-            this.panel30.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownEpCount)).EndInit();
-            this.panel32.ResumeLayout(false);
-            this.panel55.ResumeLayout(false);
-            this.panel55.PerformLayout();
-            this.panel35.ResumeLayout(false);
-            this.panel35.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDlugoscEp)).EndInit();
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
-            this.panel56.ResumeLayout(false);
-            this.panel56.PerformLayout();
-            this.panel39.ResumeLayout(false);
-            this.panel39.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = Color.FromArgb(35, 35, 35);
+            ClientSize = new Size(800, 510);
+            Controls.Add(panel56);
+            Controls.Add(panel38);
+            Controls.Add(panel41);
+            Controls.Add(panel37);
+            Controls.Add(panel36);
+            Controls.Add(panel35);
+            Controls.Add(panel33);
+            Controls.Add(panel32);
+            Controls.Add(panel31);
+            Controls.Add(panel30);
+            Controls.Add(panel27);
+            Controls.Add(panel26);
+            Controls.Add(panel25);
+            Controls.Add(panel24);
+            Controls.Add(panel23);
+            Controls.Add(panel22);
+            Controls.Add(panel21);
+            Controls.Add(panel20);
+            Controls.Add(panel19);
+            Controls.Add(panel18);
+            Controls.Add(panel17);
+            Controls.Add(panel16);
+            Controls.Add(panel15);
+            Controls.Add(panel14);
+            Controls.Add(panel13);
+            Controls.Add(panel12);
+            Controls.Add(panel11);
+            Controls.Add(panel10);
+            Controls.Add(panel9);
+            Controls.Add(panel6);
+            Controls.Add(panel5);
+            Controls.Add(panel4);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel39);
+            Controls.Add(panel1);
+            Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = Color.White;
+            Name = "PageItemCreator";
+            Text = "PageItemCreator";
+            FormClosed += PageItemCreator_FormClosed;
+            Load += PageItemCreator_Load;
+            panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            panel12.ResumeLayout(false);
+            panel28.ResumeLayout(false);
+            panel28.PerformLayout();
+            panel14.ResumeLayout(false);
+            panel29.ResumeLayout(false);
+            panel29.PerformLayout();
+            panel16.ResumeLayout(false);
+            panel34.ResumeLayout(false);
+            panel34.PerformLayout();
+            panel18.ResumeLayout(false);
+            panel18.PerformLayout();
+            panel20.ResumeLayout(false);
+            panel20.PerformLayout();
+            panel22.ResumeLayout(false);
+            panel22.PerformLayout();
+            panel24.ResumeLayout(false);
+            panel24.PerformLayout();
+            panel26.ResumeLayout(false);
+            panel26.PerformLayout();
+            panel30.ResumeLayout(false);
+            panel30.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownEpCount).EndInit();
+            panel32.ResumeLayout(false);
+            panel55.ResumeLayout(false);
+            panel55.PerformLayout();
+            panel35.ResumeLayout(false);
+            panel35.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownDlugoscEp).EndInit();
+            panel37.ResumeLayout(false);
+            panel37.PerformLayout();
+            panel56.ResumeLayout(false);
+            panel56.PerformLayout();
+            panel39.ResumeLayout(false);
+            panel39.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -1840,5 +1575,6 @@
         private Button buttonEditFile;
         private ComboBox comboBoxFileFormat;
         private Label label4;
+        private Label label5;
     }
 }
