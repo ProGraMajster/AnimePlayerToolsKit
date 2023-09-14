@@ -37,6 +37,7 @@
             buttonPageItemData = new Button();
             buttonToolEpisode = new Button();
             buttonSendFileToDiscord = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -164,12 +165,28 @@
             buttonSendFileToDiscord.UseVisualStyleBackColor = false;
             buttonSendFileToDiscord.Click += buttonSendFileToDiscord_Click;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(28, 28, 28);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Comic Sans MS", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(35, 150);
+            button2.Name = "button2";
+            button2.Size = new Size(206, 35);
+            button2.TabIndex = 8;
+            button2.Text = "Dodaj powiązanie tytułów";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // FormStart
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(25, 25, 25);
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(buttonSendFileToDiscord);
             Controls.Add(buttonToolEpisode);
             Controls.Add(buttonPageItemData);
@@ -199,5 +216,6 @@
         private Button buttonPageItemData;
         private Button buttonToolEpisode;
         private Button buttonSendFileToDiscord;
+        private Button button2;
     }
 }

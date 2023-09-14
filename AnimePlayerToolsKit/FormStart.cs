@@ -57,5 +57,12 @@ namespace AnimePlayerToolsKit
         {
             Process.Start("cmd", "/C start \"\" https://discord.gg/YpwXkPyyc3 ");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ToolCreatorRelatedTitle toolCreatorRelatedTitle = new ToolCreatorRelatedTitle();
+            toolCreatorRelatedTitle.Show();
+        }
     }
 }
