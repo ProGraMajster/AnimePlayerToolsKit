@@ -218,6 +218,7 @@ namespace AnimePlayerToolsKit
                 pageItemData.TitleInformation.MPAA = comboBoxMPAA.SelectedItem.ToString();
                 labelProgress.Text = "Przetwarzanie... 100%";
                 Application.DoEvents();
+                pageItemData.Guid = Guid.NewGuid();
 
                 if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
                 {
